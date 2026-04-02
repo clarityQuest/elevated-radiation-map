@@ -74,6 +74,18 @@
 <script>
 var BASE = 'http://www.opengeiger.de/GeigerCaching/GeigerCaching.html';
 
+function buildSourceUrl(loc) {
+  var textTarget = loc.name.replace(/\s+/g, ' ').trim();
+  if (loc.anchor) {
+    try {
+      textTarget = decodeURIComponent(loc.anchor.replace(/\+/g, ' ')).replace(/\s+/g, ' ').trim();
+    } catch (e) {
+      textTarget = loc.anchor.replace(/\+/g, ' ').replace(/\s+/g, ' ').trim();
+    }
+  }
+  return BASE + '#:~:text=' + encodeURIComponent(textTarget);
+}
+
 var locations = [
   {name:"Uranbergbaumuseum Bad Schlema",lat:50.6001,lng:12.6745,dose:40,note:"Pechblende exhibit in display case",anchor:"Uranbergbaumuseum+Bad+Schlema"},
   {name:"Ytterby Mine, Sweden",lat:59.4265,lng:18.3533,dose:18.8,note:"Historic rare-earth mine on Resar\u00f6 island",anchor:"Ytterby+Mine"},
@@ -161,10 +173,39 @@ function getTier(d) {
 }
 
 var map = L.map('map').setView([51, 12], 5);
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+var isLocalFile = window.location.protocol === 'file:';
+var osmOptions = {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | Data: <a href="http://www.opengeiger.de">opengeiger.de</a>',
   maxZoom: 18
-}).addTo(map);
+};
+var voyagerOptions = {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a> | Data: <a href="http://www.opengeiger.de">opengeiger.de</a>',
+  subdomains: 'abcd',
+  maxZoom: 20
+};
+var osmLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: osmOptions.attribution,
+  maxZoom: osmOptions.maxZoom
+});
+var voyagerLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', voyagerOptions);
+var tileErrors = 0;
+var fallbackActivated = false;
+
+osmLayer.on('tileerror', function() {
+  tileErrors += 1;
+  if (fallbackActivated || tileErrors < 4) return;
+  fallbackActivated = true;
+  map.removeLayer(osmLayer);
+  voyagerLayer.addTo(map);
+  console.warn('OSM tiles blocked locally (403). Switched to CARTO Voyager fallback.');
+});
+
+if (isLocalFile) {
+  fallbackActivated = true;
+  voyagerLayer.addTo(map);
+} else {
+  osmLayer.addTo(map);
+}
 
 locations.forEach(function(loc) {
   var color = getColor(loc.dose);
@@ -180,7 +221,7 @@ locations.forEach(function(loc) {
   marker.bindTooltip(loc.name, {direction: 'top'});
 
   marker.on('click', function() {
-    var srcUrl = BASE + '#:~:text=' + loc.anchor;
+    var srcUrl = buildSourceUrl(loc);
     document.getElementById('info').style.display = 'block';
     document.getElementById('info-name').textContent = loc.name;
     document.getElementById('info-dose').style.color = color;
