@@ -12,6 +12,18 @@
   header { background: #1a1a2e; color: #fff; padding: 14px 20px; display: flex; align-items: center; gap: 12px; }
   header h1 { font-size: 17px; font-weight: 600; }
   header a { color: #88aaff; font-size: 13px; text-decoration: none; }
+  .locate-btn {
+    margin-left: auto;
+    border: 0;
+    border-radius: 6px;
+    background: #2e6ea8;
+    color: #fff;
+    padding: 7px 10px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .locate-btn:hover { background: #3b84c5; }
+  #locate-status { font-size: 12px; color: #c6d6ea; }
   #map { width: 100%; height: calc(100vh - 56px); }
   #legend {
     position: absolute; bottom: 32px; left: 12px; z-index: 1000;
@@ -38,6 +50,7 @@
     text-decoration: none;
   }
   #info .src-link:hover { background: #333; }
+  #info .link-row { display: flex; gap: 8px; flex-wrap: wrap; }
 </style>
 </head>
 <body>
@@ -46,7 +59,8 @@
     <h1>&#9762; Geiger Caching Map</h1>
     <a href="http://www.opengeiger.de/GeigerCaching/GeigerCaching.html" target="_blank">opengeiger.de</a>
   </div>
-  <span style="margin-left:auto;font-size:12px;color:#aaa;">Click a marker for details</span>
+  <button class="locate-btn" id="locate-btn" type="button">Show my position</button>
+  <span id="locate-status">Click a marker for details</span>
 </header>
 
 <div style="position:relative;">
@@ -67,7 +81,10 @@
     <div class="dose" id="info-dose"></div>
     <div class="tier" id="info-tier"></div>
     <div class="note" id="info-note"></div>
-    <a class="src-link" id="info-link" href="#" target="_blank">&#8594; View on opengeiger.de</a>
+    <div class="link-row">
+      <a class="src-link" id="info-link" href="#" target="_blank">&#8594; View on opengeiger.de</a>
+      <a class="src-link" id="info-gmaps" href="#" target="_blank">&#8594; Open in Google Maps</a>
+    </div>
   </div>
 </div>
 
@@ -84,6 +101,10 @@ function buildSourceUrl(loc) {
     }
   }
   return BASE + '#:~:text=' + encodeURIComponent(textTarget);
+}
+
+function buildGoogleMapsUrl(lat, lng) {
+  return 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(lat + ',' + lng);
 }
 
 var locations = [
@@ -190,6 +211,8 @@ var osmLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
 var voyagerLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', voyagerOptions);
 var tileErrors = 0;
 var fallbackActivated = false;
+var userMarker = null;
+var userAccuracyCircle = null;
 
 osmLayer.on('tileerror', function() {
   tileErrors += 1;
@@ -206,6 +229,65 @@ if (isLocalFile) {
 } else {
   osmLayer.addTo(map);
 }
+
+function setLocateStatus(text) {
+  document.getElementById('locate-status').textContent = text;
+}
+
+function showUserPosition(position) {
+  var lat = position.coords.latitude;
+  var lng = position.coords.longitude;
+  var accuracy = position.coords.accuracy || 0;
+
+  if (userMarker) {
+    map.removeLayer(userMarker);
+  }
+  if (userAccuracyCircle) {
+    map.removeLayer(userAccuracyCircle);
+  }
+
+  userMarker = L.circleMarker([lat, lng], {
+    radius: 7,
+    fillColor: '#2d6cdf',
+    color: '#ffffff',
+    weight: 2,
+    fillOpacity: 0.95
+  }).addTo(map);
+  userMarker.bindTooltip('You are here', {direction: 'top'});
+
+  userAccuracyCircle = L.circle([lat, lng], {
+    radius: accuracy,
+    color: '#2d6cdf',
+    fillColor: '#2d6cdf',
+    fillOpacity: 0.12,
+    weight: 1
+  }).addTo(map);
+
+  map.flyTo([lat, lng], 13, {duration: 0.7});
+  setLocateStatus('Current position shown');
+}
+
+function showUserPositionError(err) {
+  if (err && err.code === 1) {
+    setLocateStatus('Location permission denied');
+    return;
+  }
+  setLocateStatus('Unable to get current position');
+}
+
+document.getElementById('locate-btn').addEventListener('click', function() {
+  if (!navigator.geolocation) {
+    setLocateStatus('Geolocation is not supported');
+    return;
+  }
+
+  setLocateStatus('Locating...');
+  navigator.geolocation.getCurrentPosition(showUserPosition, showUserPositionError, {
+    enableHighAccuracy: true,
+    timeout: 15000,
+    maximumAge: 30000
+  });
+});
 
 locations.forEach(function(loc) {
   var color = getColor(loc.dose);
@@ -229,6 +311,7 @@ locations.forEach(function(loc) {
     document.getElementById('info-tier').textContent = getTier(loc.dose);
     document.getElementById('info-note').textContent = loc.note;
     document.getElementById('info-link').href = srcUrl;
+    document.getElementById('info-gmaps').href = buildGoogleMapsUrl(loc.lat, loc.lng);
   });
 });
 </script>

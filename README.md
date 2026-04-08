@@ -1,19 +1,28 @@
 # opengeiger-map
 
-Interactive map of the opengeiger.de "Interesting excursions" locations with measured dose rates.
+Interactive map of places listed on opengeiger.de as notable Geiger Caching or elevated-radiation excursions.
+
+The map helps you quickly scan where these locations are and compare reported dose rates. Each marker shows:
+
+- the location name
+- a short note
+- the reported dose rate (uSv/h)
+- a direct link to the matching opengeiger.de entry
+- a button to open the location in Google Maps
+
+You can also show your own current position on the map to see nearby entries.
 
 Live webpage (GitHub Pages):
 https://clarityQuest.github.io/opengeiger-map/
 
-If the page still shows 404, GitHub Pages deployment is still in progress. You can also open the map directly from the repository file:
+If GitHub Pages is still deploying and returns 404, open the map directly from this repository:
 https://github.com/clarityQuest/opengeiger-map/blob/main/index.html
 
-This project renders known Geiger Caching spots as clickable markers on a Leaflet map. Marker color and size reflect the dose rate category, and selecting a marker opens a detail panel with location notes and a direct link back to the original opengeiger.de entry.
+## Data Sources and Credits
 
-The page is a static HTML implementation and can be hosted directly with GitHub Pages.
-
-## Sources
-
-- opengeiger.de Geiger Caching page (location names, notes, dose rates): http://www.opengeiger.de/GeigerCaching/GeigerCaching.html
-- OpenStreetMap tiles and map data attribution: https://www.openstreetmap.org/copyright
-- Leaflet mapping library: https://leafletjs.com/
+- Location list, notes, and dose values: opengeiger.de Geiger Caching page  
+	http://www.opengeiger.de/GeigerCaching/GeigerCaching.html
+- Basemap and geographic data attribution: OpenStreetMap contributors  
+	https://www.openstreetmap.org/copyright
+- Mapping framework: Leaflet  
+	https://leafletjs.com/
