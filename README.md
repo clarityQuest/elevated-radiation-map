@@ -1,16 +1,16 @@
-# opengeiger-map
+# Abnormal Radiation Map
 
-Interactive map of places listed on opengeiger.de as notable Geiger Caching or elevated-radiation excursions.
+Interactive map of locations with elevated or unusual radiation readings, combining opengeiger.de and Geigerzählerforum entries.
 
-The map helps you quickly scan where these locations are and compare reported dose rates. Each marker shows:
+The map helps you quickly scan where these locations are and compare reported dose rates across both sources. Each marker shows:
 
 - the location name
 - a short note
 - the reported dose rate (uSv/h)
-- a direct link to the matching opengeiger.de entry
+- a direct link to the original source entry
 - a button to open the location in Google Maps
 
-You can also show your own current position on the map to see nearby entries.
+You can also show your own current position on the map to see nearby entries, and toggle sources directly in the legend.
 
 Live webpage (GitHub Pages):
 https://clarityQuest.github.io/opengeiger-map/
