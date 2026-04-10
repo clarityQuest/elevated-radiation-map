@@ -13,10 +13,10 @@ The map helps you quickly scan where these locations are and compare reported do
 You can also show your own current position on the map to see nearby entries, and toggle sources directly in the legend.
 
 Live webpage (GitHub Pages):
-https://clarityQuest.github.io/opengeiger-map/
+https://clarityQuest.github.io/elevated-radiation-map/
 
 If GitHub Pages is still deploying and returns 404, open the map directly from this repository:
-https://github.com/clarityQuest/opengeiger-map/blob/main/index.html
+https://github.com/clarityQuest/elevated-radiation-map/blob/main/index.html
 
 ## Data Sources and Credits
 
