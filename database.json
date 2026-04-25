@@ -2,6 +2,7 @@
   "opengeiger": [
     {
       "name": "Uranbergbaumuseum Bad Schlema",
+      "location": "",
       "lat": 50.6001,
       "lng": 12.6745,
       "dose": -1,
@@ -1474,7 +1475,7 @@
       "location": "Osjorsk-Kyschtym-Kombinat Majak-Tetscha-Karatschai See-",
       "lat": 55.70218947411735,
       "lng": 60.7916738413267,
-      "dose": 5,
+      "dose": -1,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,1066.0.html"
     },
     {
@@ -1528,8 +1529,8 @@
     {
       "name": "Privates Mineralienmuseum in Mähring",
       "location": "Privates Mineralienmuseum in Mähring",
-      "lat": 49.9155,
-      "lng": 12.5219,
+      "lat": 49.908702,
+      "lng": 12.530487,
       "dose": -1,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,2911.0.html",
       "hidden": true

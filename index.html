@@ -66,7 +66,7 @@
   #map { width: 100%; height: 100%; }
   .map-wrap { position: relative; overflow: hidden; flex: 1 1 auto; min-height: 0; }
   #legend-stack {
-    position: absolute; bottom: 32px; left: 12px; z-index: 1000;
+    position: absolute; bottom: 44px; left: 12px; z-index: 1000;
     display: flex; flex-direction: column; gap: 8px;
   }
   #legend {
@@ -124,7 +124,7 @@
     .source-links span { font-size: 11px; }
     .locate-btn { padding: 5px 8px; font-size: 11px; }
     #locate-status { display: none; }
-    #legend-stack { bottom: 8px; left: 8px; }
+    #legend-stack { bottom: 36px; left: 8px; }
     #legend { padding: 6px 8px; font-size: 10px; max-width: 170px; }
     #legend strong { font-size: 11px; }
     .dot { width: 10px; height: 10px; margin-right: 4px; }
@@ -193,7 +193,7 @@
   </div>
 
   <div id="info">
-    <span class="close" onclick="document.getElementById('info').style.display='none'">&#215;</span>
+    <span class="close" onclick="document.getElementById('info').style.display='none'; clearHighlight();">&#215;</span>
     <div class="iname" id="info-name"></div>
     <div class="ilocation" id="info-location"></div>
     <div class="dose" id="info-dose"></div>
@@ -365,6 +365,26 @@ function showInfo(loc, color, sourceLabel, sourceUrl, forumLoc) {
 
 var ogMarkers = [];
 var forumMarkers = [];
+var selectedMarker = null;
+var highlightRing = null;
+
+function selectMarker(marker) {
+  clearHighlight();
+  selectedMarker = marker;
+  highlightRing = L.circleMarker(marker.getLatLng(), {
+    radius: 14,
+    fillOpacity: 0,
+    color: '#FFD700',
+    weight: 3,
+    opacity: 0.9,
+    interactive: false
+  }).addTo(map);
+}
+
+function clearHighlight() {
+  if (highlightRing) { map.removeLayer(highlightRing); highlightRing = null; }
+  selectedMarker = null;
+}
 
 (async function() {
   try {
@@ -423,6 +443,7 @@ function renderOpenGeiger(locations, mergeResult) {
     }
     marker.bindTooltip(loc.name, {direction: 'top'});
     marker.on('click', function() {
+      selectMarker(marker);
       showInfo(loc, color, 'opengeiger.de', buildSourceUrl(loc), mergedForum);
     });
     ogMarkers.push(marker);
@@ -439,6 +460,7 @@ function renderForum(locations, mergeResult) {
     var marker = L.marker([loc.lat, loc.lng], {icon: icon}).addTo(forumLayer);
     marker.bindTooltip(loc.name, {direction: 'top'});
     marker.on('click', function() {
+      selectMarker(marker);
       showInfo(loc, color, 'Geigerzählerforum', loc.url);
     });
     marker._triSize = s;

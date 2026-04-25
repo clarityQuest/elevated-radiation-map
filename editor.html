@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Geiger Map – Database Editor</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f0f2f5; color: #222; font-size: 13px; }
+
+/* ── TOP BAR ── */
+#topbar {
+  background: #1a1a2e;
+  color: #e8e8f0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 14px;
+  height: 46px;
+  flex-shrink: 0;
+}
+#topbar h1 { font-size: 15px; font-weight: 600; margin-right: 4px; }
+#topbar .divider { width: 1px; height: 22px; background: #444; margin: 0 4px; }
+.tb-btn {
+  background: #2e6ea8; color: #fff; border: none; border-radius: 5px;
+  padding: 5px 11px; font-size: 12px; cursor: pointer; white-space: nowrap;
+}
+.tb-btn:hover { background: #3a84cc; }
+.tb-btn.secondary { background: #3a3a5a; }
+.tb-btn.secondary:hover { background: #50507a; }
+.tb-btn.danger { background: #8b2020; }
+.tb-btn.danger:hover { background: #b02828; }
+#file-label { font-size: 12px; color: #aab; flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#dirty-badge { background: #e08800; color: #fff; border-radius: 10px; padding: 1px 7px; font-size: 11px; display: none; }
+#save-status { font-size: 12px; }
+
+/* ── HOVER MAP POPUP ── */
+#hover-map-popup {
+  display: none;
+  position: fixed;
+  z-index: 8000;
+  width: 810px;
+  height: 390px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.32);
+  border: 2px solid #ccd;
+  pointer-events: auto;
+}
+#hover-map-osm, #hover-map-sat {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+}
+#hover-map-osm { left: 0; border-right: 1px solid #ccd; }
+#hover-map-sat { left: 50%; }
+
+/* ── STATS BAR ── */
+#stats-bar {
+  background: #fff;
+  border-bottom: 1px solid #dde;
+  padding: 6px 14px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: 12px;
+}
+.stat-chip {
+  border-radius: 10px; padding: 2px 9px; color: #fff; font-size: 11px; font-weight: 600;
+}
+#stats-total { font-weight: 600; color: #555; }
+
+/* ── TABS ── */
+#tabs {
+  background: #fff;
+  border-bottom: 2px solid #dde;
+  display: flex;
+  padding: 0 14px;
+  gap: 0;
+  flex-shrink: 0;
+}
+.tab-btn {
+  padding: 9px 18px; border: none; background: none; cursor: pointer;
+  font-size: 13px; color: #667; border-bottom: 3px solid transparent; margin-bottom: -2px;
+  font-family: inherit;
+}
+.tab-btn.active { color: #2e6ea8; border-bottom-color: #2e6ea8; font-weight: 600; }
+.tab-btn:hover:not(.active) { color: #334; background: #f5f5fa; }
+
+/* ── TOOLBAR ── */
+#toolbar {
+  background: #f8f9fb;
+  border-bottom: 1px solid #dde;
+  padding: 7px 14px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-shrink: 0;
+}
+#search-input {
+  flex: 1; max-width: 320px; border: 1px solid #ccd; border-radius: 5px;
+  padding: 5px 10px; font-size: 12px; font-family: inherit;
+  background: #fff;
+}
+#search-input:focus { outline: none; border-color: #2e6ea8; box-shadow: 0 0 0 2px #2e6ea820; }
+#result-count { font-size: 12px; color: #889; }
+
+/* ── TABLE ── */
+#table-wrap {
+  flex: 1; overflow: auto; padding: 0;
+}
+table {
+  width: auto; border-collapse: collapse; font-size: 12px; white-space: nowrap;
+}
+thead {
+  position: sticky; top: 0; z-index: 10; background: #eef0f6;
+}
+th {
+  padding: 8px 10px; text-align: left; font-weight: 600; color: #445;
+  border-bottom: 2px solid #ccd; white-space: nowrap; cursor: pointer;
+  user-select: none;
+}
+th:hover { background: #e2e5f0; }
+th.sort-asc::after { content: ' ↑'; color: #2e6ea8; }
+th.sort-desc::after { content: ' ↓'; color: #2e6ea8; }
+td {
+  padding: 4px 8px; border-bottom: 1px solid #eee; vertical-align: top;
+}
+tr:hover td { background: #f5f7ff; }
+td.actions { white-space: nowrap; width: 80px; }
+.row-btn {
+  padding: 2px 8px; font-size: 11px; border: 1px solid #ccd; border-radius: 4px;
+  cursor: pointer; background: #fff; font-family: inherit; margin-right: 3px;
+}
+.row-btn:hover { background: #eef; border-color: #2e6ea8; color: #2e6ea8; }
+.row-btn.del:hover { background: #fee; border-color: #c44; color: #c44; }
+.dose-badge {
+  border-radius: 10px; padding: 1px 8px; color: #fff; font-size: 11px;
+  display: inline-block; white-space: nowrap;
+}
+td.url-cell a { color: #2e6ea8; text-decoration: none; }
+td.url-cell a:hover { text-decoration: underline; }
+td.coord-cell { cursor: crosshair; color: #2e6ea8; font-variant-numeric: tabular-nums; }
+td.hidden-cell { text-align: center; width: 36px; }
+
+/* ── LAYOUT ── */
+body { display: flex; flex-direction: column; }
+#main { display: flex; flex-direction: column; flex: 1; overflow: hidden; }
+
+/* ── MODAL ── */
+#modal-overlay {
+  display: none; position: fixed; inset: 0; z-index: 1000;
+  background: rgba(0,0,0,0.45); align-items: center; justify-content: center;
+}
+#modal-overlay.open { display: flex; }
+#modal {
+  background: #fff; border-radius: 10px; box-shadow: 0 8px 40px rgba(0,0,0,0.22);
+  width: 540px; max-width: 96vw; max-height: 90vh;
+  display: flex; flex-direction: column; overflow: hidden;
+}
+#modal-header {
+  padding: 14px 18px 10px; border-bottom: 1px solid #eee;
+  display: flex; align-items: center; justify-content: space-between;
+}
+#modal-header h2 { font-size: 15px; }
+#modal-close {
+  background: none; border: none; font-size: 22px; cursor: pointer;
+  color: #888; line-height: 1; padding: 0 4px;
+}
+#modal-close:hover { color: #222; }
+#modal-body { padding: 14px 18px; overflow-y: auto; flex: 1; }
+.form-row { margin-bottom: 12px; }
+.form-row label { display: block; font-size: 11px; font-weight: 600; color: #556; margin-bottom: 4px; }
+.form-row input, .form-row textarea {
+  width: 100%; border: 1px solid #ccd; border-radius: 5px;
+  padding: 6px 9px; font-size: 12px; font-family: inherit;
+}
+.form-row input:focus, .form-row textarea:focus {
+  outline: none; border-color: #2e6ea8; box-shadow: 0 0 0 2px #2e6ea820;
+}
+.form-row textarea { resize: vertical; min-height: 56px; }
+.coord-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+#modal-map-wrap { margin: 10px 0; border-radius: 6px; overflow: hidden; border: 1px solid #ccd; }
+#modal-map { height: 200px; }
+.map-hint { font-size: 11px; color: #889; margin-top: 4px; }
+#modal-footer {
+  padding: 10px 18px 14px; border-top: 1px solid #eee;
+  display: flex; justify-content: flex-end; gap: 8px;
+}
+.err-msg { color: #c44; font-size: 11px; margin-top: 4px; display: none; }
+#modal-error { color: #c44; font-size: 12px; margin-bottom: 8px; display: none; }
+</style>
+</head>
+<body>
+
+<div id="topbar">
+  <h1>&#9762; DB Editor</h1>
+  <div class="divider"></div>
+  <button class="tb-btn secondary" id="btn-reload">&#8635; Reload</button>
+  <button class="tb-btn" id="btn-save">&#128190; Save</button>
+  <span class="divider"></span>
+  <span id="file-label">database.json</span>
+  <span id="save-status"></span>
+  <span id="dirty-badge">unsaved</span>
+</div>
+
+<div id="main">
+  <div id="stats-bar">
+    <span id="stats-total">—</span>
+    <span class="stat-chip" style="background:#A32D2D" id="s-extreme">EXTREME: 0</span>
+    <span class="stat-chip" style="background:#D85A30" id="s-veryhigh">VERY HIGH: 0</span>
+    <span class="stat-chip" style="background:#EF9F27" id="s-high">HIGH: 0</span>
+    <span class="stat-chip" style="background:#639922" id="s-elevated">ELEVATED: 0</span>
+    <span class="stat-chip" style="background:#378ADD" id="s-low">LOW: 0</span>
+    <span class="stat-chip" style="background:#999" id="s-nodata">NO DATA: 0</span>
+  </div>
+
+  <div id="tabs">
+    <button class="tab-btn active" id="tab-og" onclick="switchTab('opengeiger')">OpenGeiger</button>
+    <button class="tab-btn" id="tab-forum" onclick="switchTab('forum')">Geigerzählerforum</button>
+  </div>
+
+  <div id="toolbar">
+    <input type="text" id="search-input" placeholder="Search all fields…" oninput="onSearch()"/>
+    <span id="result-count"></span>
+    <button class="tb-btn" id="btn-add" onclick="openModal(null)">+ Add Entry</button>
+  </div>
+
+  <div id="table-wrap">
+    <table id="data-table">
+      <thead id="table-head"></thead>
+      <tbody id="table-body"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="modal-overlay">
+  <div id="modal">
+    <div id="modal-header">
+      <h2 id="modal-title">Add Entry</h2>
+      <button id="modal-close" onclick="closeModal()">&#215;</button>
+    </div>
+    <div id="modal-body">
+      <div id="modal-error"></div>
+      <div id="modal-fields"></div>
+      <div id="modal-map-wrap">
+        <div id="modal-map"></div>
+        <p class="map-hint">Click map or drag pin to set coordinates</p>
+      </div>
+    </div>
+    <div id="modal-footer">
+      <button class="tb-btn secondary" onclick="closeModal()">Cancel</button>
+      <button class="tb-btn" id="btn-modal-save" onclick="saveModal()">Save Entry</button>
+    </div>
+  </div>
+</div>
+
+<!-- Hover map popup -->
+<div id="hover-map-popup">
+  <div id="hover-map-osm"></div>
+  <div id="hover-map-sat"></div>
+</div>
+
+<script>
+// ─── State ───────────────────────────────────────────────────────────────────
+var db = { opengeiger: [], forum: [] };
+var dirty = false;
+var currentTab = 'opengeiger';
+var sortCol = null;
+var sortDir = 1;
+var searchQuery = '';
+var editingIdx = null;   // null = adding, number = editing
+
+// Modal map state
+var modalMap = null;
+var modalPin = null;
+var modalMapInitialized = false;
+
+// ─── Schemas ─────────────────────────────────────────────────────────────────
+var SCHEMA = {
+  opengeiger: [
+    { key: 'name',     label: 'Name',              type: 'text',   required: true },
+    { key: 'location', label: 'Location (place; state; country)', type: 'text' },
+    { key: 'coords',   label: 'Coordinates (lat, lng)', type: 'coords', required: true },
+    { key: 'dose',     label: 'Dose (µSv/h, −1 = no data)', type: 'number', required: true, step: 'any' },
+    { key: 'note',     label: 'Note',               type: 'textarea' },
+    { key: 'anchor',   label: 'Anchor (URL fragment)', type: 'text' },
+    { key: 'hidden',   label: 'Hide from map',     type: 'checkbox' }
+  ],
+  forum: [
+    { key: 'name',     label: 'Name',             type: 'text',   required: true },
+    { key: 'location', label: 'Location (place; state; country)', type: 'text' },
+    { key: 'coords',   label: 'Coordinates (lat, lng)', type: 'coords', required: true },
+    { key: 'dose',     label: 'Dose (µSv/h, −1 = no data)', type: 'number', required: true, step: 'any' },
+    { key: 'url',      label: 'Forum URL',        type: 'url' },
+    { key: 'hidden',   label: 'Hide from map',     type: 'checkbox' }
+  ]
+};
+
+var COLUMNS = {
+  opengeiger: ['name','dose','hidden','actions','coords','note','anchor'],
+  forum:      ['name','location','dose','hidden','actions','coords','url']
+};
+
+// ─── Color helpers ────────────────────────────────────────────────────────────
+function getColor(d) {
+  if (d < 0)    return '#999';
+  if (d >= 10)  return '#A32D2D';
+  if (d >= 3)   return '#D85A30';
+  if (d >= 1)   return '#EF9F27';
+  if (d >= 0.5) return '#639922';
+  return '#378ADD';
+}
+function getTier(d) {
+  if (d < 0)    return 'NO DATA';
+  if (d >= 10)  return 'EXTREME';
+  if (d >= 3)   return 'VERY HIGH';
+  if (d >= 1)   return 'HIGH';
+  if (d >= 0.5) return 'ELEVATED';
+  return 'LOW';
+}
+function doseBadge(dose) {
+  var c = getColor(dose);
+  var label = dose < 0 ? 'No data' : dose + ' µSv/h';
+  return '<span class="dose-badge" style="background:' + c + '">' + esc(label) + '</span>';
+}
+
+// ─── File I/O ─────────────────────────────────────────────────────────────────
+document.getElementById('btn-reload').addEventListener('click', function() {
+  if (dirty && !confirm('You have unsaved changes. Reload anyway?')) return;
+  autoLoad();
+});
+document.getElementById('btn-save').addEventListener('click', saveDB);
+
+async function autoLoad() {
+  try {
+    var r = await fetch('database.json?_=' + Date.now());
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    loadDB(await r.json());
+  } catch(e) {
+    document.getElementById('file-label').textContent = 'Load error: ' + e.message;
+  }
+}
+
+autoLoad();
+
+var SAVE_URL = (function() {
+  // Always POST to server.py. If served from a different port (e.g. VS Code
+  // Live Server), rewrite to port 8080 where server.py listens.
+  var loc = window.location;
+  if (loc.port === '8080' || loc.protocol === 'file:') return '/api/save';
+  return loc.protocol + '//' + loc.hostname + ':8080/api/save';
+})();
+
+async function saveDB() {
+  if (!db.opengeiger.length && !db.forum.length) { alert('Nothing to save.'); return; }
+  setSaveStatus('Saving…', '#aaa');
+  try {
+    var r = await fetch(SAVE_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(db)
+    });
+    var ct = r.headers.get('Content-Type') || '';
+    if (!ct.includes('application/json')) {
+      throw new Error('No JSON from server (HTTP ' + r.status + '). Is server.py running on port 8080?');
+    }
+    var result = await r.json();
+    if (!r.ok) throw new Error(result.error || 'HTTP ' + r.status);
+    setDirty(false);
+    setSaveStatus('Saved ✓', '#6b9');
+    setTimeout(function() { setSaveStatus('', ''); }, 3000);
+  } catch(e) {
+    setSaveStatus('Save failed: ' + e.message, '#e66');
+  }
+}
+
+function setSaveStatus(text, color) {
+  var el = document.getElementById('save-status');
+  el.textContent = text;
+  el.style.color = color;
+}
+
+function loadDB(data) {
+  if (!data.opengeiger || !data.forum) { alert('Invalid database: missing "opengeiger" or "forum" arrays.'); return; }
+  db = data;
+  setDirty(false);
+  renderCurrentTab();
+}
+
+function setDirty(val) {
+  dirty = val;
+  document.getElementById('dirty-badge').style.display = val ? 'inline-block' : 'none';
+}
+
+// ─── Tab switching ────────────────────────────────────────────────────────────
+function switchTab(tab) {
+  currentTab = tab;
+  sortCol = null; sortDir = 1; searchQuery = '';
+  document.getElementById('search-input').value = '';
+  document.getElementById('tab-og').classList.toggle('active', tab === 'opengeiger');
+  document.getElementById('tab-forum').classList.toggle('active', tab === 'forum');
+  renderCurrentTab();
+}
+
+// ─── Stats ────────────────────────────────────────────────────────────────────
+function updateStats() {
+  var arr = db[currentTab];
+  var total = arr.length;
+  function cnt(fn) { return arr.filter(fn).length; }
+  document.getElementById('stats-total').textContent = total + ' entries';
+  document.getElementById('s-extreme').textContent  = 'EXTREME: '   + cnt(function(x){ return x.dose >= 10; });
+  document.getElementById('s-veryhigh').textContent = 'VERY HIGH: ' + cnt(function(x){ return x.dose >= 3 && x.dose < 10; });
+  document.getElementById('s-high').textContent     = 'HIGH: '      + cnt(function(x){ return x.dose >= 1 && x.dose < 3; });
+  document.getElementById('s-elevated').textContent = 'ELEVATED: '  + cnt(function(x){ return x.dose >= 0.5 && x.dose < 1; });
+  document.getElementById('s-low').textContent      = 'LOW: '       + cnt(function(x){ return x.dose >= 0 && x.dose < 0.5; });
+  document.getElementById('s-nodata').textContent   = 'NO DATA: '   + cnt(function(x){ return x.dose < 0; });
+}
+
+// ─── Table render ─────────────────────────────────────────────────────────────
+function renderCurrentTab() {
+  updateStats();
+  buildTableHead();
+  buildTableBody();
+}
+
+function buildTableHead() {
+  var cols = COLUMNS[currentTab];
+  var schema = SCHEMA[currentTab];
+  var labelMap = {};
+  schema.forEach(function(f) { labelMap[f.key] = f.label; });
+
+  var ths = cols.map(function(col) {
+    if (col === 'actions') return '<th>Actions</th>';
+    var cls = sortCol === col ? (sortDir > 0 ? 'sort-asc' : 'sort-desc') : '';
+    return '<th class="' + cls + '" onclick="sortBy(\'' + col + '\')">' + esc(labelMap[col] || col) + '</th>';
+  });
+  document.getElementById('table-head').innerHTML = '<tr>' + ths.join('') + '</tr>';
+}
+
+function buildTableBody() {
+  var arr = db[currentTab];
+  var q = searchQuery.toLowerCase();
+
+  // Filter
+  var filtered = arr.map(function(item, idx) { return { item: item, idx: idx }; });
+  if (q) {
+    filtered = filtered.filter(function(e) {
+      return Object.values(e.item).some(function(v) {
+        return String(v).toLowerCase().indexOf(q) !== -1;
+      });
+    });
+  }
+
+  // Sort
+  if (sortCol) {
+    filtered.sort(function(a, b) {
+      var av = a.item[sortCol], bv = b.item[sortCol];
+      if (typeof av === 'number' && typeof bv === 'number') return (av - bv) * sortDir;
+      return String(av).localeCompare(String(bv)) * sortDir;
+    });
+  }
+
+  document.getElementById('result-count').textContent =
+    filtered.length < arr.length ? filtered.length + ' of ' + arr.length + ' shown' : '';
+
+  var cols = COLUMNS[currentTab];
+  var rows = filtered.map(function(e) {
+    var item = e.item;
+    var idx = e.idx;
+    var tds = cols.map(function(col) {
+      var val = item[col];
+      if (col === 'actions') return '<td class="actions"><button class="row-btn" onclick="openModal(' + idx + ')">Edit</button><button class="row-btn del" onclick="deleteEntry(' + idx + ')">Del</button></td>';
+      if (col === 'hidden') {
+        var chk = item.hidden ? ' checked' : '';
+        return '<td class="hidden-cell"><input type="checkbox"' + chk + ' onchange="toggleHidden(' + idx + ', this.checked)"></td>';
+      }
+      if (col === 'dose') return '<td>' + doseBadge(val) + '</td>';
+      if (col === 'url' && val) return '<td class="url-cell"><a href="' + esc(val) + '" target="_blank" title="' + esc(val) + '">' + esc(truncate(val, 40)) + '</a></td>';
+      if (col === 'coords') {
+        var dLat = item.lat !== undefined ? item.lat : '';
+        var dLng = item.lng !== undefined ? item.lng : '';
+        var displayVal = (dLat !== '' && dLng !== '') ? Number(dLat).toFixed(6) + ', ' + Number(dLng).toFixed(6) : '';
+        return '<td class="coord-cell" data-lat="' + dLat + '" data-lng="' + dLng + '">' + esc(displayVal) + '</td>';
+      }
+      return '<td title="' + esc(String(val || '')) + '">' + esc(truncate(String(val || ''), 50)) + '</td>';
+    });
+    return '<tr>' + tds.join('') + '</tr>';
+  });
+
+  document.getElementById('table-body').innerHTML = rows.length
+    ? rows.join('')
+    : '<tr><td colspan="' + cols.length + '" style="text-align:center;padding:24px;color:#999">' +
+      (db[currentTab].length ? 'No results for "' + esc(q) + '"' : 'No entries yet. Click + Add Entry.') + '</td></tr>';
+}
+
+function sortBy(col) {
+  if (sortCol === col) sortDir = -sortDir;
+  else { sortCol = col; sortDir = 1; }
+  buildTableHead();
+  buildTableBody();
+}
+
+function onSearch() {
+  searchQuery = document.getElementById('search-input').value;
+  buildTableBody();
+}
+
+// ─── CRUD ─────────────────────────────────────────────────────────────────────
+function toggleHidden(idx, val) {
+  if (val) {
+    db[currentTab][idx].hidden = true;
+  } else {
+    delete db[currentTab][idx].hidden;
+  }
+  setDirty(true);
+}
+
+function deleteEntry(idx) {
+  var name = db[currentTab][idx] && (db[currentTab][idx].name || '(unnamed)');
+  if (!confirm('Delete "' + name + '"?\nThis cannot be undone.')) return;
+  db[currentTab].splice(idx, 1);
+  setDirty(true);
+  renderCurrentTab();
+}
+
+// ─── Modal ────────────────────────────────────────────────────────────────────
+function openModal(idx) {
+  editingIdx = idx;
+  var isEdit = (idx !== null);
+  var record = isEdit ? db[currentTab][idx] : {};
+  document.getElementById('modal-title').textContent = isEdit ? 'Edit Entry' : 'Add Entry';
+  document.getElementById('modal-error').style.display = 'none';
+
+  // Build form fields (values set via JS below to avoid locale/encoding issues)
+  var schema = SCHEMA[currentTab];
+  var html = '';
+  schema.forEach(function(f) {
+    var req = f.required ? '<span style="color:#c44">*</span>' : '';
+    if (f.type === 'checkbox') {
+      html += '<div class="form-row"><label>' + esc(f.label) + '</label><input type="checkbox" id="field-' + f.key + '"/></div>';
+    } else if (f.type === 'textarea') {
+      html += '<div class="form-row"><label>' + esc(f.label) + req + '</label><textarea id="field-' + f.key + '" rows="3"></textarea></div>';
+    } else if (f.type === 'coords') {
+      html += '<div class="form-row"><label>' + esc(f.label) + req + '</label><input type="text" inputmode="decimal" id="field-coords" placeholder="e.g. 50.368744, 12.81826"/></div>';
+    } else {
+      // Use type="text" with inputmode for all fields to avoid locale/validation issues
+      var inputmode = f.type === 'number' ? ' inputmode="decimal"' : '';
+      html += '<div class="form-row"><label>' + esc(f.label) + req + '</label><input type="text"' + inputmode + ' id="field-' + f.key + '"/></div>';
+    }
+  });
+
+  document.getElementById('modal-fields').innerHTML = html;
+
+  // Set values via JS after DOM is built (reliable for all value types)
+  schema.forEach(function(f) {
+    if (f.type === 'checkbox') {
+      var el = document.getElementById('field-' + f.key);
+      if (el) el.checked = !!record[f.key];
+      return;
+    }
+    if (f.type === 'coords') {
+      var latV = record.lat !== undefined ? record.lat : '';
+      var lngV = record.lng !== undefined ? record.lng : '';
+      var el = document.getElementById('field-coords');
+      if (el) el.value = (latV !== '' && lngV !== '') ? latV + ', ' + lngV : '';
+      return;
+    }
+    var el = document.getElementById('field-' + f.key);
+    if (!el) return;
+    var v = record[f.key];
+    el.value = (v !== undefined && v !== null) ? String(v) : '';
+  });
+
+  // Wire coords input to map pin
+  var coordsEl = document.getElementById('field-coords');
+  if (coordsEl) coordsEl.addEventListener('input', syncPinFromInputs);
+
+  // Open overlay
+  document.getElementById('modal-overlay').classList.add('open');
+
+  // Init/update modal map
+  var lat = parseFloat(record.lat) || 51;
+  var lng = parseFloat(record.lng) || 12;
+  var hasCoords = record.lat !== undefined && record.lng !== undefined;
+
+  setTimeout(function() {
+    if (!modalMapInitialized) {
+      modalMap = L.map('modal-map').setView([lat, lng], hasCoords ? 10 : 5);
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+        subdomains: 'abcd', maxZoom: 19,
+        attribution: '&copy; OpenStreetMap &copy; CARTO'
+      }).addTo(modalMap);
+      modalPin = L.marker([lat, lng], { draggable: true }).addTo(modalMap);
+      modalPin.on('dragend', function(e) {
+        var ll = e.target.getLatLng();
+        setModalCoords(ll.lat, ll.lng);
+      });
+      modalMap.on('click', function(e) {
+        setModalCoords(e.latlng.lat, e.latlng.lng);
+      });
+      modalMapInitialized = true;
+    } else {
+      modalPin.setLatLng([lat, lng]);
+      modalMap.setView([lat, lng], hasCoords ? 10 : 5);
+    }
+    modalMap.invalidateSize();
+  }, 60);
+}
+
+function setModalCoords(lat, lng) {
+  var el = document.getElementById('field-coords');
+  if (el) el.value = parseFloat(lat.toFixed(6)) + ', ' + parseFloat(lng.toFixed(6));
+  if (modalPin) modalPin.setLatLng([lat, lng]);
+}
+
+function parseCoords(str) {
+  var s = str.trim(), latStr, lngStr;
+  if (s.indexOf('/') !== -1) {
+    var parts = s.split('/');
+    if (parts.length !== 2) return null;
+    latStr = parts[0].trim().replace(',', '.');
+    lngStr = parts[1].trim().replace(',', '.');
+  } else {
+    var ci = s.indexOf(',');
+    if (ci === -1) return null;
+    latStr = s.slice(0, ci).trim();
+    lngStr = s.slice(ci + 1).trim();
+  }
+  var lat = parseFloat(latStr), lng = parseFloat(lngStr);
+  if (isNaN(lat) || isNaN(lng) || lat < -90 || lat > 90 || lng < -180 || lng > 180) return null;
+  return { lat: lat, lng: lng };
+}
+
+function syncPinFromInputs() {
+  var el = document.getElementById('field-coords');
+  if (!el) return;
+  var parsed = parseCoords(el.value);
+  if (parsed && modalPin) {
+    modalPin.setLatLng([parsed.lat, parsed.lng]);
+    modalMap.setView([parsed.lat, parsed.lng], modalMap.getZoom());
+  }
+}
+
+function closeModal() {
+  document.getElementById('modal-overlay').classList.remove('open');
+}
+
+function saveModal() {
+  var schema = SCHEMA[currentTab];
+  var record = {};
+  var errEl = document.getElementById('modal-error');
+  errEl.style.display = 'none';
+
+  for (var i = 0; i < schema.length; i++) {
+    var f = schema[i];
+
+    if (f.type === 'checkbox') {
+      var el = document.getElementById('field-' + f.key);
+      if (el && el.checked) record[f.key] = true;
+      // omit key when unchecked — absence means visible
+      continue;
+    }
+
+    if (f.type === 'coords') {
+      var el = document.getElementById('field-coords');
+      var val = el ? el.value.trim() : '';
+      if (f.required && val === '') {
+        errEl.textContent = '"Coordinates" is required.';
+        errEl.style.display = 'block';
+        if (el) el.focus();
+        return;
+      }
+      var parsed = parseCoords(val);
+      if (val !== '' && !parsed) {
+        errEl.textContent = 'Coordinates must be "lat, lng" (e.g. 50.368, 12.818).';
+        errEl.style.display = 'block';
+        if (el) el.focus();
+        return;
+      }
+      if (parsed) { record.lat = parsed.lat; record.lng = parsed.lng; }
+      continue;
+    }
+
+    var el = document.getElementById('field-' + f.key);
+    if (!el) continue;
+    var val = el.value.trim();
+    if (f.required && val === '') {
+      errEl.textContent = '"' + f.label + '" is required.';
+      errEl.style.display = 'block';
+      el.focus();
+      return;
+    }
+    if (f.type === 'number') {
+      // Accept both dot and comma as decimal separator
+      var normalized = val.replace(',', '.');
+      var num = parseFloat(normalized);
+      if (val !== '' && isNaN(num)) {
+        errEl.textContent = '"' + f.label + '" must be a number.';
+        errEl.style.display = 'block';
+        el.focus();
+        return;
+      }
+      record[f.key] = val === '' ? undefined : num;
+    } else {
+      record[f.key] = val;
+    }
+  }
+
+  // Remove undefined keys
+  Object.keys(record).forEach(function(k) {
+    if (record[k] === undefined) delete record[k];
+  });
+
+  if (editingIdx === null) {
+    db[currentTab].push(record);
+  } else {
+    db[currentTab][editingIdx] = record;
+  }
+  setDirty(true);
+  closeModal();
+  renderCurrentTab();
+}
+
+// Close modal on overlay click
+document.getElementById('modal-overlay').addEventListener('click', function(e) {
+  if (e.target === this) closeModal();
+});
+
+// Warn on unsaved changes
+window.addEventListener('beforeunload', function(e) {
+  if (dirty) { e.preventDefault(); e.returnValue = ''; }
+});
+
+// Keyboard shortcuts
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeModal();
+  if ((e.ctrlKey || e.metaKey) && e.key === 's') { e.preventDefault(); saveDB(); }
+});
+
+// ─── Hover map ────────────────────────────────────────────────────────────────
+var hoverMap = null;
+var hoverMapSat = null;
+var hoverPin = null;
+var hoverPinSat = null;
+var hoverMapReady = false;
+var hoverHideTimer = null;
+var hmSyncing = false;
+
+function initHoverMap() {
+  // OSM map (left)
+  hoverMap = L.map('hover-map-osm', {
+    zoomControl: true,
+    attributionControl: false
+  }).setView([51, 12], 10);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+    subdomains: 'abcd', maxZoom: 19
+  }).addTo(hoverMap);
+  hoverPin = L.circleMarker([51, 12], {
+    radius: 7, fillColor: '#c33', color: '#fff', weight: 2, fillOpacity: 0.9
+  }).addTo(hoverMap);
+
+  // Satellite map (right)
+  hoverMapSat = L.map('hover-map-sat', {
+    zoomControl: false,
+    attributionControl: false
+  }).setView([51, 12], 10);
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+    maxZoom: 19
+  }).addTo(hoverMapSat);
+  hoverPinSat = L.circleMarker([51, 12], {
+    radius: 7, fillColor: '#c33', color: '#fff', weight: 2, fillOpacity: 0.9
+  }).addTo(hoverMapSat);
+
+  // Sync zoom/pan between the two maps
+  hoverMap.on('move', function() {
+    if (hmSyncing) return;
+    hmSyncing = true;
+    hoverMapSat.setView(hoverMap.getCenter(), hoverMap.getZoom(), { animate: false });
+    hmSyncing = false;
+  });
+  hoverMapSat.on('move', function() {
+    if (hmSyncing) return;
+    hmSyncing = true;
+    hoverMap.setView(hoverMapSat.getCenter(), hoverMapSat.getZoom(), { animate: false });
+    hmSyncing = false;
+  });
+
+  hoverMapReady = true;
+}
+
+function showHoverMap(lat, lng, event) {
+  clearTimeout(hoverHideTimer);
+  if (!hoverMapReady) initHoverMap();
+
+  // Position near cursor, keep within viewport
+  var pw = 810, ph = 390, margin = 16;
+  var x = event.clientX + margin;
+  var y = event.clientY - Math.round(ph / 2);
+  if (x + pw > window.innerWidth)  x = event.clientX - pw - margin;
+  if (y < margin)                  y = margin;
+  if (y + ph > window.innerHeight) y = window.innerHeight - ph - margin;
+
+  var popup = document.getElementById('hover-map-popup');
+  popup.style.left = x + 'px';
+  popup.style.top  = y + 'px';
+  popup.style.display = 'block';
+
+  hoverMap.invalidateSize();
+  hoverMapSat.invalidateSize();
+  hoverPin.setLatLng([lat, lng]);
+  hoverPinSat.setLatLng([lat, lng]);
+  hmSyncing = true;
+  hoverMap.setView([lat, lng], 13, { animate: false });
+  hoverMapSat.setView([lat, lng], 13, { animate: false });
+  hmSyncing = false;
+}
+
+function hideHoverMap() {
+  hoverHideTimer = setTimeout(function() {
+    document.getElementById('hover-map-popup').style.display = 'none';
+  }, 80);
+}
+
+// Event delegation on table body
+document.getElementById('table-body').addEventListener('mouseover', function(e) {
+  var td = e.target.closest('td.coord-cell');
+  if (!td) { hideHoverMap(); return; }
+  var lat = parseFloat(td.dataset.lat);
+  var lng = parseFloat(td.dataset.lng);
+  if (!isNaN(lat) && !isNaN(lng)) showHoverMap(lat, lng, e);
+});
+document.getElementById('table-body').addEventListener('mouseleave', hideHoverMap);
+
+// Keep popup visible when cursor moves into it
+var hoverPopupEl = document.getElementById('hover-map-popup');
+hoverPopupEl.addEventListener('mouseenter', function() { clearTimeout(hoverHideTimer); });
+hoverPopupEl.addEventListener('mouseleave', hideHoverMap);
+
+// ─── Utilities ────────────────────────────────────────────────────────────────
+function esc(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+function truncate(str, n) {
+  return str.length > n ? str.slice(0, n) + '…' : str;
+}
+</script>
+</body>
+</html>

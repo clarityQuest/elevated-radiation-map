@@ -1,0 +1,11 @@
+# Downloaded/scraped content (may contain third-party secrets)
+geigerzaehlerforum parser/downloaded_board6/
+geigerzaehlerforum parser/downloaded_board6_auth/
+geigerzaehlerforum parser/downloaded_board6_auth_fresh/
+geigerzaehlerforum parser/images/
+
+# Debug/temp files
+_resolve_stderr.txt
+_resolve_stdout.txt
+geigerzaehlerforum parser/_auth_probe/
+geigerzaehlerforum parser/_auth_probe_45365/
