@@ -368,17 +368,41 @@ var forumMarkers = [];
 var selectedMarker = null;
 var highlightRing = null;
 
+function makeTriangleHighlightIcon(triSize, shifted) {
+  var s = triSize + 8;
+  var half = s / 2;
+  var svg = '<svg width="' + s + '" height="' + s + '" viewBox="0 0 ' + s + ' ' + s + '" xmlns="http://www.w3.org/2000/svg">' +
+    '<polygon points="' + half + ',1 ' + (s - 1) + ',' + (s - 1) + ' 1,' + (s - 1) + '" ' +
+    'fill="none" stroke="#FFD700" stroke-width="2.5" stroke-linejoin="round"/>' +
+    '</svg>';
+  var anchorOffset = shifted ? triSize : 0;
+  return L.divIcon({
+    html: svg,
+    className: '',
+    iconSize: [s, s],
+    iconAnchor: [half + anchorOffset, half]
+  });
+}
+
 function selectMarker(marker) {
   clearHighlight();
   selectedMarker = marker;
-  highlightRing = L.circleMarker(marker.getLatLng(), {
-    radius: 14,
-    fillOpacity: 0,
-    color: '#FFD700',
-    weight: 3,
-    opacity: 0.9,
-    interactive: false
-  }).addTo(map);
+  if (marker._markerType === 'triangle') {
+    highlightRing = L.marker(marker.getLatLng(), {
+      icon: makeTriangleHighlightIcon(marker._triSize || 14, marker._shifted),
+      interactive: false,
+      zIndexOffset: -1
+    }).addTo(map);
+  } else {
+    highlightRing = L.circleMarker(marker.getLatLng(), {
+      radius: 14,
+      fillOpacity: 0,
+      color: '#FFD700',
+      weight: 3,
+      opacity: 0.9,
+      interactive: false
+    }).addTo(map);
+  }
 }
 
 function clearHighlight() {
@@ -465,6 +489,7 @@ function renderForum(locations, mergeResult) {
     });
     marker._triSize = s;
     marker._triColor = color;
+    marker._markerType = 'triangle';
     forumMarkers.push(marker);
   });
 }
