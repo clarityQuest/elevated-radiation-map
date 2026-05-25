@@ -66,9 +66,16 @@
   #map { width: 100%; height: 100%; }
   .map-wrap { position: relative; overflow: hidden; flex: 1 1 auto; min-height: 0; }
   #legend-stack {
-    position: absolute; bottom: 44px; left: 12px; z-index: 1000;
-    display: flex; flex-direction: column; gap: 8px;
+    position: absolute; bottom: 44px; right: 12px; z-index: 1000;
+    display: flex; flex-direction: column; gap: 8px; align-items: flex-end;
   }
+  #legend-toggle-btn {
+    display: none;
+    background: rgba(255,255,255,0.95); border: none; border-radius: 8px;
+    padding: 6px 12px; font-size: 12px; cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2); white-space: nowrap;
+  }
+  #legend-toggle-btn:hover { background: #fff; }
   #legend {
     background: rgba(255,255,255,0.95); border-radius: 8px;
     padding: 8px 10px; font-size: 11px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);
@@ -124,7 +131,10 @@
     .source-links span { font-size: 11px; }
     .locate-btn { padding: 5px 8px; font-size: 11px; }
     #locate-status { display: none; }
-    #legend-stack { bottom: 36px; left: 8px; }
+    #legend-stack { bottom: 36px; right: 8px; }
+    #legend-toggle-btn { display: block; }
+    #legend { display: none; }
+    #legend.legend-open { display: block; }
     #legend { padding: 6px 8px; font-size: 10px; max-width: 170px; }
     #legend strong { font-size: 11px; }
     .dot { width: 10px; height: 10px; margin-right: 4px; }
@@ -160,6 +170,7 @@
       <a href="https://www.geigerzaehlerforum.de/" target="_blank">geigerzaehlerforum.de</a>
     </div>
   </div>
+  <a class="locate-btn" href="mailto:info@three-mills.com" style="text-decoration:none">Add places / Contact</a>
   <button class="locate-btn" id="locate-btn" type="button">Show my position</button>
   <span id="locate-status">Click a marker for details</span>
 </header>
@@ -172,6 +183,7 @@
   </div>
 
   <div id="legend-stack">
+    <button id="legend-toggle-btn" type="button">&#9432; Legend</button>
     <div id="legend">
       <strong>Sources</strong>
       <div class="legend-sources">
@@ -373,7 +385,7 @@ function makeTriangleHighlightIcon(triSize, shifted) {
   var half = s / 2;
   var svg = '<svg width="' + s + '" height="' + s + '" viewBox="0 0 ' + s + ' ' + s + '" xmlns="http://www.w3.org/2000/svg">' +
     '<polygon points="' + half + ',1 ' + (s - 1) + ',' + (s - 1) + ' 1,' + (s - 1) + '" ' +
-    'fill="none" stroke="#FFD700" stroke-width="2.5" stroke-linejoin="round"/>' +
+    'fill="none" stroke="#000" stroke-width="2.5" stroke-linejoin="round"/>' +
     '</svg>';
   var anchorOffset = shifted ? triSize : 0;
   return L.divIcon({
@@ -397,7 +409,7 @@ function selectMarker(marker) {
     highlightRing = L.circleMarker(marker.getLatLng(), {
       radius: 14,
       fillOpacity: 0,
-      color: '#FFD700',
+      color: '#000',
       weight: 3,
       opacity: 0.9,
       interactive: false
@@ -594,6 +606,10 @@ document.getElementById('chk-opengeiger').addEventListener('change', function() 
 document.getElementById('chk-forum').addEventListener('change', function() {
   if (this.checked) map.addLayer(forumLayer);
   else map.removeLayer(forumLayer);
+});
+
+document.getElementById('legend-toggle-btn').addEventListener('click', function() {
+  document.getElementById('legend').classList.toggle('legend-open');
 });
 </script>
 </body>
