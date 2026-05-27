@@ -1492,7 +1492,8 @@
       "lat": 37.279397,
       "lng": 14.992366,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,796.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,796.0.html",
+      "hidden": true
     },
     {
       "name": "Oybin",
