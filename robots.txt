@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://clarityquest.github.io/elevated-radiation-map/sitemap.xml

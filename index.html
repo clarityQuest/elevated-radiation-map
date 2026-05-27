@@ -3,7 +3,85 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Elevated Radiation Map</title>
+<title>Elevated Radiation Map – Geiger Counter Measurements in Germany &amp; Europe</title>
+<meta name="description" content="Interactive map of locations with elevated radiation measured by Geiger counters across Germany and Europe. Visualises dose rates (µSv/h) from citizen-science data by opengeiger.de and Geigerzählerforum. Find radioactive anomalies, old mine tailings, and naturally elevated background spots."/>
+<meta name="keywords" content="radiation map, Geiger counter map, radioactivity map Germany, Strahlungsmessung Karte, elevated radiation locations, dose rate µSv, opengeiger.de, Geigerzählerforum, nuclear radiation, Radioaktivität Deutschland, Geigerzähler Messorte, radiation hotspot, background radiation Europe"/>
+<meta name="robots" content="index, follow"/>
+<meta name="author" content="opengeiger.de &amp; Geigerzählerforum contributors"/>
+<meta property="og:title" content="Elevated Radiation Map – Geiger Counter Measurements in Germany &amp; Europe"/>
+<meta property="og:description" content="Interactive map showing hundreds of locations with elevated radiation, measured by citizen scientists with Geiger counters. Data from opengeiger.de and Geigerzählerforum. Colour-coded by dose rate."/>
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:locale:alternate" content="de_DE"/>
+<meta property="og:url" content="https://clarityquest.github.io/elevated-radiation-map/"/>
+<link rel="canonical" href="https://clarityquest.github.io/elevated-radiation-map/"/>
+<meta name="geo.region" content="DE"/>
+<meta name="geo.placename" content="Germany"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Elevated Radiation Map – Geiger Counter Data"/>
+<meta name="twitter:description" content="Interactive map of elevated-radiation locations across Germany and Europe. Geiger counter measurements from opengeiger.de and Geigerzählerforum, colour-coded by dose rate (µSv/h)."/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Elevated Radiation Map",
+  "alternateName": "Strahlungsmessung Karte",
+  "description": "Interactive map visualising hundreds of locations across Germany and Europe where citizen scientists have measured elevated radiation with Geiger counters. Data sourced from opengeiger.de and the Geigerzählerforum. Dose rates displayed in µSv/h, colour-coded from low background levels to extreme hotspots.",
+  "applicationCategory": "ScienceApplication",
+  "operatingSystem": "Any modern web browser",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+  "keywords": "radiation map, Geiger counter, dose rate, radioactivity, Germany, Europe, opengeiger, Geigerzählerforum",
+  "inLanguage": ["en", "de"],
+  "isAccessibleForFree": true,
+  "about": {
+    "@type": "Thing",
+    "name": "Ionising radiation measurements",
+    "description": "Crowd-sourced Geiger counter dose-rate readings at geographic locations"
+  },
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Hobbyist physicists, radiation safety researchers, curious citizens, geology enthusiasts"
+  },
+  "citation": [
+    { "@type": "WebSite", "name": "opengeiger.de", "url": "http://www.opengeiger.de/GeigerCaching/GeigerCaching.html" },
+    { "@type": "WebSite", "name": "Geigerzählerforum", "url": "https://www.geigerzaehlerforum.de/" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Elevated Radiation Locations in Germany and Europe",
+  "alternateName": "Erhöhte Strahlungsmessorte in Deutschland und Europa",
+  "description": "Crowd-sourced Geiger counter dose-rate measurements (µSv/h) at hundreds of locations across Germany and Europe. Compiled from opengeiger.de and the Geigerzählerforum citizen-science community. Includes location name, GPS coordinates, measured dose rate, source notes, and a direct link to the original measurement report.",
+  "url": "https://clarityquest.github.io/elevated-radiation-map/",
+  "keywords": ["radiation", "Geiger counter", "dose rate", "µSv/h", "radioactivity", "Germany", "Europe", "ionising radiation", "background radiation", "uranium", "thorium", "mine tailings", "Strahlung", "Radioaktivität"],
+  "creator": [
+    { "@type": "Organization", "name": "opengeiger.de", "url": "http://www.opengeiger.de" },
+    { "@type": "Organization", "name": "Geigerzählerforum", "url": "https://www.geigerzaehlerforum.de/" }
+  ],
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Germany and Europe",
+    "geo": { "@type": "GeoShape", "box": "47.2 5.9 55.1 15.0" }
+  },
+  "measurementTechnique": "Geiger-Müller counter",
+  "variableMeasured": {
+    "@type": "PropertyValue",
+    "name": "Dose rate",
+    "unitText": "µSv/h",
+    "description": "Ambient gamma dose rate in microsieverts per hour measured at ground level"
+  },
+  "isAccessibleForFree": true,
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "distribution": {
+    "@type": "DataDownload",
+    "encodingFormat": "application/json",
+    "contentUrl": "https://clarityquest.github.io/elevated-radiation-map/database.json"
+  }
+}
+</script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <style>
@@ -161,6 +239,14 @@
 </style>
 </head>
 <body>
+<noscript>
+  <p><strong>Elevated Radiation Map – Geiger Counter Measurements in Germany &amp; Europe</strong></p>
+  <p>This interactive map shows hundreds of locations across Germany and Europe where citizen scientists have measured elevated levels of ionising radiation with Geiger counters.
+  Data is sourced from <a href="http://www.opengeiger.de/GeigerCaching/GeigerCaching.html">opengeiger.de</a> and the <a href="https://www.geigerzaehlerforum.de/">Geigerzählerforum</a>.
+  Each map marker is colour-coded by the measured dose rate in µSv/h: blue for low background (&lt;0.5 µSv/h), green for slightly elevated (0.5–1 µSv/h), orange for high (1–3 µSv/h), red-orange for very high (3–10 µSv/h), and dark red for extreme readings (&ge;10 µSv/h).
+  Locations include old mine tailings, areas with naturally elevated background radiation, and other radioactive anomalies measured by hobbyist physicists, geology enthusiasts, and radiation safety researchers.
+  JavaScript must be enabled to use the interactive map.</p>
+</noscript>
 <header>
   <div class="header-meta">
     <h1>&#9762; Elevated Radiation Map</h1>
@@ -396,6 +482,11 @@ function makeTriangleHighlightIcon(triSize, shifted) {
   });
 }
 
+function circleHighlightRadius(marker) {
+  if (marker.getRadius) return marker.getRadius() + 5;
+  return (marker._mergedR || 9) + 5;
+}
+
 function selectMarker(marker) {
   clearHighlight();
   selectedMarker = marker;
@@ -407,11 +498,11 @@ function selectMarker(marker) {
     }).addTo(map);
   } else {
     highlightRing = L.circleMarker(marker.getLatLng(), {
-      radius: 14,
+      radius: circleHighlightRadius(marker),
       fillOpacity: 0,
       color: '#000',
-      weight: 3,
-      opacity: 0.9,
+      weight: 2.5,
+      opacity: 0.85,
       interactive: false
     }).addTo(map);
   }
@@ -472,6 +563,7 @@ function renderOpenGeiger(locations, mergeResult) {
     if (mergedForum) {
       marker = L.marker([loc.lat, loc.lng], { icon: makeMergedIcon(color, r) }).addTo(openGeigerLayer);
       marker._mergedColor = color;
+      marker._mergedR = r;
     } else {
       marker = L.circleMarker([loc.lat, loc.lng], {
         radius: r, fillColor: color, color: '#fff', weight: 1.5, fillOpacity: 0.85
@@ -551,6 +643,7 @@ function adjustOverlappingMarkers() {
   // Resize all og markers (circles or merged icons)
   ogMarkers.forEach(function(om) {
     if (om._mergedColor) {
+      om._mergedR = sz.r;
       om.setIcon(makeMergedIcon(om._mergedColor, sz.r));
     } else {
       om.setRadius(sz.r);
@@ -595,6 +688,15 @@ function adjustOverlappingMarkers() {
       fm._shifted = false;
     }
   });
+
+  // Keep highlight ring in sync with resized marker
+  if (selectedMarker && highlightRing) {
+    if (selectedMarker._markerType === 'triangle') {
+      highlightRing.setIcon(makeTriangleHighlightIcon(selectedMarker._triSize, selectedMarker._shifted));
+    } else {
+      highlightRing.setRadius(circleHighlightRadius(selectedMarker));
+    }
+  }
 }
 
 map.on('zoomend', adjustOverlappingMarkers);

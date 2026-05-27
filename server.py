@@ -7,7 +7,7 @@ Usage: python server.py
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 import json, os, shutil, sys
 
-PORT = 8080
+PORT = 8000
 DB_PATH = 'database.json'
 ARCHIVE_PATH = os.path.join('archive', 'database.json')
 
@@ -77,7 +77,7 @@ class Handler(SimpleHTTPRequestHandler):
 if __name__ == '__main__':
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
     server = HTTPServer(('', PORT), Handler)
-    print(f'Geiger Map server running at http://localhost:{PORT}')
+    print(f'Geiger Map server running at http://localhost:{PORT}  (use PORT env var or edit server.py to change)')
     print(f'  Map:    http://localhost:{PORT}/')
     print(f'  Editor: http://localhost:{PORT}/editor.html')
     print('Press Ctrl+C to stop.\n')

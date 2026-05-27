@@ -352,10 +352,10 @@ autoLoad();
 
 var SAVE_URL = (function() {
   // Always POST to server.py. If served from a different port (e.g. VS Code
-  // Live Server), rewrite to port 8080 where server.py listens.
+  // Live Server), rewrite to port 8000 where server.py listens.
   var loc = window.location;
-  if (loc.port === '8080' || loc.protocol === 'file:') return '/api/save';
-  return loc.protocol + '//' + loc.hostname + ':8080/api/save';
+  if (loc.port === '8000' || loc.protocol === 'file:') return '/api/save';
+  return loc.protocol + '//' + loc.hostname + ':8000/api/save';
 })();
 
 async function saveDB() {
@@ -369,7 +369,7 @@ async function saveDB() {
     });
     var ct = r.headers.get('Content-Type') || '';
     if (!ct.includes('application/json')) {
-      throw new Error('No JSON from server (HTTP ' + r.status + '). Is server.py running on port 8080?');
+      throw new Error('No JSON from server (HTTP ' + r.status + '). Is server.py running on port 8000?');
     }
     var result = await r.json();
     if (!r.ok) throw new Error(result.error || 'HTTP ' + r.status);
