@@ -67,9 +67,10 @@
     },
     {
       "name": "Bergbau Museum Schloss Theuern",
+      "location": "",
       "lat": 49.3865,
       "lng": 11.9111,
-      "dose": 5.3,
+      "dose": -1,
       "note": "Mining museum with uranium mineral exhibit",
       "anchor": "Bergbau+Museum+im+Schloss+Theuern"
     },
@@ -180,9 +181,10 @@
     },
     {
       "name": "Mineralienmuseum Schneckenstein",
+      "location": "",
       "lat": 50.4171,
       "lng": 12.4533,
-      "dose": 1.764,
+      "dose": -1,
       "note": "Mineral museum with uranium specimens",
       "anchor": "Vogtl%C3%A4ndisch-B%C3%B6hmisches+Mineralienzentrum+Schneckenstein"
     },
@@ -759,7 +761,7 @@
       "location": "DAYTON - National Museum of the United States Air Force 2016",
       "lat": 39.780224,
       "lng": -84.108072,
-      "dose": 3.5,
+      "dose": -1,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,2232.0.html"
     },
     {
@@ -1418,7 +1420,7 @@
       "location": "Naturhistorisches Museum Wien",
       "lat": 48.205269,
       "lng": 16.359755,
-      "dose": 1,
+      "dose": -1,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,2893.0.html"
     },
     {
