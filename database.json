@@ -50,7 +50,8 @@
       "lng": 9.1314,
       "dose": 6.4,
       "note": "WWII rubble hill, radioactive granite fragment",
-      "anchor": "Monte+Scherbelino+Stuttgart"
+      "anchor": "Monte+Scherbelino+Stuttgart",
+      "wikipedia": "https://de.wikipedia.org/wiki/Birkenkopf"
     },
     {
       "name": "Hotspot Gsponwald, Walensee CH",
@@ -153,7 +154,8 @@
       "lng": 13.6871,
       "dose": 2.5,
       "note": "Railway embankment built with uranium slag",
-      "anchor": "Windbergbahn"
+      "anchor": "Windbergbahn",
+      "wikipedia": "https://de.wikipedia.org/wiki/Windbergbahn"
     },
     {
       "name": "Oranienburg II",
@@ -170,7 +172,8 @@
       "lng": 13.6326,
       "dose": 2.338,
       "note": "Uranium-contaminated sludge pond",
-      "anchor": "Schlammteich+4+in+Freital"
+      "anchor": "Schlammteich+4+in+Freital",
+      "wikipedia": "https://de.wikipedia.org/wiki/Freital#Uranerzaufbereitung"
     },
     {
       "name": "Tschernobyl",
@@ -519,7 +522,8 @@
       "lng": 11.5496,
       "dose": 0.4,
       "note": "Uranium-bearing copper slag cobblestones",
-      "anchor": "Hei%C3%9Fes+Pflaster+in+Lutherstadt-Eisleben"
+      "anchor": "Hei%C3%9Fes+Pflaster+in+Lutherstadt-Eisleben",
+      "wikipedia": "https://de.wikipedia.org/wiki/Eisleben"
     },
     {
       "name": "Stuttgarter Marktplatz",
@@ -670,7 +674,8 @@
       "lat": 51.041517,
       "lng": 13.29507,
       "dose": 0.35,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,163.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,163.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Bundesautobahn_4"
     },
     {
       "name": "AVR Jülich",
@@ -905,7 +910,8 @@
       "lng": 16.4183882,
       "dose": 0.104,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,2535.0.html",
-      "hidden": true
+      "hidden": true,
+      "wikipedia": "https://de.wikipedia.org/wiki/Kosmische_Strahlung"
     },
     {
       "name": "Dresden Freital",
@@ -939,7 +945,8 @@
       "lat": 50.7728345,
       "lng": 12.2418481,
       "dose": 0.5,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,150.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,150.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Wismut_(Unternehmen)"
     },
     {
       "name": "Elbmarsch Krümmel und die GKSS",
@@ -957,7 +964,8 @@
       "lat": 50.3596,
       "lng": 12.9352,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,37.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,37.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Jachymov"
     },
     {
       "name": "Fettquelle in BAD",
@@ -1070,7 +1078,8 @@
       "lng": 9.181818,
       "dose": 10,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,1972.0.html",
-      "hidden": true
+      "hidden": true,
+      "wikipedia": "https://de.wikipedia.org/wiki/K%C3%B6nigstra%C3%9Fe_(Stuttgart)"
     },
     {
       "name": "Geschichts-Drama 'Chernobyl' (GB/USA) auf SKY",
@@ -1155,7 +1164,8 @@
       "lat": 53.558448,
       "lng": 9.97267,
       "dose": 1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,825.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,825.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Karolinenviertel"
     },
     {
       "name": "Hanford Site",
@@ -1172,7 +1182,8 @@
       "lat": 52.084696,
       "lng": 13.302543,
       "dose": 20,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,164.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,164.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Uranmaschine"
     },
     {
       "name": "Hessen ( Frankfurt am Main)",
@@ -1356,7 +1367,8 @@
       "lng": 35.118287,
       "dose": -1,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,1606.0.html",
-      "hidden": true
+      "hidden": true,
+      "wikipedia": "https://de.wikipedia.org/wiki/Kernkraftwerk_Saporischschja"
     },
     {
       "name": "Königstein/Wismutgelände",
@@ -1646,7 +1658,8 @@
       "lat": 50.04988,
       "lng": 12.56552,
       "dose": 0.15,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1765.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1765.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Joachimsthal"
     },
     {
       "name": "Radioaktive Schwermineralsände am Strand von L`Espiguette (Camargue, Frankreich)",
@@ -1811,7 +1824,8 @@
       "lng": 15.8460054,
       "dose": 5,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,1755.0.html",
-      "hidden": true
+      "hidden": true,
+      "wikipedia": "https://de.wikipedia.org/wiki/Prag"
     },
     {
       "name": "Revier Zobes Schacht 294?",
@@ -2314,7 +2328,8 @@
       "lat": 50.078919,
       "lng": 11.886211,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,732.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,732.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Wismut_(Unternehmen)"
     },
     {
       "name": "Wettinquelle in Bad Brambach",
@@ -2364,7 +2379,8 @@
       "lat": 50.843552,
       "lng": 12.44391,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,391.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,391.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Wismut_(Unternehmen)"
     },
     {
       "name": "Wismutsee bei Steinach",
