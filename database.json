@@ -7,7 +7,8 @@
       "lng": 12.6745,
       "dose": -1,
       "note": "Pechblende exhibit in display case",
-      "anchor": "Uranbergbaumuseum+Bad+Schlema"
+      "anchor": "Uranbergbaumuseum+Bad+Schlema",
+      "wikipedia": "https://de.wikipedia.org/wiki/Bad_Schlema"
     },
     {
       "name": "Ytterby Mine, Sweden",
@@ -24,7 +25,8 @@
       "lng": 12.1703,
       "dose": 11.6,
       "note": "Uranium ore in granite outcrop at motorway A93",
-      "anchor": "Uranvererzungen+an+der+A93"
+      "anchor": "Uranvererzungen+an+der+A93",
+      "wikipedia": "https://de.wikipedia.org/wiki/W%C3%B6lsendorf"
     },
     {
       "name": "Grube Krunkelbach, Menzenschwand",
@@ -59,7 +61,8 @@
       "lng": 9.1942,
       "dose": 6.651,
       "note": "Natural radiation hotspot in Swiss forest",
-      "anchor": "Hotspot+im+Gsponwald"
+      "anchor": "Hotspot+im+Gsponwald",
+      "wikipedia": "https://de.wikipedia.org/wiki/Walensee"
     },
     {
       "name": "Freital-Burgk Abraumhalden",
@@ -67,7 +70,8 @@
       "lng": 13.6755,
       "dose": 5.833,
       "note": "Former uranium mining spoil heaps",
-      "anchor": "Ehemalige+Bergbau-Abraumhalden+in+Freital-Burgk"
+      "anchor": "Ehemalige+Bergbau-Abraumhalden+in+Freital-Burgk",
+      "wikipedia": "https://de.wikipedia.org/wiki/Freital"
     },
     {
       "name": "Bergbau Museum Schloss Theuern",
@@ -128,7 +132,8 @@
       "lng": 11.1701,
       "dose": 3.266,
       "note": "Contaminated fish pond from WISMUT era",
-      "anchor": "Wismut-Teich+in+Steinach"
+      "anchor": "Wismut-Teich+in+Steinach",
+      "wikipedia": "https://de.wikipedia.org/wiki/Wismut_(Unternehmen)"
     },
     {
       "name": "Teufelsgrund Königstein",
@@ -201,7 +206,8 @@
       "lng": 12.4533,
       "dose": -1,
       "note": "Mineral museum with uranium specimens",
-      "anchor": "Vogtl%C3%A4ndisch-B%C3%B6hmisches+Mineralienzentrum+Schneckenstein"
+      "anchor": "Vogtl%C3%A4ndisch-B%C3%B6hmisches+Mineralienzentrum+Schneckenstein",
+      "wikipedia": "https://de.wikipedia.org/wiki/Schneckenstein"
     },
     {
       "name": "Uranfabrik Ranstad, Sweden",
@@ -217,7 +223,8 @@
       "lng": 8.3186,
       "dose": 1.583,
       "note": "Hidden radon mine shaft – entry dangerous!",
-      "anchor": "Radonstollen+im+Stammelbachtal"
+      "anchor": "Radonstollen+im+Stammelbachtal",
+      "wikipedia": "https://de.wikipedia.org/wiki/Schwarzwald"
     },
     {
       "name": "Strand L’Espiguette, Camargue",
@@ -225,7 +232,8 @@
       "lng": 4.1512,
       "dose": 1.526,
       "note": "Natural thorium-enriched beach sand",
-      "anchor": "radioaktive+Badestrand+von+L%27Espiguette"
+      "anchor": "radioaktive+Badestrand+von+L%27Espiguette",
+      "wikipedia": "https://de.wikipedia.org/wiki/Camargue"
     },
     {
       "name": "Halde Helbra",
@@ -250,7 +258,8 @@
       "lng": 7.1324,
       "dose": 1.27,
       "note": "Radium-contaminated stream bank, no warning signs",
-      "anchor": "Hot+Dogs+am+Silvertbach+in+Marl"
+      "anchor": "Hot+Dogs+am+Silvertbach+in+Marl",
+      "wikipedia": "https://de.wikipedia.org/wiki/Marl_(Westfalen)"
     },
     {
       "name": "Lost Place Einkaufszentrum",
@@ -258,7 +267,8 @@
       "lng": 8.4104,
       "dose": 1.287,
       "note": "Former contaminated site, now shopping centre",
-      "anchor": "Lost+Place+-+Das+kontaminierte+Einkaufszentrum"
+      "anchor": "Lost+Place+-+Das+kontaminierte+Einkaufszentrum",
+      "wikipedia": "https://de.wikipedia.org/wiki/Ludwigshafen_am_Rhein"
     },
     {
       "name": "Sportplatz Kleinnaundorf",
@@ -266,7 +276,8 @@
       "lng": 13.6847,
       "dose": 1.221,
       "note": "Contaminated sports field near Dresden",
-      "anchor": "Kontaminierter+Sportplatz+in+Kleinnaundorf"
+      "anchor": "Kontaminierter+Sportplatz+in+Kleinnaundorf",
+      "wikipedia": "https://de.wikipedia.org/wiki/Kleinnaundorf"
     },
     {
       "name": "Quarzsteinbruch Hennenkobel",
@@ -274,7 +285,8 @@
       "lng": 13.1697,
       "dose": 1.2,
       "note": "Quartz quarry near Bodenmais, Bavarian Forest",
-      "anchor": "Quarzsteinbruch+am+Hennenkobel"
+      "anchor": "Quarzsteinbruch+am+Hennenkobel",
+      "wikipedia": "https://de.wikipedia.org/wiki/Bodenmais"
     },
     {
       "name": "Beach-Volleyball Dresden Räcknitz",
@@ -282,7 +294,8 @@
       "lng": 13.7201,
       "dose": 1.2,
       "note": "Contaminated sand on sports court near TU Dresden",
-      "anchor": "Beach-Volleyball-Platz+in+Dresden"
+      "anchor": "Beach-Volleyball-Platz+in+Dresden",
+      "wikipedia": "https://de.wikipedia.org/wiki/Dresden"
     },
     {
       "name": "Frauentorstrasse Weimar",
@@ -298,7 +311,8 @@
       "lng": 9.1706,
       "dose": 1.179,
       "note": "Chapel built with uranium-bearing sandstone",
-      "anchor": "strahlende+Kapelle+im+H%C3%B6henpark+Killesberg"
+      "anchor": "strahlende+Kapelle+im+H%C3%B6henpark+Killesberg",
+      "wikipedia": "https://de.wikipedia.org/wiki/Killesberg"
     },
     {
       "name": "Uranabbaugebiet Ellweiler",
@@ -314,7 +328,8 @@
       "lng": 11.5523,
       "dose": 1.111,
       "note": "16th century copper smelting slag heap",
-      "anchor": "H%C3%BCttengrund+Helfta"
+      "anchor": "H%C3%BCttengrund+Helfta",
+      "wikipedia": "https://de.wikipedia.org/wiki/Helfta"
     },
     {
       "name": "Nusshardtstube Fichtelgebirge",
@@ -373,7 +388,8 @@
       "lng": 13.6824,
       "dose": 0.69,
       "note": "Former spoil heap",
-      "anchor": "Collmberghalde+Dresden"
+      "anchor": "Collmberghalde+Dresden",
+      "wikipedia": "https://de.wikipedia.org/wiki/Cosch%C3%BCtz"
     },
     {
       "name": "Kloster Adelberg (Brunnen)",
@@ -435,7 +451,8 @@
       "lng": 8.0231,
       "dose": 0.563,
       "note": "Black Forest granite summit",
-      "anchor": "Bl%C3%B6ssling+und+das+K%C3%B6pfle+bei+Bernau"
+      "anchor": "Bl%C3%B6ssling+und+das+K%C3%B6pfle+bei+Bernau",
+      "wikipedia": "https://de.wikipedia.org/wiki/Bernau_im_Schwarzwald"
     },
     {
       "name": "Ölberg Schriesheim",
@@ -461,7 +478,8 @@
       "lng": 13.4451,
       "dose": 0.53,
       "note": "Motorway construction using uranium-containing fill",
-      "anchor": "Radioaktivit%C3%A4t+auf+der+A4"
+      "anchor": "Radioaktivit%C3%A4t+auf+der+A4",
+      "wikipedia": "https://de.wikipedia.org/wiki/Wismut_(Unternehmen)"
     },
     {
       "name": "Mühlbach am Hochkönig AT",
@@ -575,7 +593,8 @@
       "lng": 9.1045,
       "dose": 0.2,
       "note": "Teaching reactor at University of Stuttgart IKE",
-      "anchor": "Unterrichtsreaktor+SUR-100"
+      "anchor": "Unterrichtsreaktor+SUR-100",
+      "wikipedia": "https://de.wikipedia.org/wiki/Universit%C3%A4t_Stuttgart"
     },
     {
       "name": "Johanngeorgenstadt",
@@ -693,7 +712,8 @@
       "lat": 49.5371912,
       "lng": 11.902496,
       "dose": 0.34,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,3134.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,3134.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Bundesstra%C3%9Fe_14"
     },
     {
       "name": "Bahnhof Zwickau (Zwickau (Sachs) Hbf)",
@@ -711,7 +731,7 @@
       "lng": 22.628333,
       "dose": 5,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,2996.0.html",
-      "wikipedia": ""
+      "wikipedia": "https://de.wikipedia.org/wiki/Uranbergbau"
     },
     {
       "name": "Berlin-Victoriastadt: Kaskelstraße",
@@ -781,7 +801,7 @@
       "lng": 12.481862,
       "dose": 1,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,1620.0.html",
-      "wikipedia": ""
+      "wikipedia": "https://de.wikipedia.org/wiki/Mulde"
     },
     {
       "name": "Dalgety Bay (Schottland)",
@@ -798,7 +818,8 @@
       "lat": 39.097795,
       "lng": 17.106786,
       "dose": 0.3,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2717.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2717.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Crotone"
     },
     {
       "name": "Das Wetterprojekt in Schneeberg/Erzgebirge",
@@ -823,7 +844,8 @@
       "lat": 50.7715,
       "lng": 12.4292,
       "dose": 3.7,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,9.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,9.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/D%C3%A4nkritz"
     },
     {
       "name": "Der Goiânia-Unfall (Parque Estadual Telma Ortegal in Brasilien)",
@@ -841,7 +863,8 @@
       "lat": 51.796895,
       "lng": 10.7119185,
       "dose": 0.45,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1744.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1744.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Harz"
     },
     {
       "name": "Der schlechte Atem der Erde...",
@@ -874,7 +897,8 @@
       "lat": 50.718504,
       "lng": 12.493927,
       "dose": 2,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,38.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,38.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Zwickau"
     },
     {
       "name": "Die Referenzflächen der WISMUT Reust bei Ronneburg",
@@ -937,7 +961,8 @@
       "lat": 51.006614,
       "lng": 13.651196,
       "dose": 12.7,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1963.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1963.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Freital"
     },
     {
       "name": "ehemalige Uranerzaufbereitung Seelingstädt",
@@ -973,7 +998,8 @@
       "lat": 48.763404,
       "lng": 8.242625,
       "dose": 0.3,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1964.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1964.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Pforzheim"
     },
     {
       "name": "Florida's Radioactive Fountain",
@@ -1060,7 +1086,8 @@
       "lng": 9.170617,
       "dose": 0.63,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,1960.0.html",
-      "hidden": true
+      "hidden": true,
+      "wikipedia": "https://de.wikipedia.org/wiki/H%C3%B6henpark_Killesberg"
     },
     {
       "name": "Gamma-ODL Referenzpunkt Esslingen",
@@ -1069,7 +1096,8 @@
       "lng": 9.30553,
       "dose": 0.505,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,2182.0.html",
-      "hidden": true
+      "hidden": true,
+      "wikipedia": "https://de.wikipedia.org/wiki/Esslingen_am_Neckar"
     },
     {
       "name": "Gamma-ODL Referenzstrecke „Königstraße in Stuttgart",
@@ -1096,7 +1124,8 @@
       "lat": 50.60248,
       "lng": 12.666563,
       "dose": 0.34,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,20.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,20.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Bad_Schlema"
     },
     {
       "name": "Granit an der Fillgraderstiege im 6. Bezirk",
@@ -1130,7 +1159,8 @@
       "lat": 50.5113,
       "lng": 12.7483,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,3146.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,3146.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Zwickauer_Steinkohlenrevier"
     },
     {
       "name": "Halde Stolzenberg",
@@ -1209,7 +1239,8 @@
       "lat": 49.569066,
       "lng": 8.781677,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2100.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2100.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Mackenheim"
     },
     {
       "name": "Hinweise auf Th- und Seltenerdmetalle rund um Nagy-Kopasz, Budapest",
@@ -1268,7 +1299,8 @@
       "lat": 51.742222,
       "lng": 11.027778,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1171.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1171.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Thale"
     },
     {
       "name": "IAA 'Hakenkrümme' bei Aue",
@@ -1376,7 +1408,8 @@
       "lat": 50.91303131028778,
       "lng": 14.036684151424613,
       "dose": 2,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,678.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,678.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Wismut_(Unternehmen)"
     },
     {
       "name": "Kont. Kontrollen an Sperrzone Tschernobyl.",
@@ -1447,7 +1480,8 @@
       "lat": 53.247823,
       "lng": 10.408994,
       "dose": 0.4,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1198.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1198.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/L%C3%BCneburg"
     },
     {
       "name": "Maria Skłodowska-Curie Museum Warschau/Polen",
@@ -1473,7 +1507,8 @@
       "lat": 49.487417,
       "lng": 7.830513,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1607.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1607.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Mehlinger_Heide"
     },
     {
       "name": "Menzenschwand Krunkelbach",
@@ -1499,7 +1534,8 @@
       "lat": 47.85453,
       "lng": 7.78443,
       "dose": 0.28,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,3161.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,3161.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/M%C3%BCnstertal_(Schwarzwald)"
     },
     {
       "name": "Musée Curie, Paris/Frankreich",
@@ -1516,7 +1552,8 @@
       "lat": 50.600071,
       "lng": 12.67476,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2384.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2384.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Bad_Schlema"
     },
     {
       "name": "Naturhistorisches Museum Wien",
@@ -1578,7 +1615,7 @@
       "lng": 17.536101,
       "dose": 10,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,3036.0.html",
-      "wikipedia": ""
+      "wikipedia": "https://de.wikipedia.org/wiki/Balaton"
     },
     {
       "name": "Osjorsk-Kyschtym-Kombinat Majak-Tetscha-Karatschai See-",
@@ -1650,7 +1687,8 @@
       "lng": 12.530487,
       "dose": -1,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,2911.0.html",
-      "hidden": true
+      "hidden": true,
+      "wikipedia": "https://de.wikipedia.org/wiki/M%C3%A4hring"
     },
     {
       "name": "Quellen mit Uran, Radium und Radon",
@@ -1667,7 +1705,8 @@
       "lat": 43.4783,
       "lng": 4.1512,
       "dose": 1.8,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1231.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1231.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Camargue"
     },
     {
       "name": "RADIONUKLIDE IN GRUNDWÄSSERN, GESTEINEN UND BACHSEDIMENTEN ÖSTERREICHS",
@@ -1728,7 +1767,8 @@
       "lat": 50.759533,
       "lng": 11.87075,
       "dose": 0.12,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,820.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,820.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Bad_Salzungen"
     },
     {
       "name": "Radiumquelle Stecklenberg/Harz",
@@ -1779,7 +1819,8 @@
       "lat": 48.361764,
       "lng": 8.066845,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1197.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1197.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Zell_am_Harmersbach"
     },
     {
       "name": "Radonhaltige Quelle in Berga",
@@ -1833,7 +1874,8 @@
       "lat": 50.498313,
       "lng": 12.254644,
       "dose": 5,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1734.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1734.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Erzgebirge"
     },
     {
       "name": "Rotschlammdeponie Stade",
@@ -1857,7 +1899,8 @@
       "lat": 51.016265,
       "lng": 13.6530329,
       "dose": 0.667,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1024.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1024.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Freital"
     },
     {
       "name": "S-Bahnhof Griebnitzsee",
@@ -1874,7 +1917,8 @@
       "lat": 50.504846,
       "lng": 12.77423,
       "dose": 10,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2302.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2302.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Bergbau_in_Sachsen"
     },
     {
       "name": "Schacht 254 Streuberg / Bergen",
@@ -1882,7 +1926,8 @@
       "lat": 50.4671,
       "lng": 12.2472,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1805.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1805.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Erzgebirge"
     },
     {
       "name": "Schacht 318 bei Crandorf",
@@ -1981,7 +2026,8 @@
       "lat": 52.9794838,
       "lng": 13.3348959,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,953.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,953.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Zehdenick"
     },
     {
       "name": "Špindlerův Mlýn (Spindlermühle) im Riesengebirge",
@@ -2006,7 +2052,8 @@
       "lat": 49.9784,
       "lng": 9.1962,
       "dose": 0.3,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2079.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2079.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/H%C3%B6sbach"
     },
     {
       "name": "Steinbruch Jenikov Lahost",
@@ -2084,7 +2131,8 @@
       "lat": 50.789056,
       "lng": 12.427056,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,433.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,433.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/D%C3%A4nkritz"
     },
     {
       "name": "Straße zwischen Gosel und Frankenhausen",
@@ -2101,7 +2149,8 @@
       "lat": 50.768139,
       "lng": 12.157639,
       "dose": 1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,26.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,26.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Berga/Elster"
     },
     {
       "name": "Stuttgarter Königstraße",
@@ -2209,7 +2258,8 @@
       "lat": 48.33682,
       "lng": 8.341608,
       "dose": 10,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,124.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,124.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Wittichen"
     },
     {
       "name": "Uranium City",
@@ -2226,7 +2276,8 @@
       "lat": 47.941941,
       "lng": -118.0962,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1940.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1940.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Hanford_Site"
     },
     {
       "name": "Uranmine – Kővágószőlős, Ungarn",
@@ -2234,7 +2285,8 @@
       "lat": 46.099531,
       "lng": 18.090411,
       "dose": 5,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,3141.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,3141.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Uranbergbau"
     },
     {
       "name": "Uranversuchsabbau in Müllenbach bei Baden-Baden",
@@ -2260,7 +2312,8 @@
       "lng": 10.8650508,
       "dose": 5,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,856.0.html",
-      "hidden": true
+      "hidden": true,
+      "wikipedia": "https://de.wikipedia.org/wiki/Jonastal"
     },
     {
       "name": "Versuchslabor Stadtilm",
@@ -2268,7 +2321,8 @@
       "lat": 50.774744,
       "lng": 11.077528,
       "dose": 0.3,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,761.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,761.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Stadtilm"
     },
     {
       "name": "Vogesen, Frankreich",
@@ -2304,7 +2358,8 @@
       "lng": 30.099167,
       "dose": 1,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,322.0.html",
-      "hidden": true
+      "hidden": true,
+      "wikipedia": "https://de.wikipedia.org/wiki/Kernkraftwerk_Tschernobyl"
     },
     {
       "name": "Washout-Hotspot bei Magdeburg?",
@@ -2320,7 +2375,8 @@
       "lat": 51.161944,
       "lng": 13.586222,
       "dose": 0.22,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2309.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2309.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Weinb%C3%B6hla"
     },
     {
       "name": "Weißenstadt ehem. Uranabbau",
@@ -2355,7 +2411,8 @@
       "lat": 50.848,
       "lng": 12.171,
       "dose": 10,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,15.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,15.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Erzgebirgskreis"
     },
     {
       "name": "Wiesenquelle in Bad Schlema",
@@ -2363,7 +2420,8 @@
       "lat": 50.593721,
       "lng": 12.663248,
       "dose": 0.2,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,19.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,19.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Bad_Schlema"
     },
     {
       "name": "WISMUT-Bohrung(?) im Werdauer Wald",
@@ -2371,7 +2429,8 @@
       "lat": 50.714294,
       "lng": 12.258527,
       "dose": 0.6,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,47.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,47.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/SDAG_Wismut"
     },
     {
       "name": "WISMUT-Schotter: DREWS-Brache in Meerane",
