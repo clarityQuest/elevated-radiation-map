@@ -221,12 +221,12 @@
   }
   .tri-marker { width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent; }
   @media (max-width: 480px) {
-    header { padding: 8px 8px; gap: 8px; }
-    header h1 { font-size: 14px; }
-    header a { font-size: 11px; }
-    .source-links { gap: 6px; }
-    .source-links span { font-size: 11px; }
-    .locate-btn { padding: 5px 8px; font-size: 11px; }
+    header { padding: 5px 8px; gap: 6px; }
+    header h1 { font-size: 13px; }
+    header a { font-size: 10px; }
+    .source-links { gap: 4px; }
+    .source-links span { font-size: 10px; }
+    .locate-btn { padding: 4px 7px; font-size: 10px; }
     #locate-status { display: none; }
     #legend-stack { bottom: 36px; right: 8px; }
     #legend-toggle-btn { display: block; }
@@ -250,6 +250,9 @@
     #info-wiki-extract::before { content: 'Wiki: '; font-weight: 600; color: #333; }
     .link-full { display: none; }
     .link-short { display: inline; }
+  }
+  @media (max-width: 480px) and (orientation: portrait) {
+    .locate-btn { white-space: normal; max-width: 56px; line-height: 1.25; text-align: center; }
   }
   @keyframes spin { to { transform: rotate(360deg); } }
   .spinner {
