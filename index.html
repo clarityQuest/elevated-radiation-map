@@ -201,8 +201,8 @@
   #info .src-link:hover { background: #333; }
   #info .link-row { display: flex; gap: 8px; flex-wrap: wrap; }
   #info-wiki { margin-top: 10px; border-top: 1px solid #e8e8e8; padding-top: 8px; display: none; }
-  #info-wiki-body { display: flex; gap: 8px; align-items: flex-start; }
-  #info-wiki-img { width: 72px; height: 54px; object-fit: cover; border-radius: 4px; flex-shrink: 0; display: none; }
+  #info-wiki-body { overflow: hidden; }
+  #info-wiki-img { float: left; width: 72px; height: 54px; object-fit: cover; border-radius: 4px; margin: 0 8px 4px 0; display: none; }
   #info-wiki-extract { font-size: 11px; color: #555; line-height: 1.45; }
   .link-short { display: none; }
   #info-wiki-body-link { pointer-events: none; }
@@ -528,6 +528,8 @@ function showInfo(loc, color, sourceLabel, sourceUrl, forumLoc) {
 }
 
 var wikiCache = {};
+var userLang = (navigator.language || 'de').split('-')[0];
+
 function fetchWikiPreview(url) {
   var wikiEl  = document.getElementById('info-wiki');
   var wikiLnk = document.getElementById('info-wiki-link');
@@ -539,7 +541,9 @@ function fetchWikiPreview(url) {
   document.getElementById('info-wiki-body-link').href = url;
   var m = url.match(/https:\/\/([\w-]+)\.wikipedia\.org\/wiki\/([^#]+)/);
   if (!m) return;
-  var apiUrl = 'https://' + m[1] + '.wikipedia.org/api/rest_v1/page/summary/' + m[2];
+  var srcLang = m[1], srcTitle = m[2];
+  var apiUrl = 'https://' + srcLang + '.wikipedia.org/api/rest_v1/page/summary/' + srcTitle;
+
   function render(data) {
     var extract = (data.extract || '');
     if (extract.length > 220) extract = extract.slice(0, 220) + '…';
@@ -555,11 +559,39 @@ function fetchWikiPreview(url) {
     wikiLnk.textContent = '→ Wikipedia: ' + (data.title || 'Artikel');
     wikiEl.style.display = 'block';
   }
-  if (wikiCache[apiUrl]) { render(wikiCache[apiUrl]); return; }
-  fetch(apiUrl).then(function(r) { return r.json(); }).then(function(data) {
+
+  function tryTranslate(origData) {
+    var wdItem = origData.wikibase_item;
+    if (!wdItem) { render(origData); return; }
+    var wdUrl = 'https://www.wikidata.org/w/api.php?action=wbgetentities&ids=' + wdItem +
+      '&props=sitelinks&sitefilter=' + userLang + 'wiki|enwiki&format=json&origin=*';
+    fetch(wdUrl).then(function(r) { return r.json(); }).then(function(wd) {
+      var entity = wd.entities && wd.entities[wdItem];
+      if (!entity) { render(origData); return; }
+      var sl = entity.sitelinks || {};
+      var target = sl[userLang + 'wiki'] || sl['enwiki'];
+      if (!target) { render(origData); return; }
+      var tLang = sl[userLang + 'wiki'] ? userLang : 'en';
+      var tUrl = 'https://' + tLang + '.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(target.title);
+      if (wikiCache[tUrl]) { render(wikiCache[tUrl]); return; }
+      fetch(tUrl).then(function(r) { return r.json(); }).then(function(data) {
+        wikiCache[tUrl] = data;
+        render(data);
+      }).catch(function() { render(origData); });
+    }).catch(function() { render(origData); });
+  }
+
+  function afterFetch(data) {
     wikiCache[apiUrl] = data;
-    render(data);
-  }).catch(function() {});
+    if (srcLang !== userLang && srcLang !== 'en') {
+      tryTranslate(data);
+    } else {
+      render(data);
+    }
+  }
+
+  if (wikiCache[apiUrl]) { afterFetch(wikiCache[apiUrl]); return; }
+  fetch(apiUrl).then(function(r) { return r.json(); }).then(afterFetch).catch(function() {});
 }
 
 var ogMarkers = [];
