@@ -220,7 +220,7 @@
     #info-wiki-extract { font-size: 13px; }
   }
   .tri-marker { width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent; }
-  @media (max-width: 480px) {
+  @media (max-width: 480px), (max-height: 500px) and (orientation: landscape) {
     header { padding: 5px 8px; gap: 6px; }
     header h1 { font-size: 13px; }
     header a { font-size: 10px; }
@@ -250,6 +250,9 @@
     #info-wiki-extract::before { content: 'Wiki: '; font-weight: 600; color: #333; }
     .link-full { display: none; }
     .link-short { display: inline; }
+  }
+  @media (max-height: 500px) and (orientation: landscape) {
+    header { padding: 2px 8px; }
   }
   @media (max-width: 480px) and (orientation: portrait) {
     .locate-btn { white-space: normal; max-width: 56px; line-height: 1.25; text-align: center; }
