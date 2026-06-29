@@ -218,6 +218,11 @@
     #info .src-link { font-size: 13px; padding: 6px 13px; }
     #info-wiki-img { width: 100px; height: 76px; }
     #info-wiki-extract { font-size: 13px; }
+    #info-gmaps { display: none !important; }
+    #info-gmaps-icon { display: inline !important; }
+    #info-wiki-link { display: none !important; }
+    #info-wiki-body-link { pointer-events: auto; cursor: pointer; }
+    #info-wiki-extract::before { content: 'Wiki: '; font-weight: 600; color: #333; }
   }
   .tri-marker { width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent; }
   @media (max-width: 480px), (max-height: 500px) and (orientation: landscape) {
@@ -253,8 +258,6 @@
   }
   @media (max-height: 500px) and (orientation: landscape) {
     header { padding: 2px 8px; }
-    #info { position: fixed; top: 0; right: 0; border-radius: 0 0 0 8px; }
-    body.info-open .locate-btn { margin-left: 4px !important; }
   }
   @media (max-width: 480px) and (orientation: portrait) {
     .locate-btn { white-space: normal; max-width: 56px; line-height: 1.25; text-align: center; }
@@ -714,6 +717,7 @@ function renderOpenGeiger(locations, mergeResult) {
     marker.bindTooltip(loc.name, {direction: 'top'});
     marker.on('click', function(e) {
       L.DomEvent.stopPropagation(e);
+      marker.closeTooltip();
       selectMarker(marker);
       showInfo(loc, color, 'opengeiger.de', buildSourceUrl(loc), mergedForum);
     });
@@ -732,6 +736,7 @@ function renderForum(locations, mergeResult) {
     marker.bindTooltip(loc.name, {direction: 'top'});
     marker.on('click', function(e) {
       L.DomEvent.stopPropagation(e);
+      marker.closeTooltip();
       selectMarker(marker);
       showInfo(loc, color, 'Geigerzählerforum', loc.url);
     });
