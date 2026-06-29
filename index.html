@@ -205,6 +205,10 @@
   #info-wiki-img { width: 72px; height: 54px; object-fit: cover; border-radius: 4px; flex-shrink: 0; display: none; }
   #info-wiki-extract { font-size: 11px; color: #555; line-height: 1.45; }
   .link-short { display: none; }
+  #info-wiki-body-link { pointer-events: none; }
+  #info-dose-row { margin: 4px 0 6px; line-height: 1.3; }
+  #info .dose { font-size: 22px; font-weight: 700; }
+  #info .tier { font-size: 12px; color: #555; vertical-align: middle; margin-left: 4px; }
   @media (min-width: 900px) {
     #info { width: 380px; font-size: 15px; padding: 18px 20px; }
     #info .iname { font-size: 17px; }
@@ -233,8 +237,9 @@
     .dot { width: 10px; height: 10px; margin-right: 4px; }
     .tri { border-left-width: 5px; border-right-width: 5px; border-bottom-width: 10px; margin-right: 4px; }
     .legend-shapes { gap: 8px; font-size: 10px; }
-    #info { width: 220px; top: 8px; right: 8px; padding: 10px 12px; font-size: 12px; }
+    #info { width: 220px; top: 8px; right: 8px; padding: 10px 12px; font-size: 12px; overflow-y: auto; max-height: calc(100vh - 24px); }
     #info .dose { font-size: 18px; }
+    #info .src-link { padding: 3px 7px; font-size: 11px; }
     #info-gmaps { display: none !important; }
     #info-gmaps-icon { display: inline !important; }
     #info-wiki-link { display: none !important; }
@@ -317,18 +322,17 @@
     <a id="info-gmaps-icon" href="#" target="_blank" title="Google Maps" style="display:none;float:right;margin-left:6px;line-height:1;"><svg width="18" height="22" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C7.03 0 3 4.03 3 9c0 6.75 9 19 9 19s9-12.25 9-19c0-4.97-4.03-9-9-9z" fill="#EA4335"/><circle cx="12" cy="9" r="3.5" fill="#fff"/></svg></a>
     <div class="iname" id="info-name"></div>
     <div class="ilocation" id="info-location"></div>
-    <div class="dose" id="info-dose"></div>
-    <div class="tier" id="info-tier"></div>
+    <div id="info-dose-row"><span class="dose" id="info-dose"></span><span class="tier" id="info-tier"></span></div>
     <div class="note" id="info-note"></div>
     <div class="link-row">
       <a class="src-link" id="info-link" href="#" target="_blank">&#8594; Source</a>
-      <a class="src-link" id="info-forum-link" href="#" target="_blank" style="display:none">&#8594; Geigerzählerforum</a>
+      <a class="src-link" id="info-forum-link" href="#" target="_blank" style="display:none">&#8594; <span class="link-full">Geigerzählerforum</span><span class="link-short">Forum</span></a>
       <a class="src-link" id="info-gmaps" href="#" target="_blank">&#8594; Google Maps</a>
       <a class="src-link" id="info-radiaverse" href="#" target="_blank">&#8594; <span class="link-full">map.radiaverse.com</span><span class="link-short">radiaverse map</span></a>
       <a class="src-link" id="info-wiki-link" href="#" target="_blank" style="display:none">&#8594; Wikipedia</a>
     </div>
     <div id="info-wiki">
-      <a id="info-wiki-body-link" href="#" target="_blank" style="text-decoration:none;color:inherit;display:block;pointer-events:none;">
+      <a id="info-wiki-body-link" href="#" target="_blank" style="text-decoration:none;color:inherit;display:block;">
         <div id="info-wiki-body">
           <img id="info-wiki-img" src="" alt="">
           <div id="info-wiki-extract"></div>
@@ -495,7 +499,8 @@ function showInfo(loc, color, sourceLabel, sourceUrl, forumLoc) {
   document.getElementById('info-location').textContent = (locText && locText !== loc.name.trim()) ? locText : '';
   document.getElementById('info-dose').style.color = color;
   document.getElementById('info-dose').textContent = loc.dose < 0 ? 'No data' : loc.dose + ' \u00b5Sv/h';
-  document.getElementById('info-tier').textContent = getTier(loc.dose);
+  var tierLabel = getTier(loc.dose);
+  document.getElementById('info-tier').textContent = tierLabel ? ' (' + tierLabel + ')' : '';
   document.getElementById('info-note').textContent = loc.note || '';
   document.getElementById('info-link').textContent = '\u2192 ' + sourceLabel;
   document.getElementById('info-link').href = sourceUrl;
