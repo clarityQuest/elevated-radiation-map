@@ -519,8 +519,7 @@ function buildTableBody() {
       if (col === 'url' && val) return '<td class="url-cell"><a href="' + esc(val) + '" target="_blank" title="' + esc(val) + '">' + esc(truncate(val, 40)) + '</a></td>';
       if (col === 'wikipedia') {
         if (!val) return '<td></td>';
-        var lang = /\/\/de\./.test(val) ? 'DE' : 'EN';
-        return '<td class="url-cell"><a class="wiki-link" data-wiki="' + esc(val) + '" href="' + esc(val) + '" target="_blank">Wikipedia ' + lang + '</a></td>';
+        return '<td class="url-cell" title="' + esc(val) + '"><a class="wiki-link" data-wiki="' + esc(val) + '" href="' + esc(val) + '" target="_blank">' + esc(decodeURIComponent(val)) + '</a></td>';
       }
       if (col === 'wikidata') {
         if (!val) return '<td></td>';
