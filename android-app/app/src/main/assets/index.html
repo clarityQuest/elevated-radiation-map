@@ -327,12 +327,12 @@ function getColor(d) {
   return '#378ADD';
 }
 function getTier(d) {
-  if (d < 0) return 'NO DATA';
-  if (d >= 10) return 'EXTREME';
-  if (d >= 3)  return 'VERY HIGH';
-  if (d >= 1)  return 'HIGH';
-  if (d >= 0.5) return 'ELEVATED';
-  return 'LOW';
+  if (d < 0)    return t('noData');
+  if (d >= 10)  return t('extreme');
+  if (d >= 3)   return t('veryHigh');
+  if (d >= 1)   return t('high');
+  if (d >= 0.5) return t('elevated');
+  return t('low');
 }
 
 var map = L.map('map').setView([51, 12], 5);
@@ -408,24 +408,24 @@ function showUserPosition(position) {
   }).addTo(map);
 
   map.flyTo([lat, lng], 13, {duration: 0.7});
-  setLocateStatus('Current position shown');
+  setLocateStatus(t('positionShown'));
 }
 
 function showUserPositionError(err) {
   if (err && err.code === 1) {
-    setLocateStatus('Location permission denied');
+    setLocateStatus(t('locationDenied'));
     return;
   }
-  setLocateStatus('Unable to get current position');
+  setLocateStatus(t('locationUnavailable'));
 }
 
 document.getElementById('locate-btn').addEventListener('click', function() {
   if (!navigator.geolocation) {
-    setLocateStatus('Geolocation is not supported');
+    setLocateStatus(t('geolocationUnsupported'));
     return;
   }
 
-  setLocateStatus('Locating...');
+  setLocateStatus(t('locating'));
   navigator.geolocation.getCurrentPosition(showUserPosition, showUserPositionError, {
     enableHighAccuracy: true,
     timeout: 15000,
@@ -442,10 +442,16 @@ function showInfo(loc, color, sourceLabel, sourceUrl, forumLoc) {
   var locText = (loc.location || '').trim();
   document.getElementById('info-location').textContent = (locText && locText !== loc.name.trim()) ? locText : '';
   document.getElementById('info-dose').style.color = color;
-  document.getElementById('info-dose').textContent = loc.dose < 0 ? 'No data' : loc.dose + ' \u00b5Sv/h';
+  document.getElementById('info-dose').textContent = loc.dose < 0 ? t('noData') : loc.dose + ' \u00b5Sv/h';
   var tierLabel = getTier(loc.dose);
   document.getElementById('info-tier').textContent = tierLabel ? ' (' + tierLabel + ')' : '';
-  document.getElementById('info-note').textContent = loc.note || '';
+  var noteEl = document.getElementById('info-note');
+  noteEl.textContent = loc.note || '';
+  if (userLang !== 'en' && loc.note) {
+    translateNote(loc.note, function(translated) {
+      if (noteEl.textContent === loc.note) noteEl.textContent = translated;
+    });
+  }
   document.getElementById('info-link').textContent = '\u2192 ' + sourceLabel;
   document.getElementById('info-link').href = sourceUrl;
   document.getElementById('info-gmaps').href = buildGoogleMapsUrl(loc.lat, loc.lng);
@@ -466,6 +472,84 @@ function extractWikiUrl(str) {
   if (!str) return null;
   var m = str.match(/https:\/\/[\w-]+\.wikipedia\.org\/wiki\/\S+/);
   return m ? m[0] : null;
+}
+
+var STRINGS = {
+  de: {
+    noData: 'Keine Daten',
+    extreme: 'EXTREM', veryHigh: 'SEHR HOCH', high: 'HOCH',
+    elevated: 'ERHÖHT', low: 'NIEDRIG',
+    positionShown: 'Aktuelle Position wird angezeigt',
+    locationDenied: 'Standortzugriff verweigert',
+    locationUnavailable: 'Standort nicht verfügbar',
+    geolocationUnsupported: 'Geolokalisierung nicht unterstützt',
+    locating: 'Standort wird ermittelt…',
+    showPosition: 'Meine Position',
+    clickMarker: 'Marker antippen für Details',
+    loadingData: 'Daten werden geladen…',
+    legend: 'Legende', sources: 'Quellen', doseRate: 'Dosisleistung (µSv/h)',
+    addPlace: 'Ort hinzufügen / Kontakt',
+    legendExtreme: 'Extrem ≥10', legendVeryHigh: 'Sehr hoch 3–10',
+    legendHigh: 'Hoch 1–3', legendElevated: 'Erhöht 0,5–1',
+    legendLow: 'Niedrig <0,5'
+  },
+  en: {
+    noData: 'No data',
+    extreme: 'EXTREME', veryHigh: 'VERY HIGH', high: 'HIGH',
+    elevated: 'ELEVATED', low: 'LOW',
+    positionShown: 'Current position shown',
+    locationDenied: 'Location permission denied',
+    locationUnavailable: 'Unable to get current position',
+    geolocationUnsupported: 'Geolocation is not supported',
+    locating: 'Locating...',
+    showPosition: 'Show my position',
+    clickMarker: 'Click a marker for details',
+    loadingData: 'Loading data…',
+    legend: 'Legend', sources: 'Sources', doseRate: 'Dose rate (µSv/h)',
+    addPlace: 'Add place / Contact',
+    legendExtreme: 'Extreme ≥10', legendVeryHigh: 'Very high 3–10',
+    legendHigh: 'High 1–3', legendElevated: 'Elevated 0.5–1',
+    legendLow: 'Low <0.5'
+  }
+};
+function t(key) { return (STRINGS[userLang] || STRINGS.en)[key] || STRINGS.en[key]; }
+
+function applyLocale() {
+  document.getElementById('locate-btn').textContent = t('showPosition');
+  var ls = document.getElementById('locate-status');
+  if (ls && !ls.dataset.active) ls.textContent = t('clickMarker');
+  document.getElementById('loading-msg').textContent = t('loadingData');
+  var ltb = document.getElementById('legend-toggle-btn');
+  if (ltb) ltb.innerHTML = '&#9776; ' + t('legend');
+  var legStrong = document.querySelectorAll('#legend strong');
+  if (legStrong[0]) legStrong[0].textContent = t('sources');
+  if (legStrong[1]) legStrong[1].textContent = t('doseRate');
+  var rows = document.querySelectorAll('#legend .legend-row');
+  var labels = ['legendExtreme','legendVeryHigh','legendHigh','legendElevated','legendLow','noData'];
+  rows.forEach(function(row, i) {
+    var dot = row.querySelector('.dot, .tri');
+    if (dot) row.removeChild(dot);
+    row.textContent = ' ' + t(labels[i]);
+    if (dot) row.insertBefore(dot, row.firstChild);
+  });
+  var cb = document.getElementById('contact-btn');
+  if (cb) cb.innerHTML = '&#9993; ' + t('addPlace');
+}
+
+var noteTranslationCache = {};
+function translateNote(text, callback) {
+  if (!text) return;
+  if (noteTranslationCache[text]) { callback(noteTranslationCache[text]); return; }
+  fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(text) + '&langpair=en|de')
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      var translated = data.responseData && data.responseData.translatedText;
+      if (translated && translated !== text) {
+        noteTranslationCache[text] = translated;
+        callback(translated);
+      }
+    })
+    .catch(function() {});
 }
 
 var wikiCache = {};
