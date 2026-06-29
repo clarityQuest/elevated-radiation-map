@@ -458,8 +458,14 @@ function showInfo(loc, color, sourceLabel, sourceUrl, forumLoc) {
   } else {
     fl.style.display = 'none';
   }
-  var wikiUrl = loc.wikipedia || (forumLoc && forumLoc.wikipedia) || null;
+  var wikiUrl = extractWikiUrl(loc.wikipedia) || extractWikiUrl(forumLoc && forumLoc.wikipedia) || null;
   fetchWikiPreview(wikiUrl);
+}
+
+function extractWikiUrl(str) {
+  if (!str) return null;
+  var m = str.match(/https:\/\/[\w-]+\.wikipedia\.org\/wiki\/\S+/);
+  return m ? m[0] : null;
 }
 
 var wikiCache = {};
