@@ -68,8 +68,8 @@ class Handler(SimpleHTTPRequestHandler):
 
     def log_message(self, fmt, *args):
         # Suppress tile/asset noise, show only API and page requests
-        path = args[0] if args else ''
-        if any(x in path for x in ['.png', '.css', '.min.js', 'leaflet']):
+        path = str(args[0]) if args else ''
+        if any(x in path for x in ['.png', '.css', '.min.js', 'leaflet', 'favicon']):
             return
         print(' ', fmt % args)
 

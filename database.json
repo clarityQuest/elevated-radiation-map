@@ -94,11 +94,14 @@
     },
     {
       "name": "Schaentzel / Teufelsloch, Alsace",
+      "location": "",
       "lat": 48.2421,
       "lng": 7.3179,
       "dose": 4.5,
       "note": "Natural uranium occurrences, Vosges foothills",
-      "anchor": "Schaentzel+und+Teufelsloch"
+      "anchor": "Schaentzel+und+Teufelsloch",
+      "wikipedia": "https://de.wikipedia.org/wiki/Saint-Hippolyte_(Haut-Rhin)",
+      "wikidata": ""
     },
     {
       "name": "Jachymov (CZ)",
@@ -120,20 +123,25 @@
     },
     {
       "name": "Absetzanlage Dänkritz II",
+      "location": "",
       "lat": 50.7715,
       "lng": 12.4292,
       "dose": 3.278,
       "note": "WISMUT uranium ore processing residue pond",
-      "anchor": "Absetzanlage+D%C3%A4nkritz+II"
+      "anchor": "Absetzanlage+D%C3%A4nkritz+II",
+      "wikipedia": "besuchen: https://de.wikipedia.org/wiki/Helmsdorf_(Zwickau)",
+      "wikidata": ""
     },
     {
       "name": "Wismut-Teich Steinach",
+      "location": "",
       "lat": 50.4443,
       "lng": 11.1701,
       "dose": 3.266,
       "note": "Contaminated fish pond from WISMUT era",
       "anchor": "Wismut-Teich+in+Steinach",
-      "wikipedia": "https://de.wikipedia.org/wiki/Wismut_(Unternehmen)"
+      "wikipedia": "https://de.wikipedia.org/wiki/Steinach_(Th%C3%BCringen)",
+      "wikidata": ""
     },
     {
       "name": "Teufelsgrund Königstein",
@@ -211,37 +219,47 @@
     },
     {
       "name": "Uranfabrik Ranstad, Sweden",
+      "location": "",
       "lat": 58.3137,
       "lng": 13.7031,
       "dose": 1.663,
       "note": "Former uranium factory, flooded pit as ‘biotope’",
-      "anchor": "Uranfabrik+in+Ranstad"
+      "anchor": "Uranfabrik+in+Ranstad",
+      "wikipedia": "https://sv.wikipedia.org/wiki/Ranstad",
+      "wikidata": ""
     },
     {
       "name": "Radonstollen Stammelbachtal",
+      "location": "",
       "lat": 48.2663,
       "lng": 8.3186,
       "dose": 1.583,
       "note": "Hidden radon mine shaft – entry dangerous!",
       "anchor": "Radonstollen+im+Stammelbachtal",
-      "wikipedia": "https://de.wikipedia.org/wiki/Schwarzwald"
+      "wikipedia": "https://de.wikipedia.org/wiki/Schiltach",
+      "wikidata": ""
     },
     {
       "name": "Strand L’Espiguette, Camargue",
+      "location": "",
       "lat": 43.4783,
       "lng": 4.1512,
       "dose": 1.526,
       "note": "Natural thorium-enriched beach sand",
       "anchor": "radioaktive+Badestrand+von+L%27Espiguette",
-      "wikipedia": "https://de.wikipedia.org/wiki/Camargue"
+      "wikipedia": "https://fr.wikipedia.org/wiki/Pointe_de_l'Espiguette",
+      "wikidata": ""
     },
     {
       "name": "Halde Helbra",
+      "location": "",
       "lat": 51.5368,
       "lng": 11.4901,
       "dose": 1.451,
       "note": "Copper smelting slag heap with uranium",
-      "anchor": "Halde+Helbra"
+      "anchor": "Halde+Helbra",
+      "wikipedia": "https://de.wikipedia.org/wiki/Helbra",
+      "wikidata": ""
     },
     {
       "name": "Feengrotten Saalfeld",
@@ -316,11 +334,14 @@
     },
     {
       "name": "Uranabbaugebiet Ellweiler",
+      "location": "",
       "lat": 49.6177,
       "lng": 7.1466,
       "dose": 1.113,
       "note": "Former uranium mining and processing site",
-      "anchor": "Uranabbaugebiet+in+Ellweiler"
+      "anchor": "Uranabbaugebiet+in+Ellweiler",
+      "wikipedia": "besuchen: https://de.wikipedia.org/wiki/Uranerzaufbereitungsanlage_Ellweiler",
+      "wikidata": ""
     },
     {
       "name": "Hüttengrund Helfta",
@@ -351,19 +372,25 @@
     },
     {
       "name": "Einleitstelle Elbe Thürmsdorf",
+      "location": "",
       "lat": 50.9288,
       "lng": 14.0553,
       "dose": 0.79,
       "note": "Radioactive mine water discharge into Elbe",
-      "anchor": "Einleitstelle+radioaktiver+Gruben-Abw%C3%A4sser"
+      "anchor": "Einleitstelle+radioaktiver+Gruben-Abw%C3%A4sser",
+      "wikipedia": "https://de.wikipedia.org/wiki/Elbh%C3%A4user",
+      "wikidata": ""
     },
     {
       "name": "Uranbergbau-Revier Zobes-Mechelgrün",
+      "location": "",
       "lat": 50.4672,
       "lng": 12.2472,
       "dose": 0.79,
       "note": "Former Vogtland uranium mining district",
-      "anchor": "Zobes-Mechelgr%C3%BCn-Bergen"
+      "anchor": "Zobes-Mechelgr%C3%BCn-Bergen",
+      "wikipedia": "https://de.wikipedia.org/wiki/Zobes",
+      "wikidata": ""
     },
     {
       "name": "Theaterplatz Dresden (Semperoper)",
@@ -376,11 +403,14 @@
     },
     {
       "name": "Schlackensteine-Pfad Hüneburg",
+      "location": "",
       "lat": 51.5205,
       "lng": 11.5176,
       "dose": 0.719,
       "note": "Historic copper slag stone trail",
-      "anchor": "Schlackensteine-Pfad+an+der+Haldenlandschaft+H%C3%BCneburg"
+      "anchor": "Schlackensteine-Pfad+an+der+Haldenlandschaft+H%C3%BCneburg",
+      "wikipedia": "https://de.wikipedia.org/wiki/Mansfelder_Kupferschlackensteine",
+      "wikidata": ""
     },
     {
       "name": "Collmberghalde Dresden Coschütz",
@@ -501,11 +531,14 @@
     },
     {
       "name": "Radium-Quelle Thierberg",
+      "location": "",
       "lat": 50.4423,
       "lng": 12.4409,
       "dose": 0.465,
       "note": "Natural radon spring in forest",
-      "anchor": "Radium-Quelle+am+Thierberg"
+      "anchor": "Radium-Quelle+am+Thierberg",
+      "wikipedia": "https://de.wikipedia.org/wiki/Thierberg_(Vogtland)",
+      "wikidata": ""
     },
     {
       "name": "Schramberg",
@@ -563,11 +596,14 @@
     },
     {
       "name": "Hirschkanal KIT Karlsruhe",
+      "location": "",
       "lat": 49.1007,
       "lng": 8.4405,
       "dose": 0.35,
       "note": "Cs-137 contamination in canal sediment",
-      "anchor": "Hirschkanal+vor+dem+ehemaligen+Kernforschungszentrum"
+      "anchor": "Hirschkanal+vor+dem+ehemaligen+Kernforschungszentrum",
+      "wikipedia": "https://de.wikipedia.org/wiki/Hirschkanal",
+      "wikidata": ""
     },
     {
       "name": "Dotternhausen Ölschiefer",
@@ -694,7 +730,8 @@
       "lng": 13.29507,
       "dose": 0.35,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,163.0.html",
-      "wikipedia": "https://de.wikipedia.org/wiki/Bundesautobahn_4"
+      "wikipedia": "",
+      "wikidata": ""
     },
     {
       "name": "AVR Jülich",
@@ -713,7 +750,8 @@
       "lng": 11.902496,
       "dose": 0.34,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,3134.0.html",
-      "wikipedia": "https://de.wikipedia.org/wiki/Bundesstra%C3%9Fe_14"
+      "wikipedia": "",
+      "wikidata": ""
     },
     {
       "name": "Bahnhof Zwickau (Zwickau (Sachs) Hbf)",
@@ -864,7 +902,8 @@
       "lng": 10.7119185,
       "dose": 0.45,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,1744.0.html",
-      "wikipedia": "https://de.wikipedia.org/wiki/Harz"
+      "wikipedia": "https://de.wikipedia.org/wiki/Ottofels",
+      "wikidata": ""
     },
     {
       "name": "Der schlechte Atem der Erde...",
@@ -971,7 +1010,8 @@
       "lng": 12.2418481,
       "dose": 0.5,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,150.0.html",
-      "wikipedia": "https://de.wikipedia.org/wiki/Wismut_(Unternehmen)"
+      "wikipedia": "https://de.wikipedia.org/wiki/Seelingst%C3%A4dt",
+      "wikidata": ""
     },
     {
       "name": "Elbmarsch Krümmel und die GKSS",
@@ -1615,7 +1655,8 @@
       "lng": 17.536101,
       "dose": 10,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,3036.0.html",
-      "wikipedia": "https://de.wikipedia.org/wiki/Balaton"
+      "wikipedia": "https://hu.wikipedia.org/wiki/P%C3%A9csely",
+      "wikidata": ""
     },
     {
       "name": "Osjorsk-Kyschtym-Kombinat Majak-Tetscha-Karatschai See-",
@@ -1927,7 +1968,8 @@
       "lng": 12.2472,
       "dose": -1,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,1805.0.html",
-      "wikipedia": "https://de.wikipedia.org/wiki/Erzgebirge"
+      "wikipedia": "https://de.wikipedia.org/wiki/Zobes",
+      "wikidata": ""
     },
     {
       "name": "Schacht 318 bei Crandorf",
@@ -2286,7 +2328,8 @@
       "lng": 18.090411,
       "dose": 5,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,3141.0.html",
-      "wikipedia": "https://de.wikipedia.org/wiki/Uranbergbau"
+      "wikipedia": "https://hu.wikipedia.org/wiki/Ur%C3%A1n%C3%A9rcb%C3%A1ny%C3%A1szat_Magyarorsz%C3%A1gon",
+      "wikidata": ""
     },
     {
       "name": "Uranversuchsabbau in Müllenbach bei Baden-Baden",
