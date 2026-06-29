@@ -200,6 +200,10 @@
   }
   #info .src-link:hover { background: #333; }
   #info .link-row { display: flex; gap: 8px; flex-wrap: wrap; }
+  #info-wiki { margin-top: 10px; border-top: 1px solid #e8e8e8; padding-top: 8px; display: none; }
+  #info-wiki-body { display: flex; gap: 8px; align-items: flex-start; }
+  #info-wiki-img { width: 72px; height: 54px; object-fit: cover; border-radius: 4px; flex-shrink: 0; display: none; }
+  #info-wiki-extract { font-size: 11px; color: #555; line-height: 1.45; }
   .tri-marker { width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent; }
   @media (max-width: 480px) {
     header { padding: 8px 8px; gap: 8px; }
@@ -301,6 +305,14 @@
       <a class="src-link" id="info-link" href="#" target="_blank">&#8594; Source</a>
       <a class="src-link" id="info-forum-link" href="#" target="_blank" style="display:none">&#8594; Forum</a>
       <a class="src-link" id="info-gmaps" href="#" target="_blank">&#8594; Google Maps</a>
+      <a class="src-link" id="info-radiaverse" href="#" target="_blank">&#8594; Radiaverse</a>
+      <a class="src-link" id="info-wiki-link" href="#" target="_blank" style="display:none">&#8594; Wikipedia</a>
+    </div>
+    <div id="info-wiki">
+      <div id="info-wiki-body">
+        <img id="info-wiki-img" src="" alt="">
+        <div id="info-wiki-extract"></div>
+      </div>
     </div>
   </div>
 </div>
@@ -466,6 +478,7 @@ function showInfo(loc, color, sourceLabel, sourceUrl, forumLoc) {
   document.getElementById('info-link').textContent = '\u2192 ' + sourceLabel;
   document.getElementById('info-link').href = sourceUrl;
   document.getElementById('info-gmaps').href = buildGoogleMapsUrl(loc.lat, loc.lng);
+  document.getElementById('info-radiaverse').href = 'https://map.radiaverse.com/#17/' + loc.lat + '/' + loc.lng;
   var fl = document.getElementById('info-forum-link');
   if (forumLoc && forumLoc.url) {
     fl.style.display = 'inline-block';
@@ -473,6 +486,41 @@ function showInfo(loc, color, sourceLabel, sourceUrl, forumLoc) {
   } else {
     fl.style.display = 'none';
   }
+  var wikiUrl = loc.wikipedia || (forumLoc && forumLoc.wikipedia) || null;
+  fetchWikiPreview(wikiUrl);
+}
+
+var wikiCache = {};
+function fetchWikiPreview(url) {
+  var wikiEl  = document.getElementById('info-wiki');
+  var wikiLnk = document.getElementById('info-wiki-link');
+  wikiEl.style.display = 'none';
+  wikiLnk.style.display = 'none';
+  if (!url) return;
+  wikiLnk.href = url;
+  wikiLnk.style.display = 'inline-block';
+  var m = url.match(/https:\/\/([\w-]+)\.wikipedia\.org\/wiki\/([^#]+)/);
+  if (!m) return;
+  var apiUrl = 'https://' + m[1] + '.wikipedia.org/api/rest_v1/page/summary/' + m[2];
+  function render(data) {
+    var extract = (data.extract || '');
+    if (extract.length > 220) extract = extract.slice(0, 220) + '…';
+    var img = document.getElementById('info-wiki-img');
+    var thumb = data.thumbnail;
+    if (thumb && thumb.source) {
+      img.src = thumb.source;
+      img.style.display = 'block';
+    } else {
+      img.style.display = 'none';
+    }
+    document.getElementById('info-wiki-extract').textContent = extract;
+    wikiEl.style.display = 'block';
+  }
+  if (wikiCache[apiUrl]) { render(wikiCache[apiUrl]); return; }
+  fetch(apiUrl).then(function(r) { return r.json(); }).then(function(data) {
+    wikiCache[apiUrl] = data;
+    render(data);
+  }).catch(function() {});
 }
 
 var ogMarkers = [];
