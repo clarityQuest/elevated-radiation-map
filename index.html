@@ -204,6 +204,16 @@
   #info-wiki-body { display: flex; gap: 8px; align-items: flex-start; }
   #info-wiki-img { width: 72px; height: 54px; object-fit: cover; border-radius: 4px; flex-shrink: 0; display: none; }
   #info-wiki-extract { font-size: 11px; color: #555; line-height: 1.45; }
+  @media (min-width: 900px) {
+    #info { width: 380px; font-size: 15px; padding: 18px 20px; }
+    #info .iname { font-size: 17px; }
+    #info .ilocation { font-size: 13px; }
+    #info .dose { font-size: 28px; }
+    #info .tier, #info .note { font-size: 13px; }
+    #info .src-link { font-size: 13px; padding: 6px 13px; }
+    #info-wiki-img { width: 100px; height: 76px; }
+    #info-wiki-extract { font-size: 13px; }
+  }
   .tri-marker { width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent; }
   @media (max-width: 480px) {
     header { padding: 8px 8px; gap: 8px; }
@@ -303,9 +313,9 @@
     <div class="note" id="info-note"></div>
     <div class="link-row">
       <a class="src-link" id="info-link" href="#" target="_blank">&#8594; Source</a>
-      <a class="src-link" id="info-forum-link" href="#" target="_blank" style="display:none">&#8594; Forum</a>
+      <a class="src-link" id="info-forum-link" href="#" target="_blank" style="display:none">&#8594; Geigerzählerforum</a>
       <a class="src-link" id="info-gmaps" href="#" target="_blank">&#8594; Google Maps</a>
-      <a class="src-link" id="info-radiaverse" href="#" target="_blank">&#8594; Radiaverse</a>
+      <a class="src-link" id="info-radiaverse" href="#" target="_blank">&#8594; map.radiaverse.com</a>
       <a class="src-link" id="info-wiki-link" href="#" target="_blank" style="display:none">&#8594; Wikipedia</a>
     </div>
     <div id="info-wiki">
@@ -470,7 +480,8 @@ var forumLayer = L.layerGroup().addTo(map);
 function showInfo(loc, color, sourceLabel, sourceUrl, forumLoc) {
   document.getElementById('info').style.display = 'block';
   document.getElementById('info-name').textContent = loc.name;
-  document.getElementById('info-location').textContent = loc.location || '';
+  var locText = (loc.location || '').trim();
+  document.getElementById('info-location').textContent = (locText && locText !== loc.name.trim()) ? locText : '';
   document.getElementById('info-dose').style.color = color;
   document.getElementById('info-dose').textContent = loc.dose < 0 ? 'No data' : loc.dose + ' \u00b5Sv/h';
   document.getElementById('info-tier').textContent = getTier(loc.dose);
@@ -514,6 +525,7 @@ function fetchWikiPreview(url) {
       img.style.display = 'none';
     }
     document.getElementById('info-wiki-extract').textContent = extract;
+    wikiLnk.textContent = '→ Wikipedia: ' + (data.title || 'Artikel');
     wikiEl.style.display = 'block';
   }
   if (wikiCache[apiUrl]) { render(wikiCache[apiUrl]); return; }
