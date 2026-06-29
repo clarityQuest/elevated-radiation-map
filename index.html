@@ -644,7 +644,8 @@ function renderOpenGeiger(locations, mergeResult) {
       }).addTo(openGeigerLayer);
     }
     marker.bindTooltip(loc.name, {direction: 'top'});
-    marker.on('click', function() {
+    marker.on('click', function(e) {
+      L.DomEvent.stopPropagation(e);
       selectMarker(marker);
       showInfo(loc, color, 'opengeiger.de', buildSourceUrl(loc), mergedForum);
     });
@@ -661,7 +662,8 @@ function renderForum(locations, mergeResult) {
     var icon = makeTriangleIcon(color, s);
     var marker = L.marker([loc.lat, loc.lng], {icon: icon}).addTo(forumLayer);
     marker.bindTooltip(loc.name, {direction: 'top'});
-    marker.on('click', function() {
+    marker.on('click', function(e) {
+      L.DomEvent.stopPropagation(e);
       selectMarker(marker);
       showInfo(loc, color, 'Geigerzählerforum', loc.url);
     });
