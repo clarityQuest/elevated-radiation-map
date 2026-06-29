@@ -1917,7 +1917,8 @@
       "lng": 12.254644,
       "dose": 5,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,1734.0.html",
-      "wikipedia": "https://de.wikipedia.org/wiki/Erzgebirge"
+      "wikipedia": "https://de.wikipedia.org/wiki/Zobes#Ortsgeschichte_von_Zobes",
+      "wikidata": ""
     },
     {
       "name": "Rotschlammdeponie Stade",
@@ -1960,7 +1961,8 @@
       "lng": 12.77423,
       "dose": 10,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,2302.0.html",
-      "wikipedia": "https://de.wikipedia.org/wiki/Bergbau_in_Sachsen"
+      "wikipedia": "https://de.wikipedia.org/wiki/Antonsthal",
+      "wikidata": ""
     },
     {
       "name": "Schacht 254 Streuberg / Bergen",
@@ -2429,7 +2431,8 @@
       "lng": 11.886211,
       "dose": -1,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,732.0.html",
-      "wikipedia": "https://de.wikipedia.org/wiki/Wismut_(Unternehmen)"
+      "wikipedia": "besuchen: https://de.wikipedia.org/wiki/Uranbergwerk_Wei%C3%9Fenstadt",
+      "wikidata": ""
     },
     {
       "name": "Wettinquelle in Bad Brambach",
@@ -2456,7 +2459,8 @@
       "lng": 12.171,
       "dose": 10,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,15.0.html",
-      "wikipedia": "https://de.wikipedia.org/wiki/Erzgebirgskreis"
+      "wikipedia": "https://de.wikipedia.org/wiki/Culmitzsch",
+      "wikidata": ""
     },
     {
       "name": "Wiesenquelle in Bad Schlema",
@@ -2491,7 +2495,9 @@
       "lat": 50.444333,
       "lng": 11.170067,
       "dose": 20,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,16.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,16.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Steinach%EE%80%80_(Th%C3%BCringen)",
+      "wikidata": ""
     },
     {
       "name": "Wölsendorf (Oberpfalz)",
