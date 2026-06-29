@@ -343,6 +343,11 @@ function getTier(d) {
 }
 
 var map = L.map('map').setView([51, 12], 5);
+(function() {
+  var p = new URLSearchParams(window.location.search);
+  var lat = parseFloat(p.get('lat')), lng = parseFloat(p.get('lng')), zoom = parseInt(p.get('zoom')) || 14;
+  if (!isNaN(lat) && !isNaN(lng)) map.setView([lat, lng], zoom);
+})();
 var isLocalFile = window.location.protocol === 'file:';
 var osmOptions = {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | Data: <a href="http://www.opengeiger.de">opengeiger.de</a>, <a href="https://www.geigerzaehlerforum.de/">geigerzaehlerforum.de</a>',

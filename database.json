@@ -84,7 +84,8 @@
       "lng": 12.171,
       "dose": 5.1,
       "note": "Large former WISMUT uranium mining area",
-      "anchor": "Uranabbaugebiet+bei+Ronneburg"
+      "anchor": "Uranabbaugebiet+bei+Ronneburg",
+      "wikipedia": "https://en.wikipedia.org/wiki/Wismut_(mining_company)"
     },
     {
       "name": "Schaentzel / Teufelsloch, Alsace",
@@ -822,11 +823,12 @@
     {
       "name": "Der Goiânia-Unfall (Parque Estadual Telma Ortegal in Brasilien)",
       "location": "Der Goiânia-Unfall (Parque Estadual Telma Ortegal in Brasilien)",
-      "lat": -16.754414,
-      "lng": -49.423804,
+      "lat": -16.6746,
+      "lng": -49.2641,
       "dose": -1,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,1035.0.html",
-      "wikipedia": "https://en.wikipedia.org/wiki/Goi%C3%A2nia_accident"
+      "wikipedia": "https://en.wikipedia.org/wiki/Goi%C3%A2nia_accident",
+      "wikidata": ""
     },
     {
       "name": "Der Ottofelsen und das Thumkuhlental",
@@ -1010,10 +1012,12 @@
     {
       "name": "Franz. Kernwaffentestgelände in Algerien",
       "location": "Franz. Kernwaffentestgelände in Algerien",
-      "lat": 50.111784,
-      "lng": 8.656876,
+      "lat": 26.35,
+      "lng": -0.133333,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1253.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1253.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Franz%C3%B6sische_Kernwaffentests_in_Algerien",
+      "wikidata": ""
     },
     {
       "name": "Frauenplan in Eisenach",
@@ -1030,7 +1034,8 @@
       "lat": 51.8344172,
       "lng": 10.7862526,
       "dose": 0.3,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,812.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,812.0.html",
+      "wikipedia": "https://en.wikipedia.org/wiki/Wernigerode"
     },
     {
       "name": "Gallatin Towers climbing area in Montana, USA",
@@ -1542,7 +1547,8 @@
       "lat": 47.681354,
       "lng": 8.007872,
       "dose": 0.2,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2477.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2477.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/ODL-Messnetz"
     },
     {
       "name": "Oranienburg",
@@ -1662,11 +1668,12 @@
     {
       "name": "Radiumbrunnen Baden-Baden.",
       "location": "Radiumbrunnen Baden-Baden.",
-      "lat": 48.3619,
-      "lng": 8.0489,
+      "lat": 48.76265,
+      "lng": 8.240234,
       "dose": -1,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,1739.0.html",
-      "wikipedia": "https://en.wikipedia.org/wiki/Baden-Baden"
+      "wikipedia": "https://en.wikipedia.org/wiki/Baden-Baden",
+      "wikidata": ""
     },
     {
       "name": "Radium-Quelle Břetislav bei Plesna (Radonquelle)",
@@ -1901,11 +1908,12 @@
     {
       "name": "Schramberg und Umgebung",
       "location": "Schramberg und Umgebung",
-      "lat": 48,
-      "lng": 8,
+      "lat": 48.200111,
+      "lng": 8.356544,
       "dose": 4,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,267.0.html",
-      "wikipedia": "https://en.wikipedia.org/wiki/Schramberg"
+      "wikipedia": "https://en.wikipedia.org/wiki/Schramberg",
+      "wikidata": ""
     },
     {
       "name": "Schwarzachklamm",
