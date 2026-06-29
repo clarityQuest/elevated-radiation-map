@@ -194,6 +194,22 @@ body { display: flex; flex-direction: column; }
 }
 .err-msg { color: #c44; font-size: 11px; margin-top: 4px; display: none; }
 #modal-error { color: #c44; font-size: 12px; margin-bottom: 8px; display: none; }
+
+/* ── WIKI POPUP ── */
+#wiki-popup {
+  display: none; position: fixed; z-index: 9000;
+  width: 340px; background: #fff; border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.28); border: 1px solid #dde;
+  overflow: hidden; pointer-events: auto;
+}
+#wiki-popup-img { width: 100%; height: 150px; object-fit: cover; display: none; background: #eee; }
+#wiki-popup-body { padding: 11px 14px 10px; }
+#wiki-popup-title { font-weight: 700; font-size: 14px; margin-bottom: 6px; color: #111; }
+#wiki-popup-extract { font-size: 12px; color: #444; line-height: 1.55; max-height: 120px; overflow: hidden; }
+#wiki-popup-footer { padding: 7px 14px; border-top: 1px solid #eee; font-size: 11px; color: #889; display: flex; justify-content: space-between; align-items: center; }
+#wiki-popup-footer a { color: #2e6ea8; text-decoration: none; font-weight: 600; }
+#wiki-popup-footer a:hover { text-decoration: underline; }
+#wiki-popup-loading { padding: 18px 14px; text-align: center; color: #999; font-size: 12px; }
 </style>
 </head>
 <body>
@@ -261,6 +277,20 @@ body { display: flex; flex-direction: column; }
   </div>
 </div>
 
+<!-- Wiki preview popup -->
+<div id="wiki-popup">
+  <img id="wiki-popup-img" alt=""/>
+  <div id="wiki-popup-loading">Loading…</div>
+  <div id="wiki-popup-body" style="display:none">
+    <div id="wiki-popup-title"></div>
+    <div id="wiki-popup-extract"></div>
+  </div>
+  <div id="wiki-popup-footer" style="display:none">
+    <span id="wiki-popup-lang"></span>
+    <a id="wiki-popup-link" href="#" target="_blank">Open article →</a>
+  </div>
+</div>
+
 <!-- Hover map popup -->
 <div id="hover-map-popup">
   <div id="hover-map-osm"></div>
@@ -285,27 +315,31 @@ var modalMapInitialized = false;
 // ─── Schemas ─────────────────────────────────────────────────────────────────
 var SCHEMA = {
   opengeiger: [
-    { key: 'name',     label: 'Name',              type: 'text',   required: true },
-    { key: 'location', label: 'Location (place; state; country)', type: 'text' },
-    { key: 'coords',   label: 'Coordinates (lat, lng)', type: 'coords', required: true },
-    { key: 'dose',     label: 'Dose (µSv/h, −1 = no data)', type: 'number', required: true, step: 'any' },
-    { key: 'note',     label: 'Note',               type: 'textarea' },
-    { key: 'anchor',   label: 'Anchor (URL fragment)', type: 'text' },
-    { key: 'hidden',   label: 'Hide from map',     type: 'checkbox' }
+    { key: 'name',      label: 'Name',              type: 'text',   required: true },
+    { key: 'location',  label: 'Location (place; state; country)', type: 'text' },
+    { key: 'coords',    label: 'Coordinates (lat, lng)', type: 'coords', required: true },
+    { key: 'dose',      label: 'Dose (µSv/h, −1 = no data)', type: 'number', required: true, step: 'any' },
+    { key: 'note',      label: 'Note',               type: 'textarea' },
+    { key: 'anchor',    label: 'Anchor (URL fragment)', type: 'text' },
+    { key: 'wikipedia', label: 'Wikipedia URL',      type: 'url' },
+    { key: 'wikidata',  label: 'Wikidata URL',       type: 'url' },
+    { key: 'hidden',    label: 'Hide from map',      type: 'checkbox' }
   ],
   forum: [
-    { key: 'name',     label: 'Name',             type: 'text',   required: true },
-    { key: 'location', label: 'Location (place; state; country)', type: 'text' },
-    { key: 'coords',   label: 'Coordinates (lat, lng)', type: 'coords', required: true },
-    { key: 'dose',     label: 'Dose (µSv/h, −1 = no data)', type: 'number', required: true, step: 'any' },
-    { key: 'url',      label: 'Forum URL',        type: 'url' },
-    { key: 'hidden',   label: 'Hide from map',     type: 'checkbox' }
+    { key: 'name',      label: 'Name',             type: 'text',   required: true },
+    { key: 'location',  label: 'Location (place; state; country)', type: 'text' },
+    { key: 'coords',    label: 'Coordinates (lat, lng)', type: 'coords', required: true },
+    { key: 'dose',      label: 'Dose (µSv/h, −1 = no data)', type: 'number', required: true, step: 'any' },
+    { key: 'url',       label: 'Forum URL',        type: 'url' },
+    { key: 'wikipedia', label: 'Wikipedia URL',    type: 'url' },
+    { key: 'wikidata',  label: 'Wikidata URL',     type: 'url' },
+    { key: 'hidden',    label: 'Hide from map',    type: 'checkbox' }
   ]
 };
 
 var COLUMNS = {
-  opengeiger: ['name','dose','hidden','actions','coords','note','anchor'],
-  forum:      ['name','location','dose','hidden','actions','coords','url']
+  opengeiger: ['name','dose','hidden','actions','coords','wikipedia','wikidata','note','anchor'],
+  forum:      ['name','location','dose','hidden','actions','coords','url','wikipedia','wikidata']
 };
 
 // ─── Color helpers ────────────────────────────────────────────────────────────
@@ -483,6 +517,15 @@ function buildTableBody() {
       }
       if (col === 'dose') return '<td>' + doseBadge(val) + '</td>';
       if (col === 'url' && val) return '<td class="url-cell"><a href="' + esc(val) + '" target="_blank" title="' + esc(val) + '">' + esc(truncate(val, 40)) + '</a></td>';
+      if (col === 'wikipedia') {
+        if (!val) return '<td></td>';
+        var lang = /\/\/de\./.test(val) ? 'DE' : 'EN';
+        return '<td class="url-cell"><a class="wiki-link" data-wiki="' + esc(val) + '" href="' + esc(val) + '" target="_blank">Wikipedia ' + lang + '</a></td>';
+      }
+      if (col === 'wikidata') {
+        if (!val) return '<td></td>';
+        return '<td class="url-cell"><a href="' + esc(val) + '" target="_blank" title="' + esc(val) + '">Wikidata</a></td>';
+      }
       if (col === 'coords') {
         var dLat = item.lat !== undefined ? item.lat : '';
         var dLng = item.lng !== undefined ? item.lng : '';
@@ -854,6 +897,107 @@ function esc(str) {
 function truncate(str, n) {
   return str.length > n ? str.slice(0, n) + '…' : str;
 }
+
+// ─── Wiki preview popup ───────────────────────────────────────────────────────
+var wikiCache = {};
+var wikiHideTimer = null;
+var wikiPopupEl = document.getElementById('wiki-popup');
+
+function wikiApiUrl(pageUrl) {
+  var m = pageUrl.match(/\/\/([\w]+)\.wikipedia\.org\/wiki\/(.+)/);
+  if (!m) return null;
+  return { lang: m[1], api: 'https://' + m[1] + '.wikipedia.org/api/rest_v1/page/summary/' + m[2] };
+}
+
+function positionWikiPopup(event) {
+  var pw = 340, ph = 400, margin = 14;
+  var x = event.clientX + margin;
+  var y = event.clientY - Math.round(ph / 2);
+  if (x + pw > window.innerWidth)  x = event.clientX - pw - margin;
+  if (y < margin)                   y = margin;
+  if (y + ph > window.innerHeight)  y = window.innerHeight - ph - margin;
+  wikiPopupEl.style.left = x + 'px';
+  wikiPopupEl.style.top  = y + 'px';
+}
+
+async function showWikiPopup(url, event) {
+  clearTimeout(wikiHideTimer);
+  positionWikiPopup(event);
+
+  var imgEl     = document.getElementById('wiki-popup-img');
+  var loadEl    = document.getElementById('wiki-popup-loading');
+  var bodyEl    = document.getElementById('wiki-popup-body');
+  var footerEl  = document.getElementById('wiki-popup-footer');
+  var titleEl   = document.getElementById('wiki-popup-title');
+  var extractEl = document.getElementById('wiki-popup-extract');
+  var langEl    = document.getElementById('wiki-popup-lang');
+  var linkEl    = document.getElementById('wiki-popup-link');
+
+  if (wikiCache[url]) {
+    renderWiki(wikiCache[url], url);
+    return;
+  }
+
+  // Show loading state
+  imgEl.style.display = 'none';
+  loadEl.style.display = 'block';
+  bodyEl.style.display = 'none';
+  footerEl.style.display = 'none';
+  wikiPopupEl.style.display = 'block';
+
+  var info = wikiApiUrl(url);
+  if (!info) return;
+
+  try {
+    var r = await fetch(info.api);
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    var data = await r.json();
+    wikiCache[url] = { data: data, lang: info.lang, url: url };
+    renderWiki(wikiCache[url], url);
+  } catch(e) {
+    loadEl.textContent = 'Could not load preview.';
+  }
+
+  function renderWiki(cached, url) {
+    var d = cached.data;
+    loadEl.style.display = 'none';
+    bodyEl.style.display = 'block';
+    footerEl.style.display = 'flex';
+
+    if (d.thumbnail && d.thumbnail.source) {
+      imgEl.src = d.thumbnail.source;
+      imgEl.style.display = 'block';
+    } else {
+      imgEl.style.display = 'none';
+    }
+
+    titleEl.textContent = d.title || '';
+    extractEl.textContent = d.extract ? truncate(d.extract, 280) : '';
+    langEl.textContent = 'Wikipedia ' + cached.lang.toUpperCase();
+    linkEl.href = url;
+    wikiPopupEl.style.display = 'block';
+  }
+}
+
+function hideWikiPopup() {
+  wikiHideTimer = setTimeout(function() {
+    wikiPopupEl.style.display = 'none';
+  }, 120);
+}
+
+// Event delegation on table body
+document.getElementById('table-body').addEventListener('mouseover', function(e) {
+  var a = e.target.closest('a.wiki-link');
+  if (!a) return;
+  showWikiPopup(a.dataset.wiki, e);
+});
+document.getElementById('table-body').addEventListener('mouseout', function(e) {
+  var a = e.target.closest('a.wiki-link');
+  if (a) hideWikiPopup();
+});
+
+wikiPopupEl.addEventListener('mouseenter', function() { clearTimeout(wikiHideTimer); });
+wikiPopupEl.addEventListener('mouseleave', hideWikiPopup);
 </script>
 </body>
 </html>
