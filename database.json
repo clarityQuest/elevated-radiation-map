@@ -15,7 +15,8 @@
       "lng": 18.3533,
       "dose": 18.8,
       "note": "Historic rare-earth mine on Resarö island",
-      "anchor": "Ytterby+Mine"
+      "anchor": "Ytterby+Mine",
+      "wikipedia": "https://en.wikipedia.org/wiki/Ytterby"
     },
     {
       "name": "Uranvererzungen A93 Wölsendorf",
@@ -31,7 +32,8 @@
       "lng": 8.0465,
       "dose": 10.1,
       "note": "Former uranium mine, no warning signs present",
-      "anchor": "Grube+Krunkelbach+Menzenschwand"
+      "anchor": "Grube+Krunkelbach+Menzenschwand",
+      "wikipedia": "https://de.wikipedia.org/wiki/Grube_Krunkelbach"
     },
     {
       "name": "Majolika Karlsruhe",
@@ -39,7 +41,8 @@
       "lng": 8.4013,
       "dose": 10,
       "note": "Radioactive sculpture ‘Reiter’ on factory grounds",
-      "anchor": "Majolika+Karlsruhe"
+      "anchor": "Majolika+Karlsruhe",
+      "wikipedia": "https://de.wikipedia.org/wiki/Staatliche_Majolika_Manufaktur_Karlsruhe"
     },
     {
       "name": "Monte Scherbelino Stuttgart",
@@ -72,7 +75,8 @@
       "lng": 11.9111,
       "dose": -1,
       "note": "Mining museum with uranium mineral exhibit",
-      "anchor": "Bergbau+Museum+im+Schloss+Theuern"
+      "anchor": "Bergbau+Museum+im+Schloss+Theuern",
+      "wikipedia": "https://de.wikipedia.org/wiki/Theuern_%28K%C3%BCmmersbruck%29"
     },
     {
       "name": "Uranabbaugebiet Ronneburg",
@@ -96,7 +100,8 @@
       "lng": 12.9352,
       "dose": 4.4,
       "note": "Historic radium city, Marie Curie’s uranium source",
-      "anchor": "Jachymov"
+      "anchor": "Jachymov",
+      "wikipedia": "https://en.wikipedia.org/wiki/J%C3%A1chymov"
     },
     {
       "name": "Schmiedestollenhalde Wittichen",
@@ -104,7 +109,8 @@
       "lng": 8.3416,
       "dose": 3.53,
       "note": "Uranium ore spoil heap, geological trail",
-      "anchor": "Schmiedestollenhalde+Wittichen"
+      "anchor": "Schmiedestollenhalde+Wittichen",
+      "wikipedia": "https://de.wikipedia.org/wiki/Wittichen"
     },
     {
       "name": "Absetzanlage Dänkritz II",
@@ -128,7 +134,8 @@
       "lng": 14.0382,
       "dose": 2.639,
       "note": "Adjacent to WISMUT uranium mining area",
-      "anchor": "Teufelsgrund+bei+K%C3%B6nigstein"
+      "anchor": "Teufelsgrund+bei+K%C3%B6nigstein",
+      "wikipedia": "https://de.wikipedia.org/wiki/Teufelsgrund_%28K%C3%B6nigstein%2C_S%C3%A4chsische_Schweiz%29"
     },
     {
       "name": "Versuchsreaktor Gottow / Kummersdorf",
@@ -136,7 +143,8 @@
       "lng": 13.3103,
       "dose": 2.569,
       "note": "WWII experimental reactor building ruins",
-      "anchor": "Versuchsreaktor+Gottow"
+      "anchor": "Versuchsreaktor+Gottow",
+      "wikipedia": "https://de.wikipedia.org/wiki/Versuchsstelle_Gottow"
     },
     {
       "name": "Windbergbahn Kleinnaundorf–Freital",
@@ -152,7 +160,8 @@
       "lng": 13.2466,
       "dose": 2.45,
       "note": "WWII uranium processing contamination",
-      "anchor": "Oranienburg+II"
+      "anchor": "Oranienburg+II",
+      "wikipedia": "https://en.wikipedia.org/wiki/Oranienburg"
     },
     {
       "name": "Schlammteich 4 Freital-Döhlen",
@@ -177,7 +186,8 @@
       "lng": 8.8041,
       "dose": 2.07,
       "note": "WWII nuclear reactor cave museum",
-      "anchor": "Atomkeller+Haigerloch"
+      "anchor": "Atomkeller+Haigerloch",
+      "wikipedia": "https://de.wikipedia.org/wiki/Atomkeller-Museum"
     },
     {
       "name": "Mineralienmuseum Schneckenstein",
@@ -226,7 +236,8 @@
       "lng": 11.3416,
       "dose": 1.5,
       "note": "Fairy grottoes with natural radon",
-      "anchor": "Feengrotten+in+Saalfeld"
+      "anchor": "Feengrotten+in+Saalfeld",
+      "wikipedia": "https://de.wikipedia.org/wiki/Feengrotten"
     },
     {
       "name": "Silvertbach Marl",
@@ -306,7 +317,8 @@
       "lng": 11.8645,
       "dose": 0.8,
       "note": "Granite cave, high natural radiation",
-      "anchor": "Nusshardtstube+im+Fichtelgebirge"
+      "anchor": "Nusshardtstube+im+Fichtelgebirge",
+      "wikipedia": "https://de.wikipedia.org/wiki/Nu%C3%9Fhardt"
     },
     {
       "name": "Sorge-Settendorf",
@@ -314,7 +326,8 @@
       "lng": 12.2238,
       "dose": 0.826,
       "note": "WISMUT uranium mining remnants",
-      "anchor": "Sorge-Settendorf"
+      "anchor": "Sorge-Settendorf",
+      "wikipedia": "https://de.wikipedia.org/wiki/Sorge-Settendorf"
     },
     {
       "name": "Einleitstelle Elbe Thürmsdorf",
@@ -338,7 +351,8 @@
       "lng": 13.735,
       "dose": 0.725,
       "note": "Radioactive paving stones from Erzgebirge granite",
-      "anchor": "Stra%C3%9Fen+von+Dresden"
+      "anchor": "Stra%C3%9Fen+von+Dresden",
+      "wikipedia": "https://en.wikipedia.org/wiki/Semperoper"
     },
     {
       "name": "Schlackensteine-Pfad Hüneburg",
@@ -370,7 +384,8 @@
       "lng": 16.3661,
       "dose": 0.68,
       "note": "Radioactive granite monument at Vienna opera ring",
-      "anchor": "strahlende+Goethe-Denkmal+in+Wien"
+      "anchor": "strahlende+Goethe-Denkmal+in+Wien",
+      "wikipedia": "https://de.wikipedia.org/wiki/Goethedenkmal_%28Wien%29"
     },
     {
       "name": "Oranienburg I",
@@ -378,7 +393,8 @@
       "lng": 13.2554,
       "dose": 0.62,
       "note": "WWII uranium contamination street level",
-      "anchor": "Oranienburg+I"
+      "anchor": "Oranienburg+I",
+      "wikipedia": "https://en.wikipedia.org/wiki/Oranienburg"
     },
     {
       "name": "Marktplatz Esslingen",
@@ -394,7 +410,8 @@
       "lng": 8.8179,
       "dose": 0.6,
       "note": "Volcanic rock (phonolite) with natural uranium",
-      "anchor": "Hohentwiel+bei+Singen"
+      "anchor": "Hohentwiel+bei+Singen",
+      "wikipedia": "https://en.wikipedia.org/wiki/Hohentwiel"
     },
     {
       "name": "Burg Windeck / Wachenburg Weinheim",
@@ -402,7 +419,8 @@
       "lng": 8.6853,
       "dose": 0.6,
       "note": "Castle built with radioactive Quarzporphyr",
-      "anchor": "Burg+Windeck+und+Wachenburg"
+      "anchor": "Burg+Windeck+und+Wachenburg",
+      "wikipedia": "https://en.wikipedia.org/wiki/Windeck_Castle_%28Weinheim%29"
     },
     {
       "name": "Blössling / Köpfle Bernau",
@@ -418,7 +436,8 @@
       "lng": 8.6784,
       "dose": 0.559,
       "note": "Quartz porphyry quarry climbing area",
-      "anchor": "Kletterrevier+im+Quarzporphyrsteinbruch+am+%C3%96lberg"
+      "anchor": "Kletterrevier+im+Quarzporphyrsteinbruch+am+%C3%96lberg",
+      "wikipedia": "https://de.wikipedia.org/wiki/%C3%96lberg_%28Odenwald%29"
     },
     {
       "name": "Blei­straße Stralsund",
@@ -426,7 +445,8 @@
       "lng": 13.0857,
       "dose": 0.531,
       "note": "Street paved with radioactive Mansfeld copper slag",
-      "anchor": "Bleistra%C3%9Fe+in+Stralsund"
+      "anchor": "Bleistra%C3%9Fe+in+Stralsund",
+      "wikipedia": "https://de.wikipedia.org/wiki/Bleistra%C3%9Fe_%28Stralsund%29"
     },
     {
       "name": "A4 Dreieck Nossen",
@@ -442,7 +462,8 @@
       "lng": 13.1277,
       "dose": 0.5,
       "note": "Austrian uranium mining museum with yellow cake",
-      "anchor": "M%C3%BChlbach+am+Hochk%C3%B6nig"
+      "anchor": "M%C3%BChlbach+am+Hochk%C3%B6nig",
+      "wikipedia": "https://en.wikipedia.org/wiki/M%C3%BChlbach_am_Hochk%C3%B6nig"
     },
     {
       "name": "Kirchheimerstollen Müllenbach",
@@ -450,7 +471,8 @@
       "lng": 8.2912,
       "dose": 0.474,
       "note": "Former uranium mine adit near Baden-Baden",
-      "anchor": "Kirchheimerstollen+M%C3%BCllenbach"
+      "anchor": "Kirchheimerstollen+M%C3%BCllenbach",
+      "wikipedia": "https://de.wikipedia.org/wiki/Uranbergbau_M%C3%BCllenbach"
     },
     {
       "name": "Radium-Quelle Thierberg",
@@ -474,7 +496,8 @@
       "lng": 9.0453,
       "dose": 0.432,
       "note": "Volcanic rock lakeshore in Odenwald",
-      "anchor": "Katzenbuckel+bei+Eberbach+im+Odenwald"
+      "anchor": "Katzenbuckel+bei+Eberbach+im+Odenwald",
+      "wikipedia": "https://de.wikipedia.org/wiki/Katzenbuckel"
     },
     {
       "name": "Schlossberg Flossenbürg",
@@ -482,7 +505,8 @@
       "lng": 12.3431,
       "dose": 0.437,
       "note": "Granite quarry, former concentration camp site",
-      "anchor": "Schlossberg+Steinbruch+Flossenb%C3%BCrg"
+      "anchor": "Schlossberg+Steinbruch+Flossenb%C3%BCrg",
+      "wikipedia": "https://de.wikipedia.org/wiki/Burg_Flossenb%C3%BCrg"
     },
     {
       "name": "Heißes Pflaster Eisleben",
@@ -498,7 +522,8 @@
       "lng": 9.1784,
       "dose": 0.385,
       "note": "Radioactive paving stones",
-      "anchor": "Stuttgarter+Marktplatz"
+      "anchor": "Stuttgarter+Marktplatz",
+      "wikipedia": "https://de.wikipedia.org/wiki/Marktplatz_%28Stuttgart%29"
     },
     {
       "name": "Stuttgarter Königstraße",
@@ -506,7 +531,8 @@
       "lng": 9.1791,
       "dose": 0.357,
       "note": "Pedestrian zone with radioactive granite paving",
-      "anchor": "Stuttgarter+K%C3%B6nigstra%C3%9Fe"
+      "anchor": "Stuttgarter+K%C3%B6nigstra%C3%9Fe",
+      "wikipedia": "https://de.wikipedia.org/wiki/K%C3%B6nigstra%C3%9Fe_%28Stuttgart%29"
     },
     {
       "name": "Hirschkanal KIT Karlsruhe",
@@ -522,7 +548,8 @@
       "lng": 8.7736,
       "dose": 0.272,
       "note": "Natural radioactivity in oil shale",
-      "anchor": "%C3%96lschiefer+bei+Dotternhausen"
+      "anchor": "%C3%96lschiefer+bei+Dotternhausen",
+      "wikipedia": "https://de.wikipedia.org/wiki/Dotternhausen"
     },
     {
       "name": "Meerane-Waldsachsen",
@@ -530,7 +557,8 @@
       "lng": 12.4391,
       "dose": 0.267,
       "note": "Low-level uranium area",
-      "anchor": "Hauptstra%C3%9Fe+in+Meerane-Waldsachsen"
+      "anchor": "Hauptstra%C3%9Fe+in+Meerane-Waldsachsen",
+      "wikipedia": "https://de.wikipedia.org/wiki/Waldsachsen_%28Meerane%29"
     },
     {
       "name": "SUR-100 Stuttgart (IKE)",
@@ -546,7 +574,8 @@
       "lng": 12.7313,
       "dose": 0.925,
       "note": "Former uranium mining town in Erzgebirge",
-      "anchor": "Johanngeorgenstadt"
+      "anchor": "Johanngeorgenstadt",
+      "wikipedia": "https://de.wikipedia.org/wiki/Johanngeorgenstadt"
     }
   ],
   "forum": [
@@ -556,7 +585,8 @@
       "lat": 49.646515,
       "lng": -1.617342,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2905.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2905.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Cherbourg-en-Cotentin"
     },
     {
       "name": "Abertamy (Abertham) / Karlovy Vary",
@@ -564,7 +594,8 @@
       "lat": 50.373746003898574,
       "lng": 12.844658406958922,
       "dose": 5,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2804.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2804.0.html",
+      "wikipedia": "https://en.wikipedia.org/wiki/Abertamy"
     },
     {
       "name": "Aktivität in Quellen und Kalktuffen in Karlsbad",
@@ -608,7 +639,8 @@
       "lng": 11.663704,
       "dose": -1,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,1727.0.html",
-      "hidden": true
+      "hidden": true,
+      "wikipedia": "https://de.wikipedia.org/wiki/Forschungsreaktor_M%C3%BCnchen"
     },
     {
       "name": "Atommuseum/Atomkeller Haigerloch.",
@@ -616,7 +648,8 @@
       "lat": 48.367097,
       "lng": 8.803982,
       "dose": 0.25,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,949.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,949.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Forschungsreaktor_Haigerloch"
     },
     {
       "name": "atommuzeum.cz : voraussichtlich ab 19.10. geöffnet...",
@@ -641,7 +674,8 @@
       "lng": 6.364,
       "dose": 1,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,2183.0.html",
-      "hidden": true
+      "hidden": true,
+      "wikipedia": "https://en.wikipedia.org/wiki/AVR_reactor"
     },
     {
       "name": "B14 zwischen Gebenbach und Hirschau",
@@ -657,7 +691,8 @@
       "lat": 50.714411,
       "lng": 12.474516,
       "dose": 0.2,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2148.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2148.0.html",
+      "wikipedia": "https://en.wikipedia.org/wiki/Zwickau_Hauptbahnhof"
     },
     {
       "name": "Băița Uranmine - Bezirk Bihor, Rumänien",
@@ -673,7 +708,8 @@
       "lat": 52.504526,
       "lng": 13.479686,
       "dose": 0.6,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2973.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2973.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Victoriastadt"
     },
     {
       "name": "Block IV - Pressearbeit 1986",
@@ -706,7 +742,8 @@
       "lat": 35.536897,
       "lng": -108.632303,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1067.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1067.0.html",
+      "wikipedia": "https://en.wikipedia.org/wiki/Church_Rock%2C_New_Mexico"
     },
     {
       "name": "Cold War Museum Berlin",
@@ -722,7 +759,8 @@
       "lat": 51.017775,
       "lng": 13.700271,
       "dose": 0.4,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1950.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1950.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Cosch%C3%BCtz/Gittersee"
     },
     {
       "name": "Crossen: Altarm Mulde",
@@ -738,7 +776,8 @@
       "lat": 56.042273,
       "lng": -3.367249,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1350.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1350.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Dalgety_Bay"
     },
     {
       "name": "Das toxische Erbe der Chemie: Düngemittelfabrik in Crotone Kalabrien (Italien)",
@@ -762,7 +801,8 @@
       "lat": 39.780224,
       "lng": -84.108072,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2232.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2232.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/National_Museum_of_the_United_States_Air_Force"
     },
     {
       "name": "Deponie IAA Dänkritz II",
@@ -810,7 +850,8 @@
       "lat": 52.497181,
       "lng": 13.375929,
       "dose": 0.6,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2559.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2559.0.html",
+      "wikipedia": "https://en.wikipedia.org/wiki/German_Museum_of_Technology"
     },
     {
       "name": "Die Porzellanfabrik von Christian Fischer in Zwickau",
@@ -834,7 +875,8 @@
       "lat": 49.639283,
       "lng": 7.910429,
       "dose": 0.4,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1668.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1668.0.html",
+      "wikipedia": "https://en.wikipedia.org/wiki/Donnersbergkreis"
     },
     {
       "name": "Dorfstraße im Landkreis Zwickau",
@@ -842,7 +884,8 @@
       "lat": 50.680624,
       "lng": 12.350021,
       "dose": 10,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,157.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,157.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Stenn"
     },
     {
       "name": "Dosis auf der ISS und  Nord- bzw. Südpol?",
@@ -867,7 +910,8 @@
       "lat": 51.013,
       "lng": 13.647,
       "dose": 2,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2665.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2665.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Bergbaubetrieb_%E2%80%9EWilli_Agatz%E2%80%9C"
     },
     {
       "name": "Dresden Freital - Rosinaschacht",
@@ -892,7 +936,8 @@
       "lng": 10.4095775,
       "dose": -1,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,1339.0.html",
-      "hidden": true
+      "hidden": true,
+      "wikipedia": "https://de.wikipedia.org/wiki/Leuk%C3%A4miecluster_Elbmarsch"
     },
     {
       "name": "Exkursion nach Jachymov",
@@ -924,7 +969,8 @@
       "lat": 48.245313,
       "lng": 11.555857,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,3123.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,3123.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Flugwerft_Schlei%C3%9Fheim"
     },
     {
       "name": "Fort d'Aubervilliers (Paris)",
@@ -932,7 +978,8 @@
       "lat": 48.914257,
       "lng": 2.403807,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1359.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1359.0.html",
+      "wikipedia": "https://en.wikipedia.org/wiki/Fort_d%27Aubervilliers_station"
     },
     {
       "name": "Frankreich: Cs-137-Hotspots in den Alpen",
@@ -964,7 +1011,8 @@
       "lat": 50.971506,
       "lng": 10.323096,
       "dose": 1.5,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1070.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1070.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Frauenplan_%28Eisenach%29"
     },
     {
       "name": "Fußgängerzone in Wernigerode und Rundwanderweg zum Brocken",
@@ -1040,7 +1088,8 @@
       "lat": 48.379738,
       "lng": 8.228512,
       "dose": 1.2,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,972.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,972.0.html",
+      "wikipedia": "https://en.wikipedia.org/wiki/Clara_Pit"
     },
     {
       "name": "Grüsse aus Autun",
@@ -1072,7 +1121,8 @@
       "lat": 51.4944,
       "lng": 11.28613,
       "dose": 0.15,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1775.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1775.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Landkreis_Mansfeld-S%C3%BCdharz"
     },
     {
       "name": "Hamburg",
@@ -1080,7 +1130,8 @@
       "lat": 53.543398,
       "lng": 9.995022,
       "dose": 1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1524.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1524.0.html",
+      "wikipedia": "https://en.wikipedia.org/wiki/Hamburg"
     },
     {
       "name": "Hamburg: Strahlendes Karolinenviertel",
@@ -1120,7 +1171,8 @@
       "lat": 51.312556,
       "lng": 9.493417,
       "dose": 0.8,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2660.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2660.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Kassel"
     },
     {
       "name": "Hessen, vorderer Odenwald, Steinbruch Mackenheim",
@@ -1144,7 +1196,8 @@
       "lat": 51.193647,
       "lng": 5.987185,
       "dose": 0.95,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,217.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,217.0.html",
+      "wikipedia": "https://en.wikipedia.org/wiki/Roermond"
     },
     {
       "name": "Hörschbachschlucht - Murrhardt",
@@ -1152,7 +1205,8 @@
       "lat": 48.971026,
       "lng": 9.553396,
       "dose": 1.5,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2567.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2567.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/H%C3%B6rschbachschlucht"
     },
     {
       "name": "Hotspot Halde 371 Hartenstein",
@@ -1176,13 +1230,14 @@
       "lat": 50.839915,
       "lng": 12.17702,
       "dose": 2.22,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,94.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,94.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Gera"
     },
     {
       "name": "Hubertusquelle Thale",
       "location": "Hubertusquelle Thale",
-      "lat": 48.769174,
-      "lng": 10.068061,
+      "lat": 51.742222,
+      "lng": 11.027778,
       "dose": -1,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,1171.0.html"
     },
@@ -1192,7 +1247,8 @@
       "lat": 50.57971429624291,
       "lng": 12.726265243950015,
       "dose": 2,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,89.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,89.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Hakenkr%C3%BCmme"
     },
     {
       "name": "Interessante Orte in Dänemark ?",
@@ -1208,7 +1264,8 @@
       "lat": 50.447627,
       "lng": 12.729794,
       "dose": 4,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,408.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,408.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Rabenberg_%28Erzgebirge%29"
     },
     {
       "name": "Johanngeorgenstadt, Wittigsthalstraße",
@@ -1216,7 +1273,8 @@
       "lat": 50.430691,
       "lng": 12.73113,
       "dose": 0.3,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1178.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1178.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Bergbaulehrpfad_Johanngeorgenstadt"
     },
     {
       "name": "Kali-Bergwerk Sondershausen (Besucherbergwerk)",
@@ -1224,7 +1282,8 @@
       "lat": 51.389366,
       "lng": 10.83867,
       "dose": 1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1769.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1769.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Sondershausen"
     },
     {
       "name": "Karolastraße in Plauen",
@@ -1232,7 +1291,8 @@
       "lat": 50.50785,
       "lng": 12.138675,
       "dose": 0.7,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,357.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,357.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Plauen"
     },
     {
       "name": "Karten der weltweiten Uran- und Thorium-Vorkommen",
@@ -1248,7 +1308,8 @@
       "lat": 49.090728,
       "lng": 8.428539,
       "dose": 0.15,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,719.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,719.0.html",
+      "wikipedia": "https://en.wikipedia.org/wiki/Karlsruhe_Institute_of_Technology"
     },
     {
       "name": "KKW Lubmin",
@@ -1257,7 +1318,8 @@
       "lng": 13.695756,
       "dose": -1,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,45.0.html",
-      "hidden": true
+      "hidden": true,
+      "wikipedia": "https://en.wikipedia.org/wiki/Greifswald_Nuclear_Power_Plant"
     },
     {
       "name": "KKW Rheinsberg",
@@ -1266,7 +1328,8 @@
       "lng": 12.9545,
       "dose": 5,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,398.0.html",
-      "hidden": true
+      "hidden": true,
+      "wikipedia": "https://de.wikipedia.org/wiki/Kernkraftwerk_Rheinsberg"
     },
     {
       "name": "Kkw Saporischschja / Ukraine",
@@ -1332,7 +1395,8 @@
       "lat": 47.5463,
       "lng": 9.6841,
       "dose": 0.2,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2969.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2969.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Lindau_%28Bodensee%29"
     },
     {
       "name": "Lomnický Štít - Hohe Tatra",
@@ -1341,7 +1405,8 @@
       "lng": 20.213033,
       "dose": 4.289,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,1733.0.html",
-      "hidden": true
+      "hidden": true,
+      "wikipedia": "https://de.wikipedia.org/wiki/Lomnick%C3%BD_%C5%A1t%C3%ADt"
     },
     {
       "name": "Lüneburg - Kleine Bäckerstraße",
@@ -1357,7 +1422,8 @@
       "lat": 52.251531,
       "lng": 21.00852,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2849.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2849.0.html",
+      "wikipedia": "https://en.wikipedia.org/wiki/Warsaw"
     },
     {
       "name": "Mecklenburg Vorpommern. Rostocker Museumshafen",
@@ -1365,7 +1431,8 @@
       "lat": 54.099274,
       "lng": 13.386221,
       "dose": 0.6,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2999.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2999.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Greifswald"
     },
     {
       "name": "Mehlinger Heide: Uranmunition?",
@@ -1381,7 +1448,8 @@
       "lat": 47.83925,
       "lng": 8.046759,
       "dose": 5,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1007.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1007.0.html",
+      "wikipedia": "https://en.wikipedia.org/wiki/Menzenschwand"
     },
     {
       "name": "Mittenwald",
@@ -1389,13 +1457,14 @@
       "lat": 47.441778,
       "lng": 11.261429,
       "dose": 0.4,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2686.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2686.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Mittenwald"
     },
     {
       "name": "Münstertal",
       "location": "Münstertal",
-      "lat": 46.6685,
-      "lng": 10.531607,
+      "lat": 47.85453,
+      "lng": 7.78443,
       "dose": 0.28,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,3161.0.html"
     },
@@ -1421,7 +1490,8 @@
       "lat": 48.205269,
       "lng": 16.359755,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2893.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2893.0.html",
+      "wikipedia": "https://en.wikipedia.org/wiki/Natural_History_Museum%2C_Vienna"
     },
     {
       "name": "Neues Kernenergiemuseum nahe Prag",
@@ -1446,7 +1516,8 @@
       "lat": 37.244021,
       "lng": -1.812965,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1028.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1028.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Nuklearunfall_von_Palomares"
     },
     {
       "name": "ODL Großherrischwand",
@@ -1462,7 +1533,8 @@
       "lat": 52.74983,
       "lng": 13.24655,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,168.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,168.0.html",
+      "wikipedia": "https://en.wikipedia.org/wiki/Oranienburg"
     },
     {
       "name": "Örsi-Hügel, Balaton, Ungarn",
@@ -1478,7 +1550,8 @@
       "lat": 55.70218947411735,
       "lng": 60.7916738413267,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1066.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1066.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Kerntechnische_Anlage_Majak"
     },
     {
       "name": "Österreich - Waldviertel",
@@ -1503,7 +1576,8 @@
       "lat": 50.8551,
       "lng": 14.675,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,3045.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,3045.0.html",
+      "wikipedia": "https://en.wikipedia.org/wiki/Oybin"
     },
     {
       "name": "Palaisplatz in Dresden",
@@ -1511,7 +1585,8 @@
       "lat": 51.060951,
       "lng": 13.739162,
       "dose": 0.8,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2287.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2287.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Palaisplatz"
     },
     {
       "name": "Polizeifachschule Schneeberg/Erzgebirge",
@@ -1519,7 +1594,8 @@
       "lat": 50.574607,
       "lng": 12.622817,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,3118.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,3118.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Schneeberg_%28Erzgebirge%29"
     },
     {
       "name": "Pribram",
@@ -1527,7 +1603,8 @@
       "lat": 49.675807,
       "lng": 14.054871,
       "dose": 5,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,321.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,321.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/P%C5%99%C3%ADbram"
     },
     {
       "name": "Privates Mineralienmuseum in Mähring",
@@ -1585,7 +1662,8 @@
       "lat": 50.570441,
       "lng": 12.504933,
       "dose": 0.24,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,11.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,11.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Obercrinitz"
     },
     {
       "name": "Radiumquelle Hartmannsdorf",
@@ -1601,7 +1679,8 @@
       "lat": 50.457151,
       "lng": 12.489735,
       "dose": 0.21,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,112.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,112.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Muldenhammer"
     },
     {
       "name": "Radiumquelle Rodaborn",
@@ -1625,7 +1704,8 @@
       "lat": 50.394167,
       "lng": 12.482028,
       "dose": 0.18,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,31.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,31.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Radiumquelle_%28Klingenthal%29"
     },
     {
       "name": "Radiumquelle Thierberg",
@@ -1633,7 +1713,8 @@
       "lat": 50.442371,
       "lng": 12.441075,
       "dose": 0.42,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,12.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,12.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Thierberg_%28Vogtland%29"
     },
     {
       "name": "Radiumquelle Wildbach im Poppenwald",
@@ -1641,7 +1722,8 @@
       "lat": 50.63115,
       "lng": 12.669761,
       "dose": 0.14,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,402.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,402.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Isenburg_%28Sachsen%29"
     },
     {
       "name": "Radiumquelle Wunderthausen",
@@ -1673,7 +1755,8 @@
       "lat": 49.8395,
       "lng": 7.8514,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1617.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1617.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Bad_Kreuznach"
     },
     {
       "name": "Ramsar Iran",
@@ -1681,7 +1764,8 @@
       "lat": 36.842139,
       "lng": 50.587302,
       "dose": 5,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1501.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1501.0.html",
+      "wikipedia": "https://en.wikipedia.org/wiki/Ramsar%2C_Iran"
     },
     {
       "name": "Reise mit privatem Guide nach Chernobyl/Pripjat April/Mai 2020",
@@ -1739,7 +1823,8 @@
       "lat": 52.394878,
       "lng": 13.128428,
       "dose": 45,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2698.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2698.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Neubabelsberg"
     },
     {
       "name": "Schacht 235 Weißer Hirsch bei Antonsthal",
@@ -1771,7 +1856,8 @@
       "lat": 51.465601,
       "lng": 6.738362,
       "dose": 1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2130.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2130.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Zeche_Westende"
     },
     {
       "name": "Schneckenstein",
@@ -1779,7 +1865,8 @@
       "lat": 50.40564,
       "lng": 12.447019,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,111.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,111.0.html",
+      "wikipedia": "https://en.wikipedia.org/wiki/Schneckenstein"
     },
     {
       "name": "Schowti Wody (Жо́вті Во́ди), Ukraine",
@@ -1787,7 +1874,8 @@
       "lat": 48.346517,
       "lng": 33.50278,
       "dose": 40,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,442.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,442.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Schowti_Wody"
     },
     {
       "name": "Schramberg und Umgebung",
@@ -1803,7 +1891,8 @@
       "lat": 49.3515,
       "lng": 11.21702,
       "dose": 0.07,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2486.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2486.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Schwarzachschlucht_bei_Schwarzenbruck"
     },
     {
       "name": "Sellafield (Windscale) UK",
@@ -1812,7 +1901,8 @@
       "lng": -3.500208,
       "dose": -1,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,1406.0.html",
-      "hidden": true
+      "hidden": true,
+      "wikipedia": "https://en.wikipedia.org/wiki/Sellafield"
     },
     {
       "name": "Sinsheim- Technikmuseum",
@@ -1820,7 +1910,8 @@
       "lat": 49.238832,
       "lng": 8.8973,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,3081.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,3081.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Technik-Museum_Sinsheim"
     },
     {
       "name": "Site A/Plot M Disposal Site",
@@ -1828,7 +1919,8 @@
       "lat": 41.702222,
       "lng": -87.912222,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1036.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1036.0.html",
+      "wikipedia": "https://en.wikipedia.org/wiki/Site_A"
     },
     {
       "name": "Sonderwaffenlager Lychen II Himmelpfort",
@@ -1836,7 +1928,8 @@
       "lat": 53.175127,
       "lng": 13.282508,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,920.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,920.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Sonderwaffenlager_Himmelpfort"
     },
     {
       "name": "Sonderwaffenlager Vogelsang bei Zehdenick",
@@ -1852,7 +1945,8 @@
       "lat": 50.743692,
       "lng": 15.580187,
       "dose": 5,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2316.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2316.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/%C5%A0pindler%C5%AFv_Ml%C3%BDn"
     },
     {
       "name": "Sportplatz Kleinnaundorf",
@@ -1865,8 +1959,8 @@
     {
       "name": "Steinbruch bei  Hösbach",
       "location": "Steinbruch bei  Hösbach",
-      "lat": 52.233238,
-      "lng": 10.738495,
+      "lat": 49.9784,
+      "lng": 9.1962,
       "dose": 0.3,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,2079.0.html"
     },
@@ -1884,7 +1978,8 @@
       "lat": 51.76774796426002,
       "lng": 10.721872832791771,
       "dose": 0.35,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1463.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1463.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Knaupsholz-Granit"
     },
     {
       "name": "Stolln Jägersgrün",
@@ -1892,7 +1987,8 @@
       "lat": 50.4446981,
       "lng": 12.4749101,
       "dose": 2,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2874.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2874.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Kleine_Pyra"
     },
     {
       "name": "Strahlender Affe",
@@ -1908,7 +2004,8 @@
       "lat": 58.579826,
       "lng": -3.751562,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,616.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,616.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Nuklearanlage_Dounreay"
     },
     {
       "name": "Strand von Guarapari (Brasilien)",
@@ -1916,7 +2013,8 @@
       "lat": -20.676261,
       "lng": -40.496492,
       "dose": 34,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1349.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1349.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Guarapari"
     },
     {
       "name": "Straße zwischen Brunn und Reuth",
@@ -1924,7 +2022,8 @@
       "lat": 50.660949,
       "lng": 12.323088,
       "dose": 0.8,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,946.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,946.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Reuth_%28Neumark%29"
     },
     {
       "name": "Straße zwischen Buchwald und Limbach (Vogtland)",
@@ -1932,7 +2031,8 @@
       "lat": 50.586366,
       "lng": 12.266571,
       "dose": 2,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1133.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1133.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Limbach_%28Vogtland%29"
     },
     {
       "name": "Straße zwischen Dänkritz und Lauenhain",
@@ -1948,7 +2048,8 @@
       "lat": 50.843278,
       "lng": 12.404028,
       "dose": 5,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,178.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,178.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Gosel_%28Ponitz%29"
     },
     {
       "name": "Straßendreieck bei Berga/Elster",
@@ -1964,7 +2065,8 @@
       "lat": 48.778911,
       "lng": 9.178735,
       "dose": 0.867,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,992.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,992.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/K%C3%B6nigstra%C3%9Fe_%28Stuttgart%29"
     },
     {
       "name": "Sylt.",
@@ -1972,7 +2074,8 @@
       "lat": 54.901983,
       "lng": 8.363477,
       "dose": 0.18,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2769.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2769.0.html",
+      "wikipedia": "https://en.wikipedia.org/wiki/Sylt"
     },
     {
       "name": "Tammiku / Paldiski (Estland)",
@@ -1989,7 +2092,8 @@
       "lat": 51.085335,
       "lng": 13.598162,
       "dose": 0.5,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2363.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2363.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/T%C3%A4nnichtgrund"
     },
     {
       "name": "Telemark Norwegen",
@@ -2005,7 +2109,8 @@
       "lat": 50.638446805556,
       "lng": 13.860296222222,
       "dose": 4,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,934.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,934.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Burg_Doubravsk%C3%A1_hora"
     },
     {
       "name": "Testgelände Semipalatinsk",
@@ -2013,7 +2118,8 @@
       "lat": 50.116667,
       "lng": 78.716667,
       "dose": 3,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1021.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1021.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Atomwaffentestgel%C3%A4nde_Semipalatinsk"
     },
     {
       "name": "Three Mile Island",
@@ -2021,7 +2127,8 @@
       "lat": 40.153302,
       "lng": -76.724437,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2199.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2199.0.html",
+      "wikipedia": "https://en.wikipedia.org/wiki/Three_Mile_Island_accident"
     },
     {
       "name": "Tokaimura",
@@ -2029,7 +2136,8 @@
       "lat": 36.479722,
       "lng": 140.553611,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1207.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1207.0.html",
+      "wikipedia": "https://en.wikipedia.org/wiki/Tokaimura_nuclear_accidents"
     },
     {
       "name": "U-Bahnhof Potsdamer Platz",
@@ -2037,7 +2145,8 @@
       "lat": 52.509159,
       "lng": 13.378215,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1142.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,1142.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Bahnhof_Berlin_Potsdamer_Platz"
     },
     {
       "name": "Uranerzaufbereitungsanlage Ellweiler / Rheinland-Pfalz",
@@ -2045,7 +2154,8 @@
       "lat": 49.617378,
       "lng": 7.146437,
       "dose": 0.9,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,665.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,665.0.html",
+      "wikipedia": "https://en.wikipedia.org/wiki/Ellweiler"
     },
     {
       "name": "Uranhaltige Halden in Wittichen-Schenkenzell in BW",
@@ -2061,7 +2171,8 @@
       "lat": 59.56583,
       "lng": -108.61444,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2008.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2008.0.html",
+      "wikipedia": "https://en.wikipedia.org/wiki/Uranium_City"
     },
     {
       "name": "Uranium Washington (state)",
@@ -2126,7 +2237,8 @@
       "lat": 50.0792,
       "lng": 14.4304,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2511.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2511.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Prag"
     },
     {
       "name": "Wald bei Behringersdorf (Nürnberg)",
@@ -2134,13 +2246,14 @@
       "lat": 49.494806,
       "lng": 11.191389,
       "dose": 0.65,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2500.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,2500.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Schwaig_bei_N%C3%BCrnberg"
     },
     {
       "name": "Waldbrand in Tschernobyl",
       "location": "Waldbrand in Tschernobyl",
-      "lat": 49.282569,
-      "lng": 7.118741,
+      "lat": 51.389444,
+      "lng": 30.099167,
       "dose": 1,
       "url": "https://www.geigerzaehlerforum.de/index.php/topic,322.0.html",
       "hidden": true
@@ -2175,7 +2288,8 @@
       "lat": 50.221737,
       "lng": 12.299518,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,21.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,21.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Bad_Brambach"
     },
     {
       "name": "Wien: Altstandort Glühstrumpf-Fabrik Auer von Welsbach",
@@ -2231,7 +2345,8 @@
       "lat": 49.422102,
       "lng": 12.170025,
       "dose": 0.9,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,456.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,456.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/W%C3%B6lsendorf"
     },
     {
       "name": "Zalesi /Javornik",
@@ -2239,7 +2354,8 @@
       "lat": 50.359837,
       "lng": 16.932873,
       "dose": -1,
-      "url": "https://www.geigerzaehlerforum.de/index.php/topic,166.0.html"
+      "url": "https://www.geigerzaehlerforum.de/index.php/topic,166.0.html",
+      "wikipedia": "https://de.wikipedia.org/wiki/Z%C3%A1les%C3%AD_%28Javorn%C3%ADk%29"
     },
     {
       "name": "Zwischenlager Rossendorf (ZLR)",
