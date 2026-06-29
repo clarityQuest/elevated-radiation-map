@@ -531,7 +531,7 @@ function buildTableBody() {
         var dLng = item.lng !== undefined ? item.lng : '';
         var displayVal = (dLat !== '' && dLng !== '') ? Number(dLat).toFixed(6) + ', ' + Number(dLng).toFixed(6) : '';
         var mapLink = (dLat !== '' && dLng !== '')
-          ? ' <a href="https://map.radiaverse.com/#14/' + dLat + '/' + dLng + '" target="_blank" title="Open on map.radiaverse.com" style="color:#2e6ea8;text-decoration:none;font-size:11px;">&#x1F5FA;</a>'
+          ? ' <a href="https://map.radiaverse.com/#17/' + dLat + '/' + dLng + '" target="_blank" title="Open on map.radiaverse.com" style="color:#2e6ea8;text-decoration:none;font-size:11px;">&#x1F5FA;</a>'
           : '';
         return '<td class="coord-cell" data-lat="' + dLat + '" data-lng="' + dLng + '">' + esc(displayVal) + mapLink + '</td>';
       }

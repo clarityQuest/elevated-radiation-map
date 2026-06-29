@@ -350,7 +350,7 @@ var _urlLat, _urlLng, _urlZoom;
   if (m) {
     _urlLat = parseFloat(m[2]); _urlLng = parseFloat(m[3]); _urlZoom = parseInt(m[1]);
   } else if (p.get('lat')) {
-    _urlLat = parseFloat(p.get('lat')); _urlLng = parseFloat(p.get('lng')); _urlZoom = parseInt(p.get('zoom')) || 14;
+    _urlLat = parseFloat(p.get('lat')); _urlLng = parseFloat(p.get('lng')); _urlZoom = parseInt(p.get('zoom')) || 17;
   }
 })();
 var map = L.map('map').setView(
