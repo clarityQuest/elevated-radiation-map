@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Elevated Radiation Map</string>
+    <string name="app_description">
+        Interactive map of locations with elevated or unusual radiation readings,
+        combining data from opengeiger.de and Geigerzählerforum. Browse markers,
+        filter sources, check dose rates (µSv/h), and see your own position on the map.
+    </string>
+</resources>

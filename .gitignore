@@ -9,3 +9,21 @@ _resolve_stderr.txt
 _resolve_stdout.txt
 geigerzaehlerforum parser/_auth_probe/
 geigerzaehlerforum parser/_auth_probe_45365/
+
+# Android build artifacts
+android-app/.gradle/
+android-app/.idea/
+android-app/build/
+android-app/app/build/
+android-app/app/release/
+android-app/local.properties
+
+# IDE / tooling
+.vscode/
+.claude/
+
+# Misc project-root clutter
+archive/
+falsch.txt
+image.jpg
+release assets/

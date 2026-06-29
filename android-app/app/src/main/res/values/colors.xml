@@ -1,0 +1,9 @@
+<resources>
+    <!-- Brand colours matching the app UI -->
+    <color name="navy_dark">#1a1a2e</color>
+    <color name="navy_mid">#16213e</color>
+    <color name="blue_accent">#2e6ea8</color>
+    <color name="blue_light">#88aaff</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+</resources>
