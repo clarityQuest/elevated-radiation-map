@@ -680,40 +680,57 @@ function fetchWikiPreview(url) {
 
   function render(data) {
     var extract = (data.extract || '');
+    if (!extract) { wikiEl.style.display = 'none'; return; }
     if (extract.length > 220) extract = extract.slice(0, 220) + '…';
     var img = document.getElementById('info-wiki-img');
     var thumb = data.thumbnail;
-    if (thumb && thumb.source) {
-      img.src = thumb.source;
-      img.style.display = 'block';
-    } else {
-      img.style.display = 'none';
-    }
+    if (thumb && thumb.source) { img.src = thumb.source; img.style.display = 'block'; }
+    else { img.style.display = 'none'; }
     document.getElementById('info-wiki-extract').textContent = extract;
     wikiLnk.textContent = '→ Wikipedia: ' + (data.title || 'Artikel');
     wikiEl.style.display = 'block';
   }
 
+  // Render data whose extract is in articleLang; machine-translate if needed.
+  function renderInLang(data, articleLang) {
+    if (articleLang === wikiLang) { render(data); return; }
+    var extract = (data.extract || '').slice(0, 220);
+    if (!extract) { wikiEl.style.display = 'none'; return; }
+    var cacheKey = wikiLang + '\0' + extract;
+    if (noteCache[cacheKey]) {
+      render({ title: data.title, extract: noteCache[cacheKey], thumbnail: data.thumbnail });
+      return;
+    }
+    fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(extract) +
+      '&langpair=' + articleLang + '|' + wikiLang)
+      .then(function(r) { return r.json(); })
+      .then(function(d) {
+        var t = d.responseData && d.responseData.translatedText;
+        if (t) noteCache[cacheKey] = t;
+        render({ title: data.title, extract: t || extract, thumbnail: data.thumbnail });
+      }).catch(function() { render(data); });
+  }
+
   function tryTranslate(origData) {
     var wdItem = origData.wikibase_item;
-    if (!wdItem) { render(origData); return; }
-    var otherLang = wikiLang === 'de' ? 'en' : 'de';
+    if (!wdItem) { renderInLang(origData, srcLang); return; }
     var wdUrl = 'https://www.wikidata.org/w/api.php?action=wbgetentities&ids=' + wdItem +
-      '&props=sitelinks&sitefilter=' + wikiLang + 'wiki|' + otherLang + 'wiki&format=json&origin=*';
+      '&props=sitelinks&sitefilter=dewiki|enwiki&format=json&origin=*';
     fetch(wdUrl).then(function(r) { return r.json(); }).then(function(wd) {
       var entity = wd.entities && wd.entities[wdItem];
-      if (!entity) { render(origData); return; }
+      if (!entity) { renderInLang(origData, srcLang); return; }
       var sl = entity.sitelinks || {};
+      var otherLang = wikiLang === 'de' ? 'en' : 'de';
       var target = sl[wikiLang + 'wiki'] || sl[otherLang + 'wiki'];
-      if (!target) { render(origData); return; }
+      if (!target) { renderInLang(origData, srcLang); return; }
       var tLang = sl[wikiLang + 'wiki'] ? wikiLang : otherLang;
       var tUrl = 'https://' + tLang + '.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(target.title);
-      if (wikiCache[tUrl]) { render(wikiCache[tUrl]); return; }
+      if (wikiCache[tUrl]) { renderInLang(wikiCache[tUrl], tLang); return; }
       fetch(tUrl).then(function(r) { return r.json(); }).then(function(data) {
         wikiCache[tUrl] = data;
-        render(data);
-      }).catch(function() { render(origData); });
-    }).catch(function() { render(origData); });
+        renderInLang(data, tLang);
+      }).catch(function() { renderInLang(origData, srcLang); });
+    }).catch(function() { renderInLang(origData, srcLang); });
   }
 
   function afterFetch(data) {
