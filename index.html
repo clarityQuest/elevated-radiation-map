@@ -594,7 +594,11 @@ function showInfo(loc, color, sourceLabel, sourceUrl, forumLoc) {
   document.getElementById('info-dose').textContent = loc.dose < 0 ? i18n[wikiLang].no_data : loc.dose + ' \u00b5Sv/h';
   var tierLabel = getTier(loc.dose);
   document.getElementById('info-tier').textContent = tierLabel ? ' (' + tierLabel + ')' : '';
-  document.getElementById('info-note').textContent = loc.note || '';
+  currentNote = loc.note || null;
+  currentDose = loc.dose;
+  var noteEl = document.getElementById('info-note');
+  noteEl.textContent = loc.note || '';
+  if (loc.note) translateNote(loc.note, wikiLang, function(t) { noteEl.textContent = t; });
   document.getElementById('info-link').textContent = '\u2192 ' + sourceLabel;
   document.getElementById('info-link').href = sourceUrl;
   document.getElementById('info-gmaps').href = buildGoogleMapsUrl(loc.lat, loc.lng);
@@ -612,8 +616,30 @@ function showInfo(loc, color, sourceLabel, sourceUrl, forumLoc) {
 }
 
 var wikiCache = {};
+var noteCache = {};
 var wikiLang = (navigator.language || 'de').split('-')[0] === 'de' ? 'de' : 'en';
 var currentWikiUrl = null;
+var currentNote = null;
+var currentDose = null;
+
+function guessNoteLang(text) {
+  return /[äöüÄÖÜß]/.test(text) ? 'de' : 'en';
+}
+
+function translateNote(text, targetLang, callback) {
+  if (!text) { callback(''); return; }
+  var sl = guessNoteLang(text);
+  if (sl === targetLang) { callback(text); return; }
+  var key = targetLang + '\0' + text;
+  if (noteCache[key]) { callback(noteCache[key]); return; }
+  var url = 'https://api.mymemory.translated.net/get?q=' + encodeURIComponent(text) +
+    '&langpair=' + sl + '|' + targetLang;
+  fetch(url).then(function(r) { return r.json(); }).then(function(d) {
+    var t = d.responseData && d.responseData.translatedText;
+    noteCache[key] = t || text;
+    callback(noteCache[key]);
+  }).catch(function() { callback(text); });
+}
 
 (function() {
   document.getElementById('lang-badge').textContent = wikiLang.toUpperCase();
@@ -625,10 +651,15 @@ function toggleWikiLang() {
   document.getElementById('lang-badge').textContent = wikiLang.toUpperCase();
   wikiCache = {};
   applyLang();
-  if (currentWikiUrl && document.getElementById('info').style.display !== 'none') {
-    fetchWikiPreview(currentWikiUrl);
-    var tierLabel = getTier(parseFloat(document.getElementById('info-dose').textContent));
-    document.getElementById('info-tier').textContent = tierLabel ? ' (' + tierLabel + ')' : '';
+  if (document.getElementById('info').style.display !== 'none') {
+    if (currentDose !== null) {
+      document.getElementById('info-dose').textContent = currentDose < 0 ? i18n[wikiLang].no_data : currentDose + ' µSv/h';
+      var tierLabel = getTier(currentDose);
+      document.getElementById('info-tier').textContent = tierLabel ? ' (' + tierLabel + ')' : '';
+    }
+    var noteEl = document.getElementById('info-note');
+    if (currentNote) translateNote(currentNote, wikiLang, function(t) { noteEl.textContent = t; });
+    if (currentWikiUrl) fetchWikiPreview(currentWikiUrl);
   }
 }
 
