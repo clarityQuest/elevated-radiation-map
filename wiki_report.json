@@ -1,0 +1,3709 @@
+[
+  {
+    "section": "opengeiger",
+    "index": 0,
+    "name": "Uranbergbaumuseum Bad Schlema",
+    "lat": 50.6001,
+    "lng": 12.6745,
+    "found": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 1,
+    "name": "Ytterby Mine, Sweden",
+    "lat": 59.4265,
+    "lng": 18.3533,
+    "found": {
+      "lang": "en",
+      "title": "Ytterby",
+      "url": "https://en.wikipedia.org/wiki/Ytterby",
+      "wiki_lat": 59.42944444,
+      "wiki_lng": 18.34166667,
+      "dist_km": 0.73
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 2,
+    "name": "Uranvererzungen A93 Wölsendorf",
+    "lat": 49.4228,
+    "lng": 12.1703,
+    "found": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 3,
+    "name": "Grube Krunkelbach, Menzenschwand",
+    "lat": 47.8391,
+    "lng": 8.0465,
+    "found": {
+      "lang": "de",
+      "title": "Grube Krunkelbach",
+      "url": "https://de.wikipedia.org/wiki/Grube_Krunkelbach",
+      "wiki_lat": 47.838907,
+      "wiki_lng": 8.04499,
+      "dist_km": 0.11
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 4,
+    "name": "Majolika Karlsruhe",
+    "lat": 49.0187,
+    "lng": 8.4013,
+    "found": {
+      "lang": "de",
+      "title": "Staatliche Majolika Manufaktur Karlsruhe",
+      "url": "https://de.wikipedia.org/wiki/Staatliche_Majolika_Manufaktur_Karlsruhe",
+      "wiki_lat": 49.01893333,
+      "wiki_lng": 8.400875,
+      "dist_km": 0.04
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 5,
+    "name": "Monte Scherbelino Stuttgart",
+    "lat": 48.7656,
+    "lng": 9.1314,
+    "found": {
+      "lang": "en",
+      "title": "Bombing of Stuttgart in World War II",
+      "url": "https://en.wikipedia.org/wiki/Bombing_of_Stuttgart_in_World_War_II",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 6,
+    "name": "Hotspot Gsponwald, Walensee CH",
+    "lat": 47.0708,
+    "lng": 9.1942,
+    "found": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 7,
+    "name": "Freital-Burgk Abraumhalden",
+    "lat": 51.0051,
+    "lng": 13.6755,
+    "found": {
+      "lang": "de",
+      "title": "Wismut (Unternehmen)",
+      "url": "https://de.wikipedia.org/wiki/Wismut_%28Unternehmen%29",
+      "wiki_lat": 50.80915,
+      "wiki_lng": 12.84247,
+      "dist_km": 62.34
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 8,
+    "name": "Bergbau Museum Schloss Theuern",
+    "lat": 49.3865,
+    "lng": 11.9111,
+    "found": {
+      "lang": "de",
+      "title": "Theuern (Kümmersbruck)",
+      "url": "https://de.wikipedia.org/wiki/Theuern_%28K%C3%BCmmersbruck%29",
+      "wiki_lat": 49.385596,
+      "wiki_lng": 11.914872,
+      "dist_km": 0.29
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 9,
+    "name": "Uranabbaugebiet Ronneburg",
+    "lat": 50.848,
+    "lng": 12.171,
+    "found": {
+      "lang": "de",
+      "title": "Verwaltungsgemeinschaft Oberes Sprottental",
+      "url": "https://de.wikipedia.org/wiki/Verwaltungsgemeinschaft_Oberes_Sprottental",
+      "wiki_lat": 50.86666667,
+      "wiki_lng": 12.28333333,
+      "dist_km": 8.15
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 10,
+    "name": "Schaentzel / Teufelsloch, Alsace",
+    "lat": 48.2421,
+    "lng": 7.3179,
+    "found": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 11,
+    "name": "Jachymov (CZ)",
+    "lat": 50.3596,
+    "lng": 12.9352,
+    "found": {
+      "lang": "en",
+      "title": "Jáchymov",
+      "url": "https://en.wikipedia.org/wiki/J%C3%A1chymov",
+      "wiki_lat": 50.36611111,
+      "wiki_lng": 12.92333333,
+      "dist_km": 1.11
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 12,
+    "name": "Schmiedestollenhalde Wittichen",
+    "lat": 48.3366,
+    "lng": 8.3416,
+    "found": {
+      "lang": "de",
+      "title": "Wittichen",
+      "url": "https://de.wikipedia.org/wiki/Wittichen",
+      "wiki_lat": 48.33807,
+      "wiki_lng": 8.34328,
+      "dist_km": 0.21
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 13,
+    "name": "Absetzanlage Dänkritz II",
+    "lat": 50.7715,
+    "lng": 12.4292,
+    "found": {
+      "lang": "de",
+      "title": "Liste der Naturdenkmale in Zwickau",
+      "url": "https://de.wikipedia.org/wiki/Liste_der_Naturdenkmale_in_Zwickau",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 14,
+    "name": "Wismut-Teich Steinach",
+    "lat": 50.4443,
+    "lng": 11.1701,
+    "found": {
+      "lang": "de",
+      "title": "Wismut (Unternehmen)",
+      "url": "https://de.wikipedia.org/wiki/Wismut_%28Unternehmen%29",
+      "wiki_lat": 50.80915,
+      "wiki_lng": 12.84247,
+      "dist_km": 124.74
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 15,
+    "name": "Teufelsgrund Königstein",
+    "lat": 50.9166,
+    "lng": 14.0382,
+    "found": {
+      "lang": "de",
+      "title": "Teufelsgrund (Königstein, Sächsische Schweiz)",
+      "url": "https://de.wikipedia.org/wiki/Teufelsgrund_%28K%C3%B6nigstein%2C_S%C3%A4chsische_Schweiz%29",
+      "wiki_lat": 50.916904,
+      "wiki_lng": 14.039111,
+      "dist_km": 0.07
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 16,
+    "name": "Versuchsreaktor Gottow / Kummersdorf",
+    "lat": 52.0919,
+    "lng": 13.3103,
+    "found": {
+      "lang": "de",
+      "title": "Versuchsstelle Gottow",
+      "url": "https://de.wikipedia.org/wiki/Versuchsstelle_Gottow",
+      "wiki_lat": 52.0917,
+      "wiki_lng": 13.3101,
+      "dist_km": 0.03
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 17,
+    "name": "Windbergbahn Kleinnaundorf–Freital",
+    "lat": 51.0005,
+    "lng": 13.6871,
+    "found": {
+      "lang": "de",
+      "title": "Kleinnaundorf (Freital)",
+      "url": "https://de.wikipedia.org/wiki/Kleinnaundorf_%28Freital%29",
+      "wiki_lat": 50.99138889,
+      "wiki_lng": 13.69666667,
+      "dist_km": 1.21
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 18,
+    "name": "Oranienburg II",
+    "lat": 52.7498,
+    "lng": 13.2466,
+    "found": {
+      "lang": "en",
+      "title": "Oranienburg",
+      "url": "https://en.wikipedia.org/wiki/Oranienburg",
+      "wiki_lat": 52.75444444,
+      "wiki_lng": 13.23694444,
+      "dist_km": 0.83
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 19,
+    "name": "Schlammteich 4 Freital-Döhlen",
+    "lat": 51.0022,
+    "lng": 13.6326,
+    "found": {
+      "lang": "de",
+      "title": "Freital",
+      "url": "https://de.wikipedia.org/wiki/Freital",
+      "wiki_lat": 50.99694444,
+      "wiki_lng": 13.64805556,
+      "dist_km": 1.23
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 20,
+    "name": "Tschernobyl",
+    "lat": 51.3889,
+    "lng": 30.0975,
+    "found": {
+      "lang": "de",
+      "title": "Nuklearkatastrophe von Tschernobyl",
+      "url": "https://de.wikipedia.org/wiki/Nuklearkatastrophe_von_Tschernobyl",
+      "wiki_lat": 51.38944444,
+      "wiki_lng": 30.09916667,
+      "dist_km": 0.13
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 21,
+    "name": "Atomkeller Haigerloch",
+    "lat": 48.367,
+    "lng": 8.8041,
+    "found": {
+      "lang": "de",
+      "title": "Atomkeller-Museum",
+      "url": "https://de.wikipedia.org/wiki/Atomkeller-Museum",
+      "wiki_lat": 48.36677778,
+      "wiki_lng": 8.80403889,
+      "dist_km": 0.03
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 22,
+    "name": "Mineralienmuseum Schneckenstein",
+    "lat": 50.4171,
+    "lng": 12.4533,
+    "found": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 23,
+    "name": "Uranfabrik Ranstad, Sweden",
+    "lat": 58.3137,
+    "lng": 13.7031,
+    "found": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 24,
+    "name": "Radonstollen Stammelbachtal",
+    "lat": 48.2663,
+    "lng": 8.3186,
+    "found": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 25,
+    "name": "Strand L’Espiguette, Camargue",
+    "lat": 43.4783,
+    "lng": 4.1512,
+    "found": {
+      "lang": "en",
+      "title": "List of social nudity places in Europe",
+      "url": "https://en.wikipedia.org/wiki/List_of_social_nudity_places_in_Europe",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 26,
+    "name": "Halde Helbra",
+    "lat": 51.5368,
+    "lng": 11.4901,
+    "found": {
+      "lang": "de",
+      "title": "Schmid-Schacht",
+      "url": "https://de.wikipedia.org/wiki/Schmid-Schacht",
+      "wiki_lat": 51.545603,
+      "wiki_lng": 11.487844,
+      "dist_km": 0.99
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 27,
+    "name": "Feengrotten Saalfeld",
+    "lat": 50.6353,
+    "lng": 11.3416,
+    "found": {
+      "lang": "de",
+      "title": "Feengrotten",
+      "url": "https://de.wikipedia.org/wiki/Feengrotten",
+      "wiki_lat": 50.635,
+      "wiki_lng": 11.34138889,
+      "dist_km": 0.04
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 28,
+    "name": "Silvertbach Marl",
+    "lat": 51.6785,
+    "lng": 7.1324,
+    "found": {
+      "lang": "en",
+      "title": "Sickingmühlenbach",
+      "url": "https://en.wikipedia.org/wiki/Sickingm%C3%BChlenbach",
+      "wiki_lat": 51.70361111,
+      "wiki_lng": 7.11138889,
+      "dist_km": 3.15
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 29,
+    "name": "Lost Place Einkaufszentrum",
+    "lat": 49.4496,
+    "lng": 8.4104,
+    "found": {
+      "lang": "en",
+      "title": "Offenbach am Main",
+      "url": "https://en.wikipedia.org/wiki/Offenbach_am_Main",
+      "wiki_lat": 50.10466,
+      "wiki_lng": 8.76132,
+      "dist_km": 77.07
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 30,
+    "name": "Sportplatz Kleinnaundorf",
+    "lat": 50.9979,
+    "lng": 13.6847,
+    "found": {
+      "lang": "de",
+      "title": "Kleinnaundorf (Freital)",
+      "url": "https://de.wikipedia.org/wiki/Kleinnaundorf_%28Freital%29",
+      "wiki_lat": 50.99138889,
+      "wiki_lng": 13.69666667,
+      "dist_km": 1.11
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 31,
+    "name": "Quarzsteinbruch Hennenkobel",
+    "lat": 49.0516,
+    "lng": 13.1697,
+    "found": {
+      "lang": "de",
+      "title": "Triphylin",
+      "url": "https://de.wikipedia.org/wiki/Triphylin",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 32,
+    "name": "Beach-Volleyball Dresden Räcknitz",
+    "lat": 51.0245,
+    "lng": 13.7201,
+    "found": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 33,
+    "name": "Frauentorstrasse Weimar",
+    "lat": 50.9782,
+    "lng": 11.329,
+    "found": {
+      "lang": "de",
+      "title": "Weimar",
+      "url": "https://de.wikipedia.org/wiki/Weimar",
+      "wiki_lat": 50.97944444,
+      "wiki_lng": 11.32972222,
+      "dist_km": 0.15
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 34,
+    "name": "Kapelle Höhenpark Killesberg Stuttgart",
+    "lat": 48.8064,
+    "lng": 9.1706,
+    "found": {
+      "lang": "de",
+      "title": "Stuttgart",
+      "url": "https://de.wikipedia.org/wiki/Stuttgart",
+      "wiki_lat": 48.77555556,
+      "wiki_lng": 9.18277778,
+      "dist_km": 3.54
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 35,
+    "name": "Uranabbaugebiet Ellweiler",
+    "lat": 49.6177,
+    "lng": 7.1466,
+    "found": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 36,
+    "name": "Hüttengrund Helfta",
+    "lat": 51.5036,
+    "lng": 11.5523,
+    "found": {
+      "lang": "de",
+      "title": "Hüttengrund",
+      "url": "https://de.wikipedia.org/wiki/H%C3%BCttengrund",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 37,
+    "name": "Nusshardtstube Fichtelgebirge",
+    "lat": 50.041,
+    "lng": 11.8645,
+    "found": {
+      "lang": "de",
+      "title": "Nußhardt",
+      "url": "https://de.wikipedia.org/wiki/Nu%C3%9Fhardt",
+      "wiki_lat": 50.04079722,
+      "wiki_lng": 11.86461111,
+      "dist_km": 0.02
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 38,
+    "name": "Sorge-Settendorf",
+    "lat": 50.7349,
+    "lng": 12.2238,
+    "found": {
+      "lang": "de",
+      "title": "Sorge-Settendorf",
+      "url": "https://de.wikipedia.org/wiki/Sorge-Settendorf",
+      "wiki_lat": 50.73222222,
+      "wiki_lng": 12.21361111,
+      "dist_km": 0.78
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 39,
+    "name": "Einleitstelle Elbe Thürmsdorf",
+    "lat": 50.9288,
+    "lng": 14.0553,
+    "found": {
+      "lang": "de",
+      "title": "Elbhäuser",
+      "url": "https://de.wikipedia.org/wiki/Elbh%C3%A4user",
+      "wiki_lat": 50.92694444,
+      "wiki_lng": 14.05555556,
+      "dist_km": 0.21
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 40,
+    "name": "Uranbergbau-Revier Zobes-Mechelgrün",
+    "lat": 50.4672,
+    "lng": 12.2472,
+    "found": {
+      "lang": "de",
+      "title": "Liste der Schächte des Bergbauunternehmens Wismut",
+      "url": "https://de.wikipedia.org/wiki/Liste_der_Sch%C3%A4chte_des_Bergbauunternehmens_Wismut",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 41,
+    "name": "Theaterplatz Dresden (Semperoper)",
+    "lat": 51.054,
+    "lng": 13.735,
+    "found": {
+      "lang": "en",
+      "title": "Semperoper",
+      "url": "https://en.wikipedia.org/wiki/Semperoper",
+      "wiki_lat": 51.05444444,
+      "wiki_lng": 13.73527778,
+      "dist_km": 0.05
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 42,
+    "name": "Schlackensteine-Pfad Hüneburg",
+    "lat": 51.5205,
+    "lng": 11.5176,
+    "found": {
+      "lang": "de",
+      "title": "Mansfelder Kupferschlackensteine",
+      "url": "https://de.wikipedia.org/wiki/Mansfelder_Kupferschlackensteine",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 43,
+    "name": "Collmberghalde Dresden Coschütz",
+    "lat": 51.0181,
+    "lng": 13.6824,
+    "found": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 44,
+    "name": "Kloster Adelberg (Brunnen)",
+    "lat": 48.757,
+    "lng": 9.5976,
+    "found": {
+      "lang": "de",
+      "title": "Buhlbronn",
+      "url": "https://de.wikipedia.org/wiki/Buhlbronn",
+      "wiki_lat": 48.84487222,
+      "wiki_lng": 9.51791111,
+      "dist_km": 11.38
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 45,
+    "name": "Goethe-Denkmal Wien",
+    "lat": 48.2034,
+    "lng": 16.3661,
+    "found": {
+      "lang": "de",
+      "title": "Goethedenkmal (Wien)",
+      "url": "https://de.wikipedia.org/wiki/Goethedenkmal_%28Wien%29",
+      "wiki_lat": 48.20336,
+      "wiki_lng": 16.36616,
+      "dist_km": 0.01
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 46,
+    "name": "Oranienburg I",
+    "lat": 52.7444,
+    "lng": 13.2554,
+    "found": {
+      "lang": "en",
+      "title": "Oranienburg",
+      "url": "https://en.wikipedia.org/wiki/Oranienburg",
+      "wiki_lat": 52.75444444,
+      "wiki_lng": 13.23694444,
+      "dist_km": 1.67
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 47,
+    "name": "Marktplatz Esslingen",
+    "lat": 48.7431,
+    "lng": 9.3056,
+    "found": {
+      "lang": "de",
+      "title": "Esslingen am Neckar",
+      "url": "https://de.wikipedia.org/wiki/Esslingen_am_Neckar",
+      "wiki_lat": 48.74055556,
+      "wiki_lng": 9.31083333,
+      "dist_km": 0.48
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 48,
+    "name": "Hohentwiel bei Singen",
+    "lat": 47.7638,
+    "lng": 8.8179,
+    "found": {
+      "lang": "en",
+      "title": "Hohentwiel",
+      "url": "https://en.wikipedia.org/wiki/Hohentwiel",
+      "wiki_lat": 47.76472222,
+      "wiki_lng": 8.81888889,
+      "dist_km": 0.13
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 49,
+    "name": "Burg Windeck / Wachenburg Weinheim",
+    "lat": 49.5498,
+    "lng": 8.6853,
+    "found": {
+      "lang": "en",
+      "title": "Windeck Castle (Weinheim)",
+      "url": "https://en.wikipedia.org/wiki/Windeck_Castle_%28Weinheim%29",
+      "wiki_lat": 49.54611111,
+      "wiki_lng": 8.67722222,
+      "dist_km": 0.71
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 50,
+    "name": "Blössling / Köpfle Bernau",
+    "lat": 47.7994,
+    "lng": 8.0231,
+    "found": {
+      "lang": "en",
+      "title": "List of mountains and hills of the Black Forest",
+      "url": "https://en.wikipedia.org/wiki/List_of_mountains_and_hills_of_the_Black_Forest",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 51,
+    "name": "Ölberg Schriesheim",
+    "lat": 49.4691,
+    "lng": 8.6784,
+    "found": {
+      "lang": "de",
+      "title": "Ölberg (Odenwald)",
+      "url": "https://de.wikipedia.org/wiki/%C3%96lberg_%28Odenwald%29",
+      "wiki_lat": 49.46737,
+      "wiki_lng": 8.68043,
+      "dist_km": 0.24
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 52,
+    "name": "Blei­straße Stralsund",
+    "lat": 54.3093,
+    "lng": 13.0857,
+    "found": {
+      "lang": "de",
+      "title": "Bleistraße (Stralsund)",
+      "url": "https://de.wikipedia.org/wiki/Bleistra%C3%9Fe_%28Stralsund%29",
+      "wiki_lat": 54.309933,
+      "wiki_lng": 13.08672,
+      "dist_km": 0.1
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 53,
+    "name": "A4 Dreieck Nossen",
+    "lat": 51.0591,
+    "lng": 13.4451,
+    "found": {
+      "lang": "en",
+      "title": "List of autobahns in Germany",
+      "url": "https://en.wikipedia.org/wiki/List_of_autobahns_in_Germany",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 54,
+    "name": "Mühlbach am Hochkönig AT",
+    "lat": 47.3773,
+    "lng": 13.1277,
+    "found": {
+      "lang": "en",
+      "title": "Mühlbach am Hochkönig",
+      "url": "https://en.wikipedia.org/wiki/M%C3%BChlbach_am_Hochk%C3%B6nig",
+      "wiki_lat": 47.37722222,
+      "wiki_lng": 13.12583333,
+      "dist_km": 0.14
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 55,
+    "name": "Kirchheimerstollen Müllenbach",
+    "lat": 48.7424,
+    "lng": 8.2912,
+    "found": {
+      "lang": "de",
+      "title": "Uranbergbau Müllenbach",
+      "url": "https://de.wikipedia.org/wiki/Uranbergbau_M%C3%BCllenbach",
+      "wiki_lat": 48.742383,
+      "wiki_lng": 8.291217,
+      "dist_km": 0.0
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 56,
+    "name": "Radium-Quelle Thierberg",
+    "lat": 50.4423,
+    "lng": 12.4409,
+    "found": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 57,
+    "name": "Schramberg",
+    "lat": 48.215,
+    "lng": 8.379,
+    "found": {
+      "lang": "de",
+      "title": "Schramberg",
+      "url": "https://de.wikipedia.org/wiki/Schramberg",
+      "wiki_lat": 48.225,
+      "wiki_lng": 8.385,
+      "dist_km": 1.2
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 58,
+    "name": "Katzenbuckel bei Eberbach",
+    "lat": 49.4698,
+    "lng": 9.0453,
+    "found": {
+      "lang": "de",
+      "title": "Katzenbuckel",
+      "url": "https://de.wikipedia.org/wiki/Katzenbuckel",
+      "wiki_lat": 49.47083333,
+      "wiki_lng": 9.04111111,
+      "dist_km": 0.32
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 59,
+    "name": "Schlossberg Flossenbürg",
+    "lat": 49.7343,
+    "lng": 12.3431,
+    "found": {
+      "lang": "de",
+      "title": "Burg Flossenbürg",
+      "url": "https://de.wikipedia.org/wiki/Burg_Flossenb%C3%BCrg",
+      "wiki_lat": 49.73444444,
+      "wiki_lng": 12.34527778,
+      "dist_km": 0.16
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 60,
+    "name": "Heißes Pflaster Eisleben",
+    "lat": 51.5276,
+    "lng": 11.5496,
+    "found": {
+      "lang": "de",
+      "title": "Reformationsstadt Europas",
+      "url": "https://de.wikipedia.org/wiki/Reformationsstadt_Europas",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 61,
+    "name": "Stuttgarter Marktplatz",
+    "lat": 48.7752,
+    "lng": 9.1784,
+    "found": {
+      "lang": "de",
+      "title": "Marktplatz (Stuttgart)",
+      "url": "https://de.wikipedia.org/wiki/Marktplatz_%28Stuttgart%29",
+      "wiki_lat": 48.77527778,
+      "wiki_lng": 9.17833333,
+      "dist_km": 0.01
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 62,
+    "name": "Stuttgarter Königstraße",
+    "lat": 48.7795,
+    "lng": 9.1791,
+    "found": {
+      "lang": "de",
+      "title": "Königstraße (Stuttgart)",
+      "url": "https://de.wikipedia.org/wiki/K%C3%B6nigstra%C3%9Fe_%28Stuttgart%29",
+      "wiki_lat": 48.78,
+      "wiki_lng": 9.17972222,
+      "dist_km": 0.07
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 63,
+    "name": "Hirschkanal KIT Karlsruhe",
+    "lat": 49.1007,
+    "lng": 8.4405,
+    "found": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 64,
+    "name": "Dotternhausen Ölschiefer",
+    "lat": 48.2217,
+    "lng": 8.7736,
+    "found": {
+      "lang": "de",
+      "title": "Dotternhausen",
+      "url": "https://de.wikipedia.org/wiki/Dotternhausen",
+      "wiki_lat": 48.22805556,
+      "wiki_lng": 8.79277778,
+      "dist_km": 1.59
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 65,
+    "name": "Meerane-Waldsachsen",
+    "lat": 50.8385,
+    "lng": 12.4391,
+    "found": {
+      "lang": "de",
+      "title": "Waldsachsen (Meerane)",
+      "url": "https://de.wikipedia.org/wiki/Waldsachsen_%28Meerane%29",
+      "wiki_lat": 50.83611111,
+      "wiki_lng": 12.43083333,
+      "dist_km": 0.64
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 66,
+    "name": "SUR-100 Stuttgart (IKE)",
+    "lat": 48.7496,
+    "lng": 9.1045,
+    "found": {
+      "lang": "en",
+      "title": "Deaths in December 2025",
+      "url": "https://en.wikipedia.org/wiki/Deaths_in_December_2025",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "opengeiger",
+    "index": 67,
+    "name": "Johanngeorgenstadt",
+    "lat": 50.4283,
+    "lng": 12.7313,
+    "found": {
+      "lang": "de",
+      "title": "Johanngeorgenstadt",
+      "url": "https://de.wikipedia.org/wiki/Johanngeorgenstadt",
+      "wiki_lat": 50.43111111,
+      "wiki_lng": 12.72388889,
+      "dist_km": 0.61
+    }
+  },
+  {
+    "section": "forum",
+    "index": 0,
+    "name": "Le Redoutable ein ehemaliges Atom_U-Boot im Museum in Cherbourg/Fr",
+    "lat": 49.646515,
+    "lng": -1.617342,
+    "found": {
+      "lang": "de",
+      "title": "Cherbourg-en-Cotentin",
+      "url": "https://de.wikipedia.org/wiki/Cherbourg-en-Cotentin",
+      "wiki_lat": 49.638889,
+      "wiki_lng": -1.625,
+      "dist_km": 1.01
+    }
+  },
+  {
+    "section": "forum",
+    "index": 1,
+    "name": "Abertamy (Abertham) / Karlovy Vary",
+    "lat": 50.373746003898574,
+    "lng": 12.844658406958922,
+    "found": {
+      "lang": "en",
+      "title": "Abertamy",
+      "url": "https://en.wikipedia.org/wiki/Abertamy",
+      "wiki_lat": 50.36888889,
+      "wiki_lng": 12.81833333,
+      "dist_km": 1.94
+    }
+  },
+  {
+    "section": "forum",
+    "index": 2,
+    "name": "Aktivität in Quellen und Kalktuffen in Karlsbad",
+    "lat": 50.3676845,
+    "lng": 12.9159498,
+    "found": {
+      "lang": "de",
+      "title": "Liste der Geotope in der Oberpfalz",
+      "url": "https://de.wikipedia.org/wiki/Liste_der_Geotope_in_der_Oberpfalz",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 3,
+    "name": "AKWs in EUROPA",
+    "lat": 50,
+    "lng": 10,
+    "found": {
+      "lang": "de",
+      "title": "Bahnhof Hamburg Kornweg (Klein Borstel)",
+      "url": "https://de.wikipedia.org/wiki/Bahnhof_Hamburg_Kornweg_%28Klein_Borstel%29",
+      "wiki_lat": 53.632601,
+      "wiki_lng": 10.054646,
+      "dist_km": 403.94
+    }
+  },
+  {
+    "section": "forum",
+    "index": 4,
+    "name": "Atom Fuel Firma bei Aschaffenbrug",
+    "lat": 49.9706701,
+    "lng": 9.1384857,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 5,
+    "name": "Atombombenexplosionen Weltweit visualisiert",
+    "lat": 48.235353,
+    "lng": 16.4171882,
+    "found": {
+      "lang": "de",
+      "title": "Seismogramm",
+      "url": "https://de.wikipedia.org/wiki/Seismogramm",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 6,
+    "name": "Atom-Ei Garching bei München",
+    "lat": 48.247139,
+    "lng": 11.663704,
+    "found": {
+      "lang": "de",
+      "title": "Forschungsreaktor München",
+      "url": "https://de.wikipedia.org/wiki/Forschungsreaktor_M%C3%BCnchen",
+      "wiki_lat": 48.26583333,
+      "wiki_lng": 11.67416667,
+      "dist_km": 2.22
+    }
+  },
+  {
+    "section": "forum",
+    "index": 7,
+    "name": "Atommuseum/Atomkeller Haigerloch.",
+    "lat": 48.367097,
+    "lng": 8.803982,
+    "found": {
+      "lang": "de",
+      "title": "Forschungsreaktor Haigerloch",
+      "url": "https://de.wikipedia.org/wiki/Forschungsreaktor_Haigerloch",
+      "wiki_lat": 48.36717348,
+      "wiki_lng": 8.80423844,
+      "dist_km": 0.02
+    }
+  },
+  {
+    "section": "forum",
+    "index": 8,
+    "name": "atommuzeum.cz : voraussichtlich ab 19.10. geöffnet...",
+    "lat": 50.0864234,
+    "lng": 14.4156772,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 9,
+    "name": "Autobahn A4 im Bereich Hainichen, Berbersdorf und Nossen",
+    "lat": 51.041517,
+    "lng": 13.29507,
+    "found": {
+      "lang": "de",
+      "title": "Bundesautobahn 4",
+      "url": "https://de.wikipedia.org/wiki/Bundesautobahn_4",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 10,
+    "name": "AVR Jülich",
+    "lat": 50.9223,
+    "lng": 6.364,
+    "found": {
+      "lang": "en",
+      "title": "AVR reactor",
+      "url": "https://en.wikipedia.org/wiki/AVR_reactor",
+      "wiki_lat": 50.90305556,
+      "wiki_lng": 6.42111111,
+      "dist_km": 4.54
+    }
+  },
+  {
+    "section": "forum",
+    "index": 11,
+    "name": "B14 zwischen Gebenbach und Hirschau",
+    "lat": 49.5371912,
+    "lng": 11.902496,
+    "found": {
+      "lang": "de",
+      "title": "Bundesstraße 14",
+      "url": "https://de.wikipedia.org/wiki/Bundesstra%C3%9Fe_14",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 12,
+    "name": "Bahnhof Zwickau (Zwickau (Sachs) Hbf)",
+    "lat": 50.714411,
+    "lng": 12.474516,
+    "found": {
+      "lang": "en",
+      "title": "Zwickau Hauptbahnhof",
+      "url": "https://en.wikipedia.org/wiki/Zwickau_Hauptbahnhof",
+      "wiki_lat": 50.715,
+      "wiki_lng": 12.47694444,
+      "dist_km": 0.18
+    }
+  },
+  {
+    "section": "forum",
+    "index": 13,
+    "name": "Băița Uranmine - Bezirk Bihor, Rumänien",
+    "lat": 46.4833,
+    "lng": 22.5833,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 14,
+    "name": "Berlin-Victoriastadt: Kaskelstraße",
+    "lat": 52.504526,
+    "lng": 13.479686,
+    "found": {
+      "lang": "de",
+      "title": "Victoriastadt",
+      "url": "https://de.wikipedia.org/wiki/Victoriastadt",
+      "wiki_lat": 52.505,
+      "wiki_lng": 13.475,
+      "dist_km": 0.32
+    }
+  },
+  {
+    "section": "forum",
+    "index": 15,
+    "name": "Block IV - Pressearbeit 1986",
+    "lat": 53.341065,
+    "lng": -6.270227,
+    "found": {
+      "lang": "de",
+      "title": "Bamberg",
+      "url": "https://de.wikipedia.org/wiki/Bamberg",
+      "wiki_lat": 49.89166667,
+      "wiki_lng": 10.89166667,
+      "dist_km": 1241.87
+    }
+  },
+  {
+    "section": "forum",
+    "index": 16,
+    "name": "Brunnen Tannenbergsthal",
+    "lat": 50.438061,
+    "lng": 12.461773,
+    "found": {
+      "lang": "de",
+      "title": "Auerbach/Vogtl.",
+      "url": "https://de.wikipedia.org/wiki/Auerbach/Vogtl.",
+      "wiki_lat": 50.50944444,
+      "wiki_lng": 12.4,
+      "dist_km": 9.06
+    }
+  },
+  {
+    "section": "forum",
+    "index": 17,
+    "name": "Büros der Uni Wien verstrahlt/k.k. Montan-Verkaufsamt",
+    "lat": 48.221986,
+    "lng": 16.360335,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 18,
+    "name": "Church Rock (New Mexico), USA",
+    "lat": 35.536897,
+    "lng": -108.632303,
+    "found": {
+      "lang": "en",
+      "title": "Church Rock, New Mexico",
+      "url": "https://en.wikipedia.org/wiki/Church_Rock%2C_New_Mexico",
+      "wiki_lat": 35.56916667,
+      "wiki_lng": -108.61166667,
+      "dist_km": 4.04
+    }
+  },
+  {
+    "section": "forum",
+    "index": 19,
+    "name": "Cold War Museum Berlin",
+    "lat": 52.5076,
+    "lng": 13.3904,
+    "found": {
+      "lang": "en",
+      "title": "The Cold War Museum",
+      "url": "https://en.wikipedia.org/wiki/The_Cold_War_Museum",
+      "wiki_lat": 38.7431,
+      "wiki_lng": -77.6765,
+      "dist_km": 6761.71
+    }
+  },
+  {
+    "section": "forum",
+    "index": 20,
+    "name": "Coschütz-Gittersee",
+    "lat": 51.017775,
+    "lng": 13.700271,
+    "found": {
+      "lang": "de",
+      "title": "Coschütz/Gittersee",
+      "url": "https://de.wikipedia.org/wiki/Cosch%C3%BCtz/Gittersee",
+      "wiki_lat": 51.01444444,
+      "wiki_lng": 13.69722222,
+      "dist_km": 0.43
+    }
+  },
+  {
+    "section": "forum",
+    "index": 21,
+    "name": "Crossen: Altarm Mulde",
+    "lat": 50.756534,
+    "lng": 12.479289,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 22,
+    "name": "Dalgety Bay (Schottland)",
+    "lat": 56.042273,
+    "lng": -3.367249,
+    "found": {
+      "lang": "de",
+      "title": "Dalgety Bay",
+      "url": "https://de.wikipedia.org/wiki/Dalgety_Bay",
+      "wiki_lat": 56.035753,
+      "wiki_lng": -3.350401,
+      "dist_km": 1.27
+    }
+  },
+  {
+    "section": "forum",
+    "index": 23,
+    "name": "Das toxische Erbe der Chemie: Düngemittelfabrik in Crotone Kalabrien (Italien)",
+    "lat": 39.097795,
+    "lng": 17.106786,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 24,
+    "name": "Das Wetterprojekt in Schneeberg/Erzgebirge",
+    "lat": 50.5967627,
+    "lng": 12.6400728,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 25,
+    "name": "DAYTON - National Museum of the United States Air Force 2016",
+    "lat": 39.780224,
+    "lng": -84.108072,
+    "found": {
+      "lang": "de",
+      "title": "National Museum of the United States Air Force",
+      "url": "https://de.wikipedia.org/wiki/National_Museum_of_the_United_States_Air_Force",
+      "wiki_lat": 39.78083333,
+      "wiki_lng": -84.10555556,
+      "dist_km": 0.23
+    }
+  },
+  {
+    "section": "forum",
+    "index": 26,
+    "name": "Deponie IAA Dänkritz II",
+    "lat": 50.7715,
+    "lng": 12.4292,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 27,
+    "name": "Der Goiânia-Unfall (Parque Estadual Telma Ortegal in Brasilien)",
+    "lat": -16.754414,
+    "lng": -49.423804,
+    "found": {
+      "lang": "de",
+      "title": "Goiânia-Unfall",
+      "url": "https://de.wikipedia.org/wiki/Goi%C3%A2nia-Unfall",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 28,
+    "name": "Der Ottofelsen und das Thumkuhlental",
+    "lat": 51.796895,
+    "lng": 10.7119185,
+    "found": {
+      "lang": "de",
+      "title": "Liste der Stempelstellen der Harzer Wandernadel",
+      "url": "https://de.wikipedia.org/wiki/Liste_der_Stempelstellen_der_Harzer_Wandernadel",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 29,
+    "name": "Der schlechte Atem der Erde...",
+    "lat": 48.8343018,
+    "lng": 8.8789638,
+    "found": {
+      "lang": "de",
+      "title": "Smallville (Fernsehserie)",
+      "url": "https://de.wikipedia.org/wiki/Smallville_%28Fernsehserie%29",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 30,
+    "name": "Der Silvertbach in Marl, Nordrhein-Westfalen",
+    "lat": 51.6785,
+    "lng": 7.1324,
+    "found": {
+      "lang": "de",
+      "title": "Oer-Erkenschwick",
+      "url": "https://de.wikipedia.org/wiki/Oer-Erkenschwick",
+      "wiki_lat": 51.64222222,
+      "wiki_lng": 7.25083333,
+      "dist_km": 9.11
+    }
+  },
+  {
+    "section": "forum",
+    "index": 31,
+    "name": "Deutsches Technikmuseum",
+    "lat": 52.497181,
+    "lng": 13.375929,
+    "found": {
+      "lang": "en",
+      "title": "German Museum of Technology",
+      "url": "https://en.wikipedia.org/wiki/German_Museum_of_Technology",
+      "wiki_lat": 52.49861111,
+      "wiki_lng": 13.3775,
+      "dist_km": 0.19
+    }
+  },
+  {
+    "section": "forum",
+    "index": 32,
+    "name": "Die Porzellanfabrik von Christian Fischer in Zwickau",
+    "lat": 50.718504,
+    "lng": 12.493927,
+    "found": {
+      "lang": "de",
+      "title": "Max von der Grün",
+      "url": "https://de.wikipedia.org/wiki/Max_von_der_Gr%C3%BCn",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 33,
+    "name": "Die Referenzflächen der WISMUT Reust bei Ronneburg",
+    "lat": 50.841278,
+    "lng": 12.179056,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 34,
+    "name": "Donnersbergkreis",
+    "lat": 49.639283,
+    "lng": 7.910429,
+    "found": {
+      "lang": "en",
+      "title": "Donnersbergkreis",
+      "url": "https://en.wikipedia.org/wiki/Donnersbergkreis",
+      "wiki_lat": 49.63333333,
+      "wiki_lng": 7.91666667,
+      "dist_km": 0.8
+    }
+  },
+  {
+    "section": "forum",
+    "index": 35,
+    "name": "Dorfstraße im Landkreis Zwickau",
+    "lat": 50.680624,
+    "lng": 12.350021,
+    "found": {
+      "lang": "de",
+      "title": "Stenn",
+      "url": "https://de.wikipedia.org/wiki/Stenn",
+      "wiki_lat": 50.67916667,
+      "wiki_lng": 12.43194444,
+      "dist_km": 5.77
+    }
+  },
+  {
+    "section": "forum",
+    "index": 36,
+    "name": "Dosis auf der ISS und  Nord- bzw. Südpol?",
+    "lat": 48.2347529,
+    "lng": 16.4183882,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 37,
+    "name": "Dresden Freital",
+    "lat": 51.014651,
+    "lng": 13.643744,
+    "found": {
+      "lang": "de",
+      "title": "Freital",
+      "url": "https://de.wikipedia.org/wiki/Freital",
+      "wiki_lat": 50.99694444,
+      "wiki_lng": 13.64805556,
+      "dist_km": 1.99
+    }
+  },
+  {
+    "section": "forum",
+    "index": 38,
+    "name": "Dresden Freital - Erdmuthenschacht(halde)",
+    "lat": 51.013,
+    "lng": 13.647,
+    "found": {
+      "lang": "de",
+      "title": "Bergbaubetrieb „Willi Agatz“",
+      "url": "https://de.wikipedia.org/wiki/Bergbaubetrieb_%E2%80%9EWilli_Agatz%E2%80%9C",
+      "wiki_lat": 51.005319,
+      "wiki_lng": 13.688472,
+      "dist_km": 3.02
+    }
+  },
+  {
+    "section": "forum",
+    "index": 39,
+    "name": "Dresden Freital - Rosinaschacht",
+    "lat": 51.006614,
+    "lng": 13.651196,
+    "found": {
+      "lang": "de",
+      "title": "Liste der Steinkohlenschächte, Stolln und Röschen des Döhlener Beckens",
+      "url": "https://de.wikipedia.org/wiki/Liste_der_Steinkohlensch%C3%A4chte%2C_Stolln_und_R%C3%B6schen_des_D%C3%B6hlener_Beckens",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 40,
+    "name": "ehemalige Uranerzaufbereitung Seelingstädt",
+    "lat": 50.7728345,
+    "lng": 12.2418481,
+    "found": {
+      "lang": "de",
+      "title": "Wismut (Unternehmen)",
+      "url": "https://de.wikipedia.org/wiki/Wismut_%28Unternehmen%29",
+      "wiki_lat": 50.80915,
+      "wiki_lng": 12.84247,
+      "dist_km": 42.41
+    }
+  },
+  {
+    "section": "forum",
+    "index": 41,
+    "name": "Elbmarsch Krümmel und die GKSS",
+    "lat": 53.4102903,
+    "lng": 10.4095775,
+    "found": {
+      "lang": "de",
+      "title": "Leukämiecluster Elbmarsch",
+      "url": "https://de.wikipedia.org/wiki/Leuk%C3%A4miecluster_Elbmarsch",
+      "wiki_lat": 53.40444444,
+      "wiki_lng": 10.415,
+      "dist_km": 0.74
+    }
+  },
+  {
+    "section": "forum",
+    "index": 42,
+    "name": "Exkursion nach Jachymov",
+    "lat": 50.3596,
+    "lng": 12.9352,
+    "found": {
+      "lang": "de",
+      "title": "Montanregion Erzgebirge/Krušnohoří",
+      "url": "https://de.wikipedia.org/wiki/Montanregion_Erzgebirge/Kru%C5%A1noho%C5%99%C3%AD",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 43,
+    "name": "Fettquelle in BAD",
+    "lat": 48.763404,
+    "lng": 8.242625,
+    "found": {
+      "lang": "de",
+      "title": "Thermalbad",
+      "url": "https://de.wikipedia.org/wiki/Thermalbad",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 44,
+    "name": "Florida's Radioactive Fountain",
+    "lat": 26.935376,
+    "lng": -82.051223,
+    "found": {
+      "lang": "en",
+      "title": "Spring (hydrology)",
+      "url": "https://en.wikipedia.org/wiki/Spring_%28hydrology%29",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 45,
+    "name": "Flugwerft Oberschleißheim",
+    "lat": 48.245313,
+    "lng": 11.555857,
+    "found": {
+      "lang": "de",
+      "title": "Flugwerft Schleißheim",
+      "url": "https://de.wikipedia.org/wiki/Flugwerft_Schlei%C3%9Fheim",
+      "wiki_lat": 48.24638889,
+      "wiki_lng": 11.55777778,
+      "dist_km": 0.19
+    }
+  },
+  {
+    "section": "forum",
+    "index": 46,
+    "name": "Fort d'Aubervilliers (Paris)",
+    "lat": 48.914257,
+    "lng": 2.403807,
+    "found": {
+      "lang": "en",
+      "title": "Fort d'Aubervilliers station",
+      "url": "https://en.wikipedia.org/wiki/Fort_d%27Aubervilliers_station",
+      "wiki_lat": 48.91424,
+      "wiki_lng": 2.403785,
+      "dist_km": 0.0
+    }
+  },
+  {
+    "section": "forum",
+    "index": 47,
+    "name": "Frankreich: Cs-137-Hotspots in den Alpen",
+    "lat": 44.342315,
+    "lng": 6.845905,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 48,
+    "name": "Frankreich: Fort de Vaujours / Polygone d'expérimentation de Moronvilliers",
+    "lat": 49.238389,
+    "lng": 4.314402,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 49,
+    "name": "Franz. Kernwaffentestgelände in Algerien",
+    "lat": 50.111784,
+    "lng": 8.656876,
+    "found": {
+      "lang": "de",
+      "title": "Atommacht",
+      "url": "https://de.wikipedia.org/wiki/Atommacht",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 50,
+    "name": "Frauenplan in Eisenach",
+    "lat": 50.971506,
+    "lng": 10.323096,
+    "found": {
+      "lang": "de",
+      "title": "Frauenplan (Eisenach)",
+      "url": "https://de.wikipedia.org/wiki/Frauenplan_%28Eisenach%29",
+      "wiki_lat": 50.971652,
+      "wiki_lng": 10.322243,
+      "dist_km": 0.06
+    }
+  },
+  {
+    "section": "forum",
+    "index": 51,
+    "name": "Fußgängerzone in Wernigerode und Rundwanderweg zum Brocken",
+    "lat": 51.8344172,
+    "lng": 10.7862526,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 52,
+    "name": "Gallatin Towers climbing area in Montana, USA",
+    "lat": 45.41689,
+    "lng": -111.2342,
+    "found": {
+      "lang": "en",
+      "title": "Billings, Montana",
+      "url": "https://en.wikipedia.org/wiki/Billings%2C_Montana",
+      "wiki_lat": 45.78361111,
+      "wiki_lng": -108.50611111,
+      "dist_km": 216.11
+    }
+  },
+  {
+    "section": "forum",
+    "index": 53,
+    "name": "Gamma-ODL Referenzpunkt „Kapelle im Höhenpark Killesberg in Stuttgart",
+    "lat": 48.806383,
+    "lng": 9.170617,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 54,
+    "name": "Gamma-ODL Referenzpunkt Esslingen",
+    "lat": 48.74308,
+    "lng": 9.30553,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 55,
+    "name": "Gamma-ODL Referenzstrecke „Königstraße in Stuttgart",
+    "lat": 48.782312,
+    "lng": 9.181818,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 56,
+    "name": "Geschichts-Drama 'Chernobyl' (GB/USA) auf SKY",
+    "lat": 51.601954,
+    "lng": -0.194003,
+    "found": {
+      "lang": "de",
+      "title": "Nuklearkatastrophe von Tschernobyl",
+      "url": "https://de.wikipedia.org/wiki/Nuklearkatastrophe_von_Tschernobyl",
+      "wiki_lat": 51.38944444,
+      "wiki_lng": 30.09916667,
+      "dist_km": 2082.14
+    }
+  },
+  {
+    "section": "forum",
+    "index": 57,
+    "name": "Gleesbergquelle im Gesundheitsbad ACTINON in Bad Schlema",
+    "lat": 50.60248,
+    "lng": 12.666563,
+    "found": {
+      "lang": "de",
+      "title": "Bad Schlema",
+      "url": "https://de.wikipedia.org/wiki/Bad_Schlema",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 58,
+    "name": "Granit an der Fillgraderstiege im 6. Bezirk",
+    "lat": 48.200058,
+    "lng": 16.359275,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 59,
+    "name": "Grube Wolfach",
+    "lat": 48.379738,
+    "lng": 8.228512,
+    "found": {
+      "lang": "en",
+      "title": "Clara Pit",
+      "url": "https://en.wikipedia.org/wiki/Clara_Pit",
+      "wiki_lat": 48.37975,
+      "wiki_lng": 8.22865,
+      "dist_km": 0.01
+    }
+  },
+  {
+    "section": "forum",
+    "index": 60,
+    "name": "Grüsse aus Autun",
+    "lat": 46.954361,
+    "lng": 4.321417,
+    "found": {
+      "lang": "de",
+      "title": "Priorat Perrecy-les-Forges",
+      "url": "https://de.wikipedia.org/wiki/Priorat_Perrecy-les-Forges",
+      "wiki_lat": 46.6125,
+      "wiki_lng": 4.215,
+      "dist_km": 38.87
+    }
+  },
+  {
+    "section": "forum",
+    "index": 61,
+    "name": "Halde Schacht 333",
+    "lat": 50.5113,
+    "lng": 12.7483,
+    "found": {
+      "lang": "de",
+      "title": "Liste der Kulturdenkmale in Brand-Erbisdorf",
+      "url": "https://de.wikipedia.org/wiki/Liste_der_Kulturdenkmale_in_Brand-Erbisdorf",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 62,
+    "name": "Halde Stolzenberg",
+    "lat": 50.8662249106428,
+    "lng": 12.228598594665527,
+    "found": {
+      "lang": "de",
+      "title": "Posterstein",
+      "url": "https://de.wikipedia.org/wiki/Posterstein",
+      "wiki_lat": 50.86388889,
+      "wiki_lng": 12.25333333,
+      "dist_km": 1.76
+    }
+  },
+  {
+    "section": "forum",
+    "index": 63,
+    "name": "Haldenlandschaft Mansfeld-Südharz",
+    "lat": 51.4944,
+    "lng": 11.28613,
+    "found": {
+      "lang": "de",
+      "title": "Landkreis Mansfeld-Südharz",
+      "url": "https://de.wikipedia.org/wiki/Landkreis_Mansfeld-S%C3%BCdharz",
+      "wiki_lat": 51.54,
+      "wiki_lng": 11.36,
+      "dist_km": 7.2
+    }
+  },
+  {
+    "section": "forum",
+    "index": 64,
+    "name": "Hamburg",
+    "lat": 53.543398,
+    "lng": 9.995022,
+    "found": {
+      "lang": "en",
+      "title": "Hamburg",
+      "url": "https://en.wikipedia.org/wiki/Hamburg",
+      "wiki_lat": 53.55,
+      "wiki_lng": 10,
+      "dist_km": 0.8
+    }
+  },
+  {
+    "section": "forum",
+    "index": 65,
+    "name": "Hamburg: Strahlendes Karolinenviertel",
+    "lat": 53.558448,
+    "lng": 9.97267,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 66,
+    "name": "Hanford Site",
+    "lat": 46.532849,
+    "lng": -119.493108,
+    "found": {
+      "lang": "en",
+      "title": "Hanford Site",
+      "url": "https://en.wikipedia.org/wiki/Hanford_Site",
+      "wiki_lat": 46.6475,
+      "wiki_lng": -119.59861111,
+      "dist_km": 15.08
+    }
+  },
+  {
+    "section": "forum",
+    "index": 67,
+    "name": "Heeresversuchsanstalt Kummersdorf, Versuchsstelle Gottow: Uranmaschine",
+    "lat": 52.084696,
+    "lng": 13.302543,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 68,
+    "name": "Hessen ( Frankfurt am Main)",
+    "lat": 50.106654,
+    "lng": 8.662581,
+    "found": {
+      "lang": "en",
+      "title": "Frankfurt",
+      "url": "https://en.wikipedia.org/wiki/Frankfurt",
+      "wiki_lat": 50.11055556,
+      "wiki_lng": 8.68222222,
+      "dist_km": 1.47
+    }
+  },
+  {
+    "section": "forum",
+    "index": 69,
+    "name": "Hessen, Kasseler Rathaus",
+    "lat": 51.312556,
+    "lng": 9.493417,
+    "found": {
+      "lang": "de",
+      "title": "Kassel",
+      "url": "https://de.wikipedia.org/wiki/Kassel",
+      "wiki_lat": 51.31666667,
+      "wiki_lng": 9.5,
+      "dist_km": 0.65
+    }
+  },
+  {
+    "section": "forum",
+    "index": 70,
+    "name": "Hessen, vorderer Odenwald, Steinbruch Mackenheim",
+    "lat": 49.569066,
+    "lng": 8.781677,
+    "found": {
+      "lang": "de",
+      "title": "Touristische Arbeitsgemeinschaft Vorderer Odenwald",
+      "url": "https://de.wikipedia.org/wiki/Touristische_Arbeitsgemeinschaft_Vorderer_Odenwald",
+      "wiki_lat": 49.66666667,
+      "wiki_lng": 8.9,
+      "dist_km": 13.8
+    }
+  },
+  {
+    "section": "forum",
+    "index": 71,
+    "name": "Hinweise auf Th- und Seltenerdmetalle rund um Nagy-Kopasz, Budapest",
+    "lat": 47.48139,
+    "lng": 19.145772,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 72,
+    "name": "Holland Roermond",
+    "lat": 51.193647,
+    "lng": 5.987185,
+    "found": {
+      "lang": "en",
+      "title": "Roermond",
+      "url": "https://en.wikipedia.org/wiki/Roermond",
+      "wiki_lat": 51.2,
+      "wiki_lng": 5.98333333,
+      "dist_km": 0.76
+    }
+  },
+  {
+    "section": "forum",
+    "index": 73,
+    "name": "Hörschbachschlucht - Murrhardt",
+    "lat": 48.971026,
+    "lng": 9.553396,
+    "found": {
+      "lang": "de",
+      "title": "Hörschbachschlucht",
+      "url": "https://de.wikipedia.org/wiki/H%C3%B6rschbachschlucht",
+      "wiki_lat": 48.9651,
+      "wiki_lng": 9.5495,
+      "dist_km": 0.72
+    }
+  },
+  {
+    "section": "forum",
+    "index": 74,
+    "name": "Hotspot Halde 371 Hartenstein",
+    "lat": 50.63087,
+    "lng": 12.69338,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 75,
+    "name": "Hotspots am Schacht 277 in Zobes",
+    "lat": 50.498138,
+    "lng": 12.243471,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 76,
+    "name": "Hotspots im Ronneburger Forst",
+    "lat": 50.839915,
+    "lng": 12.17702,
+    "found": {
+      "lang": "de",
+      "title": "Gera",
+      "url": "https://de.wikipedia.org/wiki/Gera",
+      "wiki_lat": 50.88055556,
+      "wiki_lng": 12.08333333,
+      "dist_km": 7.98
+    }
+  },
+  {
+    "section": "forum",
+    "index": 77,
+    "name": "Hubertusquelle Thale",
+    "lat": 48.769174,
+    "lng": 10.068061,
+    "found": {
+      "lang": "en",
+      "title": "Hubertus Spring",
+      "url": "https://en.wikipedia.org/wiki/Hubertus_Spring",
+      "wiki_lat": 51.74222222,
+      "wiki_lng": 11.02777778,
+      "dist_km": 337.55
+    }
+  },
+  {
+    "section": "forum",
+    "index": 78,
+    "name": "IAA 'Hakenkrümme' bei Aue",
+    "lat": 50.57971429624291,
+    "lng": 12.726265243950015,
+    "found": {
+      "lang": "de",
+      "title": "Hakenkrümme",
+      "url": "https://de.wikipedia.org/wiki/Hakenkr%C3%BCmme",
+      "wiki_lat": 50.581081,
+      "wiki_lng": 12.725302,
+      "dist_km": 0.17
+    }
+  },
+  {
+    "section": "forum",
+    "index": 79,
+    "name": "Interessante Orte in Dänemark ?",
+    "lat": 55.752047,
+    "lng": 8.224464,
+    "found": {
+      "lang": "de",
+      "title": "Tourismus in Dänemark",
+      "url": "https://de.wikipedia.org/wiki/Tourismus_in_D%C3%A4nemark",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 80,
+    "name": "Johanngeorgenstadt Friedrich-August-Stollen",
+    "lat": 50.447627,
+    "lng": 12.729794,
+    "found": {
+      "lang": "de",
+      "title": "Rabenberg (Erzgebirge)",
+      "url": "https://de.wikipedia.org/wiki/Rabenberg_%28Erzgebirge%29",
+      "wiki_lat": 50.45208333,
+      "wiki_lng": 12.75483333,
+      "dist_km": 1.84
+    }
+  },
+  {
+    "section": "forum",
+    "index": 81,
+    "name": "Johanngeorgenstadt, Wittigsthalstraße",
+    "lat": 50.430691,
+    "lng": 12.73113,
+    "found": {
+      "lang": "de",
+      "title": "Bergbaulehrpfad Johanngeorgenstadt",
+      "url": "https://de.wikipedia.org/wiki/Bergbaulehrpfad_Johanngeorgenstadt",
+      "wiki_lat": 50.437222,
+      "wiki_lng": 12.728542,
+      "dist_km": 0.75
+    }
+  },
+  {
+    "section": "forum",
+    "index": 82,
+    "name": "Kali-Bergwerk Sondershausen (Besucherbergwerk)",
+    "lat": 51.389366,
+    "lng": 10.83867,
+    "found": {
+      "lang": "de",
+      "title": "Sondershausen",
+      "url": "https://de.wikipedia.org/wiki/Sondershausen",
+      "wiki_lat": 51.37083333,
+      "wiki_lng": 10.87222222,
+      "dist_km": 3.11
+    }
+  },
+  {
+    "section": "forum",
+    "index": 83,
+    "name": "Karolastraße in Plauen",
+    "lat": 50.50785,
+    "lng": 12.138675,
+    "found": {
+      "lang": "de",
+      "title": "Plauen",
+      "url": "https://de.wikipedia.org/wiki/Plauen",
+      "wiki_lat": 50.495,
+      "wiki_lng": 12.13833333,
+      "dist_km": 1.43
+    }
+  },
+  {
+    "section": "forum",
+    "index": 84,
+    "name": "Karten der weltweiten Uran- und Thorium-Vorkommen",
+    "lat": 48.2342529,
+    "lng": 16.4169882,
+    "found": {
+      "lang": "de",
+      "title": "Manganknolle",
+      "url": "https://de.wikipedia.org/wiki/Manganknolle",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 85,
+    "name": "KIT Campus Nord (Karlsruhe)",
+    "lat": 49.090728,
+    "lng": 8.428539,
+    "found": {
+      "lang": "en",
+      "title": "Karlsruhe Institute of Technology",
+      "url": "https://en.wikipedia.org/wiki/Karlsruhe_Institute_of_Technology",
+      "wiki_lat": 49.00944444,
+      "wiki_lng": 8.41166667,
+      "dist_km": 9.12
+    }
+  },
+  {
+    "section": "forum",
+    "index": 86,
+    "name": "KKW Lubmin",
+    "lat": 54.09989,
+    "lng": 13.695756,
+    "found": {
+      "lang": "en",
+      "title": "Greifswald Nuclear Power Plant",
+      "url": "https://en.wikipedia.org/wiki/Greifswald_Nuclear_Power_Plant",
+      "wiki_lat": 54.14058611,
+      "wiki_lng": 13.66442222,
+      "dist_km": 4.96
+    }
+  },
+  {
+    "section": "forum",
+    "index": 87,
+    "name": "KKW Rheinsberg",
+    "lat": 53.144494,
+    "lng": 12.9545,
+    "found": {
+      "lang": "de",
+      "title": "Kernkraftwerk Rheinsberg",
+      "url": "https://de.wikipedia.org/wiki/Kernkraftwerk_Rheinsberg",
+      "wiki_lat": 53.14699167,
+      "wiki_lng": 12.99015,
+      "dist_km": 2.39
+    }
+  },
+  {
+    "section": "forum",
+    "index": 88,
+    "name": "Kkw Saporischschja / Ukraine",
+    "lat": 47.850786,
+    "lng": 35.118287,
+    "found": {
+      "lang": "de",
+      "title": "Kernkraftwerk Saporischschja",
+      "url": "https://de.wikipedia.org/wiki/Kernkraftwerk_Saporischschja",
+      "wiki_lat": 47.51222222,
+      "wiki_lng": 34.58583333,
+      "dist_km": 54.83
+    }
+  },
+  {
+    "section": "forum",
+    "index": 89,
+    "name": "Königstein/Wismutgelände",
+    "lat": 50.91303131028778,
+    "lng": 14.036684151424613,
+    "found": {
+      "lang": "de",
+      "title": "Wismut (Unternehmen)",
+      "url": "https://de.wikipedia.org/wiki/Wismut_%28Unternehmen%29",
+      "wiki_lat": 50.80915,
+      "wiki_lng": 12.84247,
+      "dist_km": 84.61
+    }
+  },
+  {
+    "section": "forum",
+    "index": 90,
+    "name": "Kont. Kontrollen an Sperrzone Tschernobyl.",
+    "lat": 51.3076238,
+    "lng": 29.8984972,
+    "found": {
+      "lang": "de",
+      "title": "Ukraine",
+      "url": "https://de.wikipedia.org/wiki/Ukraine",
+      "wiki_lat": 49.8,
+      "wiki_lng": 30.83333333,
+      "dist_km": 180.18
+    }
+  },
+  {
+    "section": "forum",
+    "index": 91,
+    "name": "Kristallgrotte im Erlebnisbergwerk Merkers",
+    "lat": 50.8197,
+    "lng": 10.1197,
+    "found": {
+      "lang": "de",
+      "title": "Trauzimmer",
+      "url": "https://de.wikipedia.org/wiki/Trauzimmer",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 92,
+    "name": "Las Vegas, Test Side, Museum, Downwinders",
+    "lat": 36.619,
+    "lng": -116.177,
+    "found": {
+      "lang": "en",
+      "title": "Nuclear weapons testing",
+      "url": "https://en.wikipedia.org/wiki/Nuclear_weapons_testing",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 93,
+    "name": "Lengenfeld Polenzstraße",
+    "lat": 50.570601,
+    "lng": 12.38103,
+    "found": {
+      "lang": "de",
+      "title": "Bahnstrecke Lengenfeld–Göltzschtalbrücke",
+      "url": "https://de.wikipedia.org/wiki/Bahnstrecke_Lengenfeld%E2%80%93G%C3%B6ltzschtalbr%C3%BCcke",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 94,
+    "name": "Lermontovskoe U-Lagerstätte",
+    "lat": 44.081612,
+    "lng": 43.005623,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 95,
+    "name": "Lindau",
+    "lat": 47.5463,
+    "lng": 9.6841,
+    "found": {
+      "lang": "de",
+      "title": "Lindau (Bodensee)",
+      "url": "https://de.wikipedia.org/wiki/Lindau_%28Bodensee%29",
+      "wiki_lat": 47.54583333,
+      "wiki_lng": 9.68388889,
+      "dist_km": 0.05
+    }
+  },
+  {
+    "section": "forum",
+    "index": 96,
+    "name": "Lomnický Štít - Hohe Tatra",
+    "lat": 49.195143,
+    "lng": 20.213033,
+    "found": {
+      "lang": "de",
+      "title": "Lomnický štít",
+      "url": "https://de.wikipedia.org/wiki/Lomnick%C3%BD_%C5%A1t%C3%ADt",
+      "wiki_lat": 49.19527778,
+      "wiki_lng": 20.21277778,
+      "dist_km": 0.02
+    }
+  },
+  {
+    "section": "forum",
+    "index": 97,
+    "name": "Lüneburg - Kleine Bäckerstraße",
+    "lat": 53.247823,
+    "lng": 10.408994,
+    "found": {
+      "lang": "de",
+      "title": "Liste der Baudenkmale in Lüneburg – Kleine Bäckerstraße",
+      "url": "https://de.wikipedia.org/wiki/Liste_der_Baudenkmale_in_L%C3%BCneburg_%E2%80%93_Kleine_B%C3%A4ckerstra%C3%9Fe",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 98,
+    "name": "Maria Skłodowska-Curie Museum Warschau/Polen",
+    "lat": 52.251531,
+    "lng": 21.00852,
+    "found": {
+      "lang": "en",
+      "title": "Warsaw",
+      "url": "https://en.wikipedia.org/wiki/Warsaw",
+      "wiki_lat": 52.23,
+      "wiki_lng": 21.01111111,
+      "dist_km": 2.4
+    }
+  },
+  {
+    "section": "forum",
+    "index": 99,
+    "name": "Mecklenburg Vorpommern. Rostocker Museumshafen",
+    "lat": 54.099274,
+    "lng": 13.386221,
+    "found": {
+      "lang": "de",
+      "title": "Greifswald",
+      "url": "https://de.wikipedia.org/wiki/Greifswald",
+      "wiki_lat": 54.09583333,
+      "wiki_lng": 13.38111111,
+      "dist_km": 0.51
+    }
+  },
+  {
+    "section": "forum",
+    "index": 100,
+    "name": "Mehlinger Heide: Uranmunition?",
+    "lat": 49.487417,
+    "lng": 7.830513,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 101,
+    "name": "Menzenschwand Krunkelbach",
+    "lat": 47.83925,
+    "lng": 8.046759,
+    "found": {
+      "lang": "en",
+      "title": "Menzenschwand",
+      "url": "https://en.wikipedia.org/wiki/Menzenschwand",
+      "wiki_lat": 47.81777778,
+      "wiki_lng": 8.07055556,
+      "dist_km": 2.98
+    }
+  },
+  {
+    "section": "forum",
+    "index": 102,
+    "name": "Mittenwald",
+    "lat": 47.441778,
+    "lng": 11.261429,
+    "found": {
+      "lang": "de",
+      "title": "Mittenwald",
+      "url": "https://de.wikipedia.org/wiki/Mittenwald",
+      "wiki_lat": 47.44194444,
+      "wiki_lng": 11.26027778,
+      "dist_km": 0.09
+    }
+  },
+  {
+    "section": "forum",
+    "index": 103,
+    "name": "Münstertal",
+    "lat": 46.6685,
+    "lng": 10.531607,
+    "found": {
+      "lang": "de",
+      "title": "Münstertal/Schwarzwald",
+      "url": "https://de.wikipedia.org/wiki/M%C3%BCnstertal/Schwarzwald",
+      "wiki_lat": 47.85453,
+      "wiki_lng": 7.78443,
+      "dist_km": 245.68
+    }
+  },
+  {
+    "section": "forum",
+    "index": 104,
+    "name": "Musée Curie, Paris/Frankreich",
+    "lat": 48.8446,
+    "lng": 2.3453,
+    "found": {
+      "lang": "en",
+      "title": "History of Paris",
+      "url": "https://en.wikipedia.org/wiki/History_of_Paris",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 105,
+    "name": "Museum Uranbergbau in Bad Schlema",
+    "lat": 50.600071,
+    "lng": 12.67476,
+    "found": {
+      "lang": "en",
+      "title": "Bad Schlema",
+      "url": "https://en.wikipedia.org/wiki/Bad_Schlema",
+      "wiki_lat": 50.61666667,
+      "wiki_lng": 12.66666667,
+      "dist_km": 1.93
+    }
+  },
+  {
+    "section": "forum",
+    "index": 106,
+    "name": "Naturhistorisches Museum Wien",
+    "lat": 48.205269,
+    "lng": 16.359755,
+    "found": {
+      "lang": "en",
+      "title": "Natural History Museum, Vienna",
+      "url": "https://en.wikipedia.org/wiki/Natural_History_Museum%2C_Vienna",
+      "wiki_lat": 48.2052,
+      "wiki_lng": 16.3599,
+      "dist_km": 0.01
+    }
+  },
+  {
+    "section": "forum",
+    "index": 107,
+    "name": "Neues Kernenergiemuseum nahe Prag",
+    "lat": 50.177554,
+    "lng": 14.358433,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 108,
+    "name": "Neutronenquelle in Berlin Karlshorst",
+    "lat": 52.482451,
+    "lng": 13.533062,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 109,
+    "name": "Nuklearunfall von Palomares (Spanien)",
+    "lat": 37.244021,
+    "lng": -1.812965,
+    "found": {
+      "lang": "de",
+      "title": "Nuklearunfall von Palomares",
+      "url": "https://de.wikipedia.org/wiki/Nuklearunfall_von_Palomares",
+      "wiki_lat": 37.2497,
+      "wiki_lng": -1.7987,
+      "dist_km": 1.41
+    }
+  },
+  {
+    "section": "forum",
+    "index": 110,
+    "name": "ODL Großherrischwand",
+    "lat": 47.681354,
+    "lng": 8.007872,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 111,
+    "name": "Oranienburg",
+    "lat": 52.74983,
+    "lng": 13.24655,
+    "found": {
+      "lang": "en",
+      "title": "Oranienburg",
+      "url": "https://en.wikipedia.org/wiki/Oranienburg",
+      "wiki_lat": 52.75444444,
+      "wiki_lng": 13.23694444,
+      "dist_km": 0.83
+    }
+  },
+  {
+    "section": "forum",
+    "index": 112,
+    "name": "Örsi-Hügel, Balaton, Ungarn",
+    "lat": 46.813132,
+    "lng": 17.527842,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 113,
+    "name": "Osjorsk-Kyschtym-Kombinat Majak-Tetscha-Karatschai See-",
+    "lat": 55.70218947411735,
+    "lng": 60.7916738413267,
+    "found": {
+      "lang": "de",
+      "title": "Kerntechnische Anlage Majak",
+      "url": "https://de.wikipedia.org/wiki/Kerntechnische_Anlage_Majak",
+      "wiki_lat": 55.69363889,
+      "wiki_lng": 60.80433333,
+      "dist_km": 1.24
+    }
+  },
+  {
+    "section": "forum",
+    "index": 114,
+    "name": "Österreich - Waldviertel",
+    "lat": 48.500856,
+    "lng": 15.381228,
+    "found": {
+      "lang": "de",
+      "title": "Waldviertel",
+      "url": "https://de.wikipedia.org/wiki/Waldviertel",
+      "wiki_lat": 48.66666667,
+      "wiki_lng": 15.25,
+      "dist_km": 20.81
+    }
+  },
+  {
+    "section": "forum",
+    "index": 115,
+    "name": "OT: Radium Palace als hotel?",
+    "lat": 37.279397,
+    "lng": 14.992366,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 116,
+    "name": "Oybin",
+    "lat": 50.8551,
+    "lng": 14.675,
+    "found": {
+      "lang": "en",
+      "title": "Oybin",
+      "url": "https://en.wikipedia.org/wiki/Oybin",
+      "wiki_lat": 50.84222222,
+      "wiki_lng": 14.74277778,
+      "dist_km": 4.97
+    }
+  },
+  {
+    "section": "forum",
+    "index": 117,
+    "name": "Palaisplatz in Dresden",
+    "lat": 51.060951,
+    "lng": 13.739162,
+    "found": {
+      "lang": "de",
+      "title": "Palaisplatz",
+      "url": "https://de.wikipedia.org/wiki/Palaisplatz",
+      "wiki_lat": 51.06027778,
+      "wiki_lng": 13.73888889,
+      "dist_km": 0.08
+    }
+  },
+  {
+    "section": "forum",
+    "index": 118,
+    "name": "Polizeifachschule Schneeberg/Erzgebirge",
+    "lat": 50.574607,
+    "lng": 12.622817,
+    "found": {
+      "lang": "de",
+      "title": "Schneeberg (Erzgebirge)",
+      "url": "https://de.wikipedia.org/wiki/Schneeberg_%28Erzgebirge%29",
+      "wiki_lat": 50.59416667,
+      "wiki_lng": 12.64555556,
+      "dist_km": 2.7
+    }
+  },
+  {
+    "section": "forum",
+    "index": 119,
+    "name": "Pribram",
+    "lat": 49.675807,
+    "lng": 14.054871,
+    "found": {
+      "lang": "de",
+      "title": "Příbram",
+      "url": "https://de.wikipedia.org/wiki/P%C5%99%C3%ADbram",
+      "wiki_lat": 49.68833333,
+      "wiki_lng": 14.00944444,
+      "dist_km": 3.55
+    }
+  },
+  {
+    "section": "forum",
+    "index": 120,
+    "name": "Privates Mineralienmuseum in Mähring",
+    "lat": 49.908702,
+    "lng": 12.530487,
+    "found": {
+      "lang": "de",
+      "title": "Liste der Museen in Baden-Württemberg",
+      "url": "https://de.wikipedia.org/wiki/Liste_der_Museen_in_Baden-W%C3%BCrttemberg",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 121,
+    "name": "Quellen mit Uran, Radium und Radon",
+    "lat": 50.04988,
+    "lng": 12.56552,
+    "found": {
+      "lang": "de",
+      "title": "Radon",
+      "url": "https://de.wikipedia.org/wiki/Radon",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 122,
+    "name": "Radioaktive Schwermineralsände am Strand von L`Espiguette (Camargue, Frankreich)",
+    "lat": 43.4783,
+    "lng": 4.1512,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 123,
+    "name": "RADIONUKLIDE IN GRUNDWÄSSERN, GESTEINEN UND BACHSEDIMENTEN ÖSTERREICHS",
+    "lat": 48.090573,
+    "lng": 13.21491,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 124,
+    "name": "Radiumbrunnen Baden-Baden.",
+    "lat": 48.3619,
+    "lng": 8.0489,
+    "found": {
+      "lang": "de",
+      "title": "Radium",
+      "url": "https://de.wikipedia.org/wiki/Radium",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 125,
+    "name": "Radium-Quelle Břetislav bei Plesna (Radonquelle)",
+    "lat": 50.206349732743156,
+    "lng": 12.340415965606706,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 126,
+    "name": "Radiumquelle Crinitzberg",
+    "lat": 50.570441,
+    "lng": 12.504933,
+    "found": {
+      "lang": "de",
+      "title": "Obercrinitz",
+      "url": "https://de.wikipedia.org/wiki/Obercrinitz",
+      "wiki_lat": 50.57194444,
+      "wiki_lng": 12.485,
+      "dist_km": 1.42
+    }
+  },
+  {
+    "section": "forum",
+    "index": 127,
+    "name": "Radiumquelle Hartmannsdorf",
+    "lat": 50.593299,
+    "lng": 12.547904,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 128,
+    "name": "Radiumquelle Rautenkranz",
+    "lat": 50.457151,
+    "lng": 12.489735,
+    "found": {
+      "lang": "de",
+      "title": "Muldenhammer",
+      "url": "https://de.wikipedia.org/wiki/Muldenhammer",
+      "wiki_lat": 50.43555556,
+      "wiki_lng": 12.46277778,
+      "dist_km": 3.07
+    }
+  },
+  {
+    "section": "forum",
+    "index": 129,
+    "name": "Radiumquelle Rodaborn",
+    "lat": 50.759533,
+    "lng": 11.87075,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 130,
+    "name": "Radiumquelle Stecklenberg/Harz",
+    "lat": 51.729088,
+    "lng": 11.089737,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 131,
+    "name": "Radiumquelle Steinbachtal bei Klingenthal",
+    "lat": 50.394167,
+    "lng": 12.482028,
+    "found": {
+      "lang": "de",
+      "title": "Radiumquelle (Klingenthal)",
+      "url": "https://de.wikipedia.org/wiki/Radiumquelle_%28Klingenthal%29",
+      "wiki_lat": 50.394167,
+      "wiki_lng": 12.482028,
+      "dist_km": 0.0
+    }
+  },
+  {
+    "section": "forum",
+    "index": 132,
+    "name": "Radiumquelle Thierberg",
+    "lat": 50.442371,
+    "lng": 12.441075,
+    "found": {
+      "lang": "de",
+      "title": "Thierberg (Vogtland)",
+      "url": "https://de.wikipedia.org/wiki/Thierberg_%28Vogtland%29",
+      "wiki_lat": 50.44583333,
+      "wiki_lng": 12.44305556,
+      "dist_km": 0.41
+    }
+  },
+  {
+    "section": "forum",
+    "index": 133,
+    "name": "Radiumquelle Wildbach im Poppenwald",
+    "lat": 50.63115,
+    "lng": 12.669761,
+    "found": {
+      "lang": "de",
+      "title": "Isenburg (Sachsen)",
+      "url": "https://de.wikipedia.org/wiki/Isenburg_%28Sachsen%29",
+      "wiki_lat": 50.6338,
+      "wiki_lng": 12.67422,
+      "dist_km": 0.43
+    }
+  },
+  {
+    "section": "forum",
+    "index": 134,
+    "name": "Radiumquelle Wunderthausen",
+    "lat": 51.11296,
+    "lng": 8.540555,
+    "found": {
+      "lang": "de",
+      "title": "Elsoff (Fluss)",
+      "url": "https://de.wikipedia.org/wiki/Elsoff_%28Fluss%29",
+      "wiki_lat": 50.99241667,
+      "wiki_lng": 8.52894444,
+      "dist_km": 13.43
+    }
+  },
+  {
+    "section": "forum",
+    "index": 135,
+    "name": "Radiumquelle Zell am Harmersbach",
+    "lat": 48.361764,
+    "lng": 8.066845,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 136,
+    "name": "Radonhaltige Quelle in Berga",
+    "lat": 50.757943,
+    "lng": 12.174485,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 137,
+    "name": "Radonstollen Bad Kreuznach",
+    "lat": 49.8395,
+    "lng": 7.8514,
+    "found": {
+      "lang": "de",
+      "title": "Bad Kreuznach",
+      "url": "https://de.wikipedia.org/wiki/Bad_Kreuznach",
+      "wiki_lat": 49.84694444,
+      "wiki_lng": 7.86694444,
+      "dist_km": 1.39
+    }
+  },
+  {
+    "section": "forum",
+    "index": 138,
+    "name": "Ramsar Iran",
+    "lat": 36.842139,
+    "lng": 50.587302,
+    "found": {
+      "lang": "en",
+      "title": "Ramsar, Iran",
+      "url": "https://en.wikipedia.org/wiki/Ramsar%2C_Iran",
+      "wiki_lat": 36.9225,
+      "wiki_lng": 50.64305556,
+      "dist_km": 10.22
+    }
+  },
+  {
+    "section": "forum",
+    "index": 139,
+    "name": "Reise mit privatem Guide nach Chernobyl/Pripjat April/Mai 2020",
+    "lat": 51.408148,
+    "lng": 30.0644729,
+    "found": {
+      "lang": "de",
+      "title": "Nuklearkatastrophe von Tschernobyl",
+      "url": "https://de.wikipedia.org/wiki/Nuklearkatastrophe_von_Tschernobyl",
+      "wiki_lat": 51.38944444,
+      "wiki_lng": 30.09916667,
+      "dist_km": 3.18
+    }
+  },
+  {
+    "section": "forum",
+    "index": 140,
+    "name": "Reise nach Osteuropa",
+    "lat": 50.7637845,
+    "lng": 15.8460054,
+    "found": {
+      "lang": "en",
+      "title": "Inner German relations",
+      "url": "https://en.wikipedia.org/wiki/Inner_German_relations",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 141,
+    "name": "Revier Zobes Schacht 294?",
+    "lat": 50.498313,
+    "lng": 12.254644,
+    "found": {
+      "lang": "de",
+      "title": "Wismut (Unternehmen)",
+      "url": "https://de.wikipedia.org/wiki/Wismut_%28Unternehmen%29",
+      "wiki_lat": 50.80915,
+      "wiki_lng": 12.84247,
+      "dist_km": 53.96
+    }
+  },
+  {
+    "section": "forum",
+    "index": 142,
+    "name": "Rotschlammdeponie Stade",
+    "lat": 53.6406,
+    "lng": 9.41903,
+    "found": {
+      "lang": "de",
+      "title": "Rotschlamm",
+      "url": "https://de.wikipedia.org/wiki/Rotschlamm",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 143,
+    "name": "Rožná / Bukov Uran Minen",
+    "lat": 49.4805,
+    "lng": 16.2231,
+    "found": {
+      "lang": "de",
+      "title": "Berzelianit",
+      "url": "https://de.wikipedia.org/wiki/Berzelianit",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 144,
+    "name": "Sanierung Collmberghalde bei Freital",
+    "lat": 51.016265,
+    "lng": 13.6530329,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 145,
+    "name": "S-Bahnhof Griebnitzsee",
+    "lat": 52.394878,
+    "lng": 13.128428,
+    "found": {
+      "lang": "de",
+      "title": "Neubabelsberg",
+      "url": "https://de.wikipedia.org/wiki/Neubabelsberg",
+      "wiki_lat": 52.40145,
+      "wiki_lng": 13.11255833,
+      "dist_km": 1.3
+    }
+  },
+  {
+    "section": "forum",
+    "index": 146,
+    "name": "Schacht 235 Weißer Hirsch bei Antonsthal",
+    "lat": 50.504846,
+    "lng": 12.77423,
+    "found": {
+      "lang": "de",
+      "title": "Zwieselit",
+      "url": "https://de.wikipedia.org/wiki/Zwieselit",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 147,
+    "name": "Schacht 254 Streuberg / Bergen",
+    "lat": 50.4671,
+    "lng": 12.2472,
+    "found": {
+      "lang": "de",
+      "title": "Boltwoodit",
+      "url": "https://de.wikipedia.org/wiki/Boltwoodit",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 148,
+    "name": "Schacht 318 bei Crandorf",
+    "lat": 50.507401,
+    "lng": 12.780704,
+    "found": {
+      "lang": "de",
+      "title": "Wismut Objekt 08",
+      "url": "https://de.wikipedia.org/wiki/Wismut_Objekt_08",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 149,
+    "name": "Schacht Westende, Duisburg",
+    "lat": 51.465601,
+    "lng": 6.738362,
+    "found": {
+      "lang": "de",
+      "title": "Zeche Westende",
+      "url": "https://de.wikipedia.org/wiki/Zeche_Westende",
+      "wiki_lat": 51.464996,
+      "wiki_lng": 6.739339,
+      "dist_km": 0.1
+    }
+  },
+  {
+    "section": "forum",
+    "index": 150,
+    "name": "Schneckenstein",
+    "lat": 50.40564,
+    "lng": 12.447019,
+    "found": {
+      "lang": "en",
+      "title": "Schneckenstein",
+      "url": "https://en.wikipedia.org/wiki/Schneckenstein",
+      "wiki_lat": 50.41333333,
+      "wiki_lng": 12.45111111,
+      "dist_km": 0.9
+    }
+  },
+  {
+    "section": "forum",
+    "index": 151,
+    "name": "Schowti Wody (Жо́вті Во́ди), Ukraine",
+    "lat": 48.346517,
+    "lng": 33.50278,
+    "found": {
+      "lang": "de",
+      "title": "Schowti Wody",
+      "url": "https://de.wikipedia.org/wiki/Schowti_Wody",
+      "wiki_lat": 48.35,
+      "wiki_lng": 33.51666667,
+      "dist_km": 1.1
+    }
+  },
+  {
+    "section": "forum",
+    "index": 152,
+    "name": "Schramberg und Umgebung",
+    "lat": 48,
+    "lng": 8,
+    "found": {
+      "lang": "en",
+      "title": "List of schools in Germany",
+      "url": "https://en.wikipedia.org/wiki/List_of_schools_in_Germany",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 153,
+    "name": "Schwarzachklamm",
+    "lat": 49.3515,
+    "lng": 11.21702,
+    "found": {
+      "lang": "de",
+      "title": "Schwarzachschlucht bei Schwarzenbruck",
+      "url": "https://de.wikipedia.org/wiki/Schwarzachschlucht_bei_Schwarzenbruck",
+      "wiki_lat": 49.35154,
+      "wiki_lng": 11.21398,
+      "dist_km": 0.22
+    }
+  },
+  {
+    "section": "forum",
+    "index": 154,
+    "name": "Sellafield (Windscale) UK",
+    "lat": 54.424457,
+    "lng": -3.500208,
+    "found": {
+      "lang": "en",
+      "title": "Sellafield",
+      "url": "https://en.wikipedia.org/wiki/Sellafield",
+      "wiki_lat": 54.4205,
+      "wiki_lng": -3.4975,
+      "dist_km": 0.47
+    }
+  },
+  {
+    "section": "forum",
+    "index": 155,
+    "name": "Sinsheim- Technikmuseum",
+    "lat": 49.238832,
+    "lng": 8.8973,
+    "found": {
+      "lang": "de",
+      "title": "Technik-Museum Sinsheim",
+      "url": "https://de.wikipedia.org/wiki/Technik-Museum_Sinsheim",
+      "wiki_lat": 49.23861111,
+      "wiki_lng": 8.89722222,
+      "dist_km": 0.03
+    }
+  },
+  {
+    "section": "forum",
+    "index": 156,
+    "name": "Site A/Plot M Disposal Site",
+    "lat": 41.702222,
+    "lng": -87.912222,
+    "found": {
+      "lang": "en",
+      "title": "Site A",
+      "url": "https://en.wikipedia.org/wiki/Site_A",
+      "wiki_lat": 41.70222222,
+      "wiki_lng": -87.91222222,
+      "dist_km": 0.0
+    }
+  },
+  {
+    "section": "forum",
+    "index": 157,
+    "name": "Sonderwaffenlager Lychen II Himmelpfort",
+    "lat": 53.175127,
+    "lng": 13.282508,
+    "found": {
+      "lang": "de",
+      "title": "Sonderwaffenlager Himmelpfort",
+      "url": "https://de.wikipedia.org/wiki/Sonderwaffenlager_Himmelpfort",
+      "wiki_lat": 53.17496917,
+      "wiki_lng": 13.28288623,
+      "dist_km": 0.03
+    }
+  },
+  {
+    "section": "forum",
+    "index": 158,
+    "name": "Sonderwaffenlager Vogelsang bei Zehdenick",
+    "lat": 52.9794838,
+    "lng": 13.3348959,
+    "found": {
+      "lang": "de",
+      "title": "Liste der sowjetischen Militärstandorte in Deutschland",
+      "url": "https://de.wikipedia.org/wiki/Liste_der_sowjetischen_Milit%C3%A4rstandorte_in_Deutschland",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 159,
+    "name": "Špindlerův Mlýn (Spindlermühle) im Riesengebirge",
+    "lat": 50.743692,
+    "lng": 15.580187,
+    "found": {
+      "lang": "de",
+      "title": "Špindlerův Mlýn",
+      "url": "https://de.wikipedia.org/wiki/%C5%A0pindler%C5%AFv_Ml%C3%BDn",
+      "wiki_lat": 50.72611111,
+      "wiki_lng": 15.59583333,
+      "dist_km": 2.24
+    }
+  },
+  {
+    "section": "forum",
+    "index": 160,
+    "name": "Sportplatz Kleinnaundorf",
+    "lat": 50.99785,
+    "lng": 13.684667,
+    "found": {
+      "lang": "de",
+      "title": "Kleinnaundorf (Freital)",
+      "url": "https://de.wikipedia.org/wiki/Kleinnaundorf_%28Freital%29",
+      "wiki_lat": 50.99138889,
+      "wiki_lng": 13.69666667,
+      "dist_km": 1.11
+    }
+  },
+  {
+    "section": "forum",
+    "index": 161,
+    "name": "Steinbruch bei  Hösbach",
+    "lat": 52.233238,
+    "lng": 10.738495,
+    "found": {
+      "lang": "de",
+      "title": "Hösbach-Bahnhof",
+      "url": "https://de.wikipedia.org/wiki/H%C3%B6sbach-Bahnhof",
+      "wiki_lat": 49.99856667,
+      "wiki_lng": 9.22796944,
+      "dist_km": 269.91
+    }
+  },
+  {
+    "section": "forum",
+    "index": 162,
+    "name": "Steinbruch Jenikov Lahost",
+    "lat": 50.63087,
+    "lng": 13.758104,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 163,
+    "name": "Steinbruch Knaupsholz",
+    "lat": 51.76774796426002,
+    "lng": 10.721872832791771,
+    "found": {
+      "lang": "de",
+      "title": "Knaupsholz-Granit",
+      "url": "https://de.wikipedia.org/wiki/Knaupsholz-Granit",
+      "wiki_lat": 51.770044,
+      "wiki_lng": 10.698109,
+      "dist_km": 1.66
+    }
+  },
+  {
+    "section": "forum",
+    "index": 164,
+    "name": "Stolln Jägersgrün",
+    "lat": 50.4446981,
+    "lng": 12.4749101,
+    "found": {
+      "lang": "de",
+      "title": "Kleine Pyra",
+      "url": "https://de.wikipedia.org/wiki/Kleine_Pyra",
+      "wiki_lat": 50.45138889,
+      "wiki_lng": 12.47361111,
+      "dist_km": 0.75
+    }
+  },
+  {
+    "section": "forum",
+    "index": 165,
+    "name": "Strahlender Affe",
+    "lat": 47.7602,
+    "lng": 9.2452,
+    "found": {
+      "lang": "de",
+      "title": "Unicodeblock Smileys",
+      "url": "https://de.wikipedia.org/wiki/Unicodeblock_Smileys",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 166,
+    "name": "Strand von Dounreay",
+    "lat": 58.579826,
+    "lng": -3.751562,
+    "found": {
+      "lang": "de",
+      "title": "Nuklearanlage Dounreay",
+      "url": "https://de.wikipedia.org/wiki/Nuklearanlage_Dounreay",
+      "wiki_lat": 58.57898611,
+      "wiki_lng": -3.75001667,
+      "dist_km": 0.13
+    }
+  },
+  {
+    "section": "forum",
+    "index": 167,
+    "name": "Strand von Guarapari (Brasilien)",
+    "lat": -20.676261,
+    "lng": -40.496492,
+    "found": {
+      "lang": "de",
+      "title": "Guarapari",
+      "url": "https://de.wikipedia.org/wiki/Guarapari",
+      "wiki_lat": -20.65777778,
+      "wiki_lng": -40.51083333,
+      "dist_km": 2.54
+    }
+  },
+  {
+    "section": "forum",
+    "index": 168,
+    "name": "Straße zwischen Brunn und Reuth",
+    "lat": 50.660949,
+    "lng": 12.323088,
+    "found": {
+      "lang": "de",
+      "title": "Reuth (Neumark)",
+      "url": "https://de.wikipedia.org/wiki/Reuth_%28Neumark%29",
+      "wiki_lat": 50.671501,
+      "wiki_lng": 12.320441,
+      "dist_km": 1.19
+    }
+  },
+  {
+    "section": "forum",
+    "index": 169,
+    "name": "Straße zwischen Buchwald und Limbach (Vogtland)",
+    "lat": 50.586366,
+    "lng": 12.266571,
+    "found": {
+      "lang": "de",
+      "title": "Limbach (Vogtland)",
+      "url": "https://de.wikipedia.org/wiki/Limbach_%28Vogtland%29",
+      "wiki_lat": 50.58388889,
+      "wiki_lng": 12.25277778,
+      "dist_km": 1.01
+    }
+  },
+  {
+    "section": "forum",
+    "index": 170,
+    "name": "Straße zwischen Dänkritz und Lauenhain",
+    "lat": 50.789056,
+    "lng": 12.427056,
+    "found": {
+      "lang": "de",
+      "title": "Regionalverkehr Westsachsen",
+      "url": "https://de.wikipedia.org/wiki/Regionalverkehr_Westsachsen",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 171,
+    "name": "Straße zwischen Gosel und Frankenhausen",
+    "lat": 50.843278,
+    "lng": 12.404028,
+    "found": {
+      "lang": "de",
+      "title": "Gosel (Ponitz)",
+      "url": "https://de.wikipedia.org/wiki/Gosel_%28Ponitz%29",
+      "wiki_lat": 50.84891944,
+      "wiki_lng": 12.41690278,
+      "dist_km": 1.1
+    }
+  },
+  {
+    "section": "forum",
+    "index": 172,
+    "name": "Straßendreieck bei Berga/Elster",
+    "lat": 50.768139,
+    "lng": 12.157639,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 173,
+    "name": "Stuttgarter Königstraße",
+    "lat": 48.778911,
+    "lng": 9.178735,
+    "found": {
+      "lang": "de",
+      "title": "Königstraße (Stuttgart)",
+      "url": "https://de.wikipedia.org/wiki/K%C3%B6nigstra%C3%9Fe_%28Stuttgart%29",
+      "wiki_lat": 48.78,
+      "wiki_lng": 9.17972222,
+      "dist_km": 0.14
+    }
+  },
+  {
+    "section": "forum",
+    "index": 174,
+    "name": "Sylt.",
+    "lat": 54.901983,
+    "lng": 8.363477,
+    "found": {
+      "lang": "en",
+      "title": "Sylt",
+      "url": "https://en.wikipedia.org/wiki/Sylt",
+      "wiki_lat": 54.9,
+      "wiki_lng": 8.33333333,
+      "dist_km": 1.94
+    }
+  },
+  {
+    "section": "forum",
+    "index": 175,
+    "name": "Tammiku / Paldiski (Estland)",
+    "lat": 59.349089,
+    "lng": 24.080174,
+    "found": {
+      "lang": "de",
+      "title": "Liste deutscher Bezeichnungen estnischer Orte",
+      "url": "https://de.wikipedia.org/wiki/Liste_deutscher_Bezeichnungen_estnischer_Orte",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 176,
+    "name": "Tännichtgrund zwischen Meißen und Dresden",
+    "lat": 51.085335,
+    "lng": 13.598162,
+    "found": {
+      "lang": "de",
+      "title": "Tännichtgrund",
+      "url": "https://de.wikipedia.org/wiki/T%C3%A4nnichtgrund",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 177,
+    "name": "Telemark Norwegen",
+    "lat": 59.275,
+    "lng": 9.3064,
+    "found": {
+      "lang": "de",
+      "title": "Telemark",
+      "url": "https://de.wikipedia.org/wiki/Telemark",
+      "wiki_lat": 59.49,
+      "wiki_lng": 8.58,
+      "dist_km": 47.58
+    }
+  },
+  {
+    "section": "forum",
+    "index": 178,
+    "name": "Teplitz, Burg Daubersberg",
+    "lat": 50.638446805556,
+    "lng": 13.860296222222,
+    "found": {
+      "lang": "de",
+      "title": "Burg Doubravská hora",
+      "url": "https://de.wikipedia.org/wiki/Burg_Doubravsk%C3%A1_hora",
+      "wiki_lat": 50.638486,
+      "wiki_lng": 13.860508,
+      "dist_km": 0.02
+    }
+  },
+  {
+    "section": "forum",
+    "index": 179,
+    "name": "Testgelände Semipalatinsk",
+    "lat": 50.116667,
+    "lng": 78.716667,
+    "found": {
+      "lang": "de",
+      "title": "Atomwaffentestgelände Semipalatinsk",
+      "url": "https://de.wikipedia.org/wiki/Atomwaffentestgel%C3%A4nde_Semipalatinsk",
+      "wiki_lat": 50.11666667,
+      "wiki_lng": 78.71666667,
+      "dist_km": 0.0
+    }
+  },
+  {
+    "section": "forum",
+    "index": 180,
+    "name": "Three Mile Island",
+    "lat": 40.153302,
+    "lng": -76.724437,
+    "found": {
+      "lang": "en",
+      "title": "Three Mile Island accident",
+      "url": "https://en.wikipedia.org/wiki/Three_Mile_Island_accident",
+      "wiki_lat": 40.15329,
+      "wiki_lng": -76.72534,
+      "dist_km": 0.08
+    }
+  },
+  {
+    "section": "forum",
+    "index": 181,
+    "name": "Tokaimura",
+    "lat": 36.479722,
+    "lng": 140.553611,
+    "found": {
+      "lang": "en",
+      "title": "Tokaimura nuclear accidents",
+      "url": "https://en.wikipedia.org/wiki/Tokaimura_nuclear_accidents",
+      "wiki_lat": 36.47972222,
+      "wiki_lng": 140.55361111,
+      "dist_km": 0.0
+    }
+  },
+  {
+    "section": "forum",
+    "index": 182,
+    "name": "U-Bahnhof Potsdamer Platz",
+    "lat": 52.509159,
+    "lng": 13.378215,
+    "found": {
+      "lang": "de",
+      "title": "Bahnhof Berlin Potsdamer Platz",
+      "url": "https://de.wikipedia.org/wiki/Bahnhof_Berlin_Potsdamer_Platz",
+      "wiki_lat": 52.5094,
+      "wiki_lng": 13.3758,
+      "dist_km": 0.17
+    }
+  },
+  {
+    "section": "forum",
+    "index": 183,
+    "name": "Uranerzaufbereitungsanlage Ellweiler / Rheinland-Pfalz",
+    "lat": 49.617378,
+    "lng": 7.146437,
+    "found": {
+      "lang": "en",
+      "title": "Ellweiler",
+      "url": "https://en.wikipedia.org/wiki/Ellweiler",
+      "wiki_lat": 49.615,
+      "wiki_lng": 7.14444444,
+      "dist_km": 0.3
+    }
+  },
+  {
+    "section": "forum",
+    "index": 184,
+    "name": "Uranhaltige Halden in Wittichen-Schenkenzell in BW",
+    "lat": 48.33682,
+    "lng": 8.341608,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 185,
+    "name": "Uranium City",
+    "lat": 59.56583,
+    "lng": -108.61444,
+    "found": {
+      "lang": "en",
+      "title": "Uranium City",
+      "url": "https://en.wikipedia.org/wiki/Uranium_City",
+      "wiki_lat": 59.56583333,
+      "wiki_lng": -108.61444444,
+      "dist_km": 0.0
+    }
+  },
+  {
+    "section": "forum",
+    "index": 186,
+    "name": "Uranium Washington (state)",
+    "lat": 47.941941,
+    "lng": -118.0962,
+    "found": {
+      "lang": "en",
+      "title": "Uranium One controversy",
+      "url": "https://en.wikipedia.org/wiki/Uranium_One_controversy",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 187,
+    "name": "Uranmine – Kővágószőlős, Ungarn",
+    "lat": 46.099531,
+    "lng": 18.090411,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 188,
+    "name": "Uranversuchsabbau in Müllenbach bei Baden-Baden",
+    "lat": 48.741407,
+    "lng": 8.29048,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 189,
+    "name": "VEB Chemiekombinat Bitterfeld",
+    "lat": 51.650423,
+    "lng": 12.289063,
+    "found": {
+      "lang": "en",
+      "title": "Handel Prize",
+      "url": "https://en.wikipedia.org/wiki/Handel_Prize",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 190,
+    "name": "verrückter Geigerzähler im Jonastal",
+    "lat": 50.8171919,
+    "lng": 10.8650508,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 191,
+    "name": "Versuchslabor Stadtilm",
+    "lat": 50.774744,
+    "lng": 11.077528,
+    "found": {
+      "lang": "de",
+      "title": "Uranprojekt",
+      "url": "https://de.wikipedia.org/wiki/Uranprojekt",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 192,
+    "name": "Vogesen, Frankreich",
+    "lat": 48.2421,
+    "lng": 7.3179,
+    "found": {
+      "lang": "de",
+      "title": "Vogesen",
+      "url": "https://de.wikipedia.org/wiki/Vogesen",
+      "wiki_lat": 48,
+      "wiki_lng": 7,
+      "dist_km": 35.8
+    }
+  },
+  {
+    "section": "forum",
+    "index": 193,
+    "name": "Vorschläge für Prag",
+    "lat": 50.0792,
+    "lng": 14.4304,
+    "found": {
+      "lang": "de",
+      "title": "Prag",
+      "url": "https://de.wikipedia.org/wiki/Prag",
+      "wiki_lat": 50.08861111,
+      "wiki_lng": 14.42138889,
+      "dist_km": 1.23
+    }
+  },
+  {
+    "section": "forum",
+    "index": 194,
+    "name": "Wald bei Behringersdorf (Nürnberg)",
+    "lat": 49.494806,
+    "lng": 11.191389,
+    "found": {
+      "lang": "de",
+      "title": "Schwaig bei Nürnberg",
+      "url": "https://de.wikipedia.org/wiki/Schwaig_bei_N%C3%BCrnberg",
+      "wiki_lat": 49.47222222,
+      "wiki_lng": 11.19888889,
+      "dist_km": 2.57
+    }
+  },
+  {
+    "section": "forum",
+    "index": 195,
+    "name": "Waldbrand in Tschernobyl",
+    "lat": 49.282569,
+    "lng": 7.118741,
+    "found": {
+      "lang": "de",
+      "title": "Nuklearkatastrophe von Tschernobyl",
+      "url": "https://de.wikipedia.org/wiki/Nuklearkatastrophe_von_Tschernobyl",
+      "wiki_lat": 51.38944444,
+      "wiki_lng": 30.09916667,
+      "dist_km": 1640.82
+    }
+  },
+  {
+    "section": "forum",
+    "index": 196,
+    "name": "Washout-Hotspot bei Magdeburg?",
+    "lat": 52.697322,
+    "lng": 12.186971,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 197,
+    "name": "Weinböhla: Ehemalige Radon-Quelle an der Laubenhöhe",
+    "lat": 51.161944,
+    "lng": 13.586222,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 198,
+    "name": "Weißenstadt ehem. Uranabbau",
+    "lat": 50.078919,
+    "lng": 11.886211,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 199,
+    "name": "Wettinquelle in Bad Brambach",
+    "lat": 50.221737,
+    "lng": 12.299518,
+    "found": {
+      "lang": "de",
+      "title": "Bad Brambach",
+      "url": "https://de.wikipedia.org/wiki/Bad_Brambach",
+      "wiki_lat": 50.22444444,
+      "wiki_lng": 12.31305556,
+      "dist_km": 1.01
+    }
+  },
+  {
+    "section": "forum",
+    "index": 200,
+    "name": "Wien: Altstandort Glühstrumpf-Fabrik Auer von Welsbach",
+    "lat": 48.155602,
+    "lng": 16.313353,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 201,
+    "name": "Wiese zwischen Gauern und Wolfersdorf",
+    "lat": 50.848,
+    "lng": 12.171,
+    "found": {
+      "lang": "de",
+      "title": "Bahnstrecke Werdau–Mehltheuer",
+      "url": "https://de.wikipedia.org/wiki/Bahnstrecke_Werdau%E2%80%93Mehltheuer",
+      "wiki_lat": null,
+      "wiki_lng": null,
+      "dist_km": null
+    }
+  },
+  {
+    "section": "forum",
+    "index": 202,
+    "name": "Wiesenquelle in Bad Schlema",
+    "lat": 50.593721,
+    "lng": 12.663248,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 203,
+    "name": "WISMUT-Bohrung(?) im Werdauer Wald",
+    "lat": 50.714294,
+    "lng": 12.258527,
+    "found": {
+      "lang": "de",
+      "title": "Zwickau",
+      "url": "https://de.wikipedia.org/wiki/Zwickau",
+      "wiki_lat": 50.71888889,
+      "wiki_lng": 12.49222222,
+      "dist_km": 16.46
+    }
+  },
+  {
+    "section": "forum",
+    "index": 204,
+    "name": "WISMUT-Schotter: DREWS-Brache in Meerane",
+    "lat": 50.843552,
+    "lng": 12.44391,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 205,
+    "name": "Wismutsee bei Steinach",
+    "lat": 50.444333,
+    "lng": 11.170067,
+    "found": null
+  },
+  {
+    "section": "forum",
+    "index": 206,
+    "name": "Wölsendorf (Oberpfalz)",
+    "lat": 49.422102,
+    "lng": 12.170025,
+    "found": {
+      "lang": "de",
+      "title": "Wölsendorf",
+      "url": "https://de.wikipedia.org/wiki/W%C3%B6lsendorf",
+      "wiki_lat": 49.409284,
+      "wiki_lng": 12.169243,
+      "dist_km": 1.43
+    }
+  },
+  {
+    "section": "forum",
+    "index": 207,
+    "name": "Zalesi /Javornik",
+    "lat": 50.359837,
+    "lng": 16.932873,
+    "found": {
+      "lang": "de",
+      "title": "Zálesí (Javorník)",
+      "url": "https://de.wikipedia.org/wiki/Z%C3%A1les%C3%AD_%28Javorn%C3%ADk%29",
+      "wiki_lat": 50.3598372,
+      "wiki_lng": 16.9328733,
+      "dist_km": 0.0
+    }
+  },
+  {
+    "section": "forum",
+    "index": 208,
+    "name": "Zwischenlager Rossendorf (ZLR)",
+    "lat": 51.54231,
+    "lng": 14.124659,
+    "found": null
+  }
+]

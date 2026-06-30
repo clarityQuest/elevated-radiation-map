@@ -1,0 +1,1502 @@
+[
+  {
+    "section": "opengeiger",
+    "index": 0,
+    "name": "Uranbergbaumuseum Bad Schlema",
+    "wikipedia": null,
+    "lat_claude": 50.5999,
+    "lng_claude": 12.6743,
+    "coord_changed": false,
+    "geo_delta_km": 0.03
+  },
+  {
+    "section": "opengeiger",
+    "index": 2,
+    "name": "Uranvererzungen A93 Wölsendorf",
+    "wikipedia": null,
+    "lat_claude": 49.4228,
+    "lng_claude": 12.1703,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 5,
+    "name": "Monte Scherbelino Stuttgart",
+    "wikipedia": null,
+    "lat_claude": 48.7656,
+    "lng_claude": 9.1314,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 6,
+    "name": "Hotspot Gsponwald, Walensee CH",
+    "wikipedia": null,
+    "lat_claude": 47.0708,
+    "lng_claude": 9.1942,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 7,
+    "name": "Freital-Burgk Abraumhalden",
+    "wikipedia": null,
+    "lat_claude": 51.0051,
+    "lng_claude": 13.6755,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 10,
+    "name": "Schaentzel / Teufelsloch, Alsace",
+    "wikipedia": null,
+    "lat_claude": 48.2421,
+    "lng_claude": 7.3179,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 13,
+    "name": "Absetzanlage Dänkritz II",
+    "wikipedia": null,
+    "lat_claude": 50.7715,
+    "lng_claude": 12.4292,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 14,
+    "name": "Wismut-Teich Steinach",
+    "wikipedia": null,
+    "lat_claude": 50.4443,
+    "lng_claude": 11.1701,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 17,
+    "name": "Windbergbahn Kleinnaundorf–Freital",
+    "wikipedia": null,
+    "lat_claude": 51.0005,
+    "lng_claude": 13.6871,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 19,
+    "name": "Schlammteich 4 Freital-Döhlen",
+    "wikipedia": null,
+    "lat_claude": 51.0022,
+    "lng_claude": 13.6326,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 20,
+    "name": "Tschernobyl",
+    "wikipedia": "https://en.wikipedia.org/wiki/Chernobyl_disaster",
+    "lat_claude": 51.3889,
+    "lng_claude": 30.0975,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 22,
+    "name": "Mineralienmuseum Schneckenstein",
+    "wikipedia": null,
+    "lat_claude": 50.4171,
+    "lng_claude": 12.4533,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 23,
+    "name": "Uranfabrik Ranstad, Sweden",
+    "wikipedia": null,
+    "lat_claude": 58.3137,
+    "lng_claude": 13.7031,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 24,
+    "name": "Radonstollen Stammelbachtal",
+    "wikipedia": null,
+    "lat_claude": 48.2663,
+    "lng_claude": 8.3186,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 25,
+    "name": "Strand L’Espiguette, Camargue",
+    "wikipedia": null,
+    "lat_claude": 43.4783,
+    "lng_claude": 4.1512,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 26,
+    "name": "Halde Helbra",
+    "wikipedia": null,
+    "lat_claude": 51.5368,
+    "lng_claude": 11.4901,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 28,
+    "name": "Silvertbach Marl",
+    "wikipedia": null,
+    "lat_claude": 51.6785,
+    "lng_claude": 7.1324,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 29,
+    "name": "Lost Place Einkaufszentrum",
+    "wikipedia": null,
+    "lat_claude": 49.4496,
+    "lng_claude": 8.4104,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 30,
+    "name": "Sportplatz Kleinnaundorf",
+    "wikipedia": null,
+    "lat_claude": 50.9979,
+    "lng_claude": 13.6847,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 31,
+    "name": "Quarzsteinbruch Hennenkobel",
+    "wikipedia": null,
+    "lat_claude": 48.9556,
+    "lng_claude": 13.1747,
+    "coord_changed": true,
+    "geo_delta_km": 10.68
+  },
+  {
+    "section": "opengeiger",
+    "index": 32,
+    "name": "Beach-Volleyball Dresden Räcknitz",
+    "wikipedia": null,
+    "lat_claude": 51.0245,
+    "lng_claude": 13.7201,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 33,
+    "name": "Frauentorstrasse Weimar",
+    "wikipedia": null,
+    "lat_claude": 50.9782,
+    "lng_claude": 11.329,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 34,
+    "name": "Kapelle Höhenpark Killesberg Stuttgart",
+    "wikipedia": null,
+    "lat_claude": 48.8064,
+    "lng_claude": 9.1706,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 35,
+    "name": "Uranabbaugebiet Ellweiler",
+    "wikipedia": null,
+    "lat_claude": 49.6177,
+    "lng_claude": 7.1466,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 36,
+    "name": "Hüttengrund Helfta",
+    "wikipedia": null,
+    "lat_claude": 51.5036,
+    "lng_claude": 11.5523,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 39,
+    "name": "Einleitstelle Elbe Thürmsdorf",
+    "wikipedia": null,
+    "lat_claude": 50.9288,
+    "lng_claude": 14.0553,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 40,
+    "name": "Uranbergbau-Revier Zobes-Mechelgrün",
+    "wikipedia": null,
+    "lat_claude": 50.4672,
+    "lng_claude": 12.2472,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 42,
+    "name": "Schlackensteine-Pfad Hüneburg",
+    "wikipedia": null,
+    "lat_claude": 51.5205,
+    "lng_claude": 11.5176,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 43,
+    "name": "Collmberghalde Dresden Coschütz",
+    "wikipedia": null,
+    "lat_claude": 51.0181,
+    "lng_claude": 13.6824,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 44,
+    "name": "Kloster Adelberg (Brunnen)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Adelberg_Abbey",
+    "lat_claude": 48.7571,
+    "lng_claude": 9.5976,
+    "coord_changed": false,
+    "geo_delta_km": 0.01
+  },
+  {
+    "section": "opengeiger",
+    "index": 47,
+    "name": "Marktplatz Esslingen",
+    "wikipedia": "https://en.wikipedia.org/wiki/Esslingen_am_Neckar",
+    "lat_claude": 48.7431,
+    "lng_claude": 9.3056,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 50,
+    "name": "Blössling / Köpfle Bernau",
+    "wikipedia": null,
+    "lat_claude": 47.7994,
+    "lng_claude": 8.0231,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 53,
+    "name": "A4 Dreieck Nossen",
+    "wikipedia": null,
+    "lat_claude": 51.0591,
+    "lng_claude": 13.4451,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 56,
+    "name": "Radium-Quelle Thierberg",
+    "wikipedia": null,
+    "lat_claude": 50.4423,
+    "lng_claude": 12.4409,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 57,
+    "name": "Schramberg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Schramberg",
+    "lat_claude": 48.2205,
+    "lng_claude": 8.3794,
+    "coord_changed": false,
+    "geo_delta_km": 0.61
+  },
+  {
+    "section": "opengeiger",
+    "index": 60,
+    "name": "Heißes Pflaster Eisleben",
+    "wikipedia": null,
+    "lat_claude": 51.5276,
+    "lng_claude": 11.5496,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 63,
+    "name": "Hirschkanal KIT Karlsruhe",
+    "wikipedia": null,
+    "lat_claude": 49.1007,
+    "lng_claude": 8.4405,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "opengeiger",
+    "index": 66,
+    "name": "SUR-100 Stuttgart (IKE)",
+    "wikipedia": null,
+    "lat_claude": 48.7496,
+    "lng_claude": 9.1045,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 2,
+    "name": "Aktivität in Quellen und Kalktuffen in Karlsbad",
+    "wikipedia": "https://en.wikipedia.org/wiki/Karlovy_Vary",
+    "lat_claude": 50.2281,
+    "lng_claude": 12.8731,
+    "coord_changed": true,
+    "geo_delta_km": 15.82
+  },
+  {
+    "section": "forum",
+    "index": 4,
+    "name": "Atom Fuel Firma bei Aschaffenbrug",
+    "wikipedia": null,
+    "lat_claude": 49.9706701,
+    "lng_claude": 9.1384857,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 5,
+    "name": "Atombombenexplosionen Weltweit visualisiert",
+    "wikipedia": null,
+    "lat_claude": 48.235353,
+    "lng_claude": 16.4171882,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 9,
+    "name": "Autobahn A4 im Bereich Hainichen, Berbersdorf und Nossen",
+    "wikipedia": null,
+    "lat_claude": 50.95,
+    "lng_claude": 13.25,
+    "coord_changed": true,
+    "geo_delta_km": 10.65
+  },
+  {
+    "section": "forum",
+    "index": 11,
+    "name": "B14 zwischen Gebenbach und Hirschau",
+    "wikipedia": null,
+    "lat_claude": 49.5372,
+    "lng_claude": 11.9025,
+    "coord_changed": false,
+    "geo_delta_km": 0.0
+  },
+  {
+    "section": "forum",
+    "index": 13,
+    "name": "Băița Uranmine - Bezirk Bihor, Rumänien",
+    "wikipedia": null,
+    "lat_claude": 46.48,
+    "lng_claude": 22.628333,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 15,
+    "name": "Block IV - Pressearbeit 1986",
+    "wikipedia": null,
+    "lat_claude": null,
+    "lng_claude": null,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 16,
+    "name": "Brunnen Tannenbergsthal",
+    "wikipedia": null,
+    "lat_claude": 50.438061,
+    "lng_claude": 12.461773,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 17,
+    "name": "Büros der Uni Wien verstrahlt/k.k. Montan-Verkaufsamt",
+    "wikipedia": null,
+    "lat_claude": 48.2088,
+    "lng_claude": 16.3738,
+    "coord_changed": true,
+    "geo_delta_km": 1.77
+  },
+  {
+    "section": "forum",
+    "index": 19,
+    "name": "Cold War Museum Berlin",
+    "wikipedia": "https://en.wikipedia.org/wiki/German_Resistance_Memorial_Center",
+    "lat_claude": 52.5076,
+    "lng_claude": 13.3904,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 21,
+    "name": "Crossen: Altarm Mulde",
+    "wikipedia": null,
+    "lat_claude": 50.761367,
+    "lng_claude": 12.481862,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 23,
+    "name": "Das toxische Erbe der Chemie: Düngemittelfabrik in Crotone Kalabrien (Italien)",
+    "wikipedia": null,
+    "lat_claude": 39.097795,
+    "lng_claude": 17.106786,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 24,
+    "name": "Das Wetterprojekt in Schneeberg/Erzgebirge",
+    "wikipedia": null,
+    "lat_claude": 50.5967627,
+    "lng_claude": 12.6400728,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 26,
+    "name": "Deponie IAA Dänkritz II",
+    "wikipedia": null,
+    "lat_claude": 50.7715,
+    "lng_claude": 12.4292,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 27,
+    "name": "Der Goiânia-Unfall (Parque Estadual Telma Ortegal in Brasilien)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Goi%C3%A2nia_accident",
+    "lat_claude": -15.8867,
+    "lng_claude": -48.956,
+    "coord_changed": true,
+    "geo_delta_km": 108.63
+  },
+  {
+    "section": "forum",
+    "index": 28,
+    "name": "Der Ottofelsen und das Thumkuhlental",
+    "wikipedia": null,
+    "lat_claude": null,
+    "lng_claude": null,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 29,
+    "name": "Der schlechte Atem der Erde...",
+    "wikipedia": null,
+    "lat_claude": null,
+    "lng_claude": null,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 30,
+    "name": "Der Silvertbach in Marl, Nordrhein-Westfalen",
+    "wikipedia": null,
+    "lat_claude": 51.6785,
+    "lng_claude": 7.1324,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 32,
+    "name": "Die Porzellanfabrik von Christian Fischer in Zwickau",
+    "wikipedia": null,
+    "lat_claude": 50.7185,
+    "lng_claude": 12.4939,
+    "coord_changed": false,
+    "geo_delta_km": 0.0
+  },
+  {
+    "section": "forum",
+    "index": 33,
+    "name": "Die Referenzflächen der WISMUT Reust bei Ronneburg",
+    "wikipedia": "https://en.wikipedia.org/wiki/Wismut_(mining_company)",
+    "lat_claude": 50.6822,
+    "lng_claude": 12.0578,
+    "coord_changed": true,
+    "geo_delta_km": 19.64
+  },
+  {
+    "section": "forum",
+    "index": 36,
+    "name": "Dosis auf der ISS und  Nord- bzw. Südpol?",
+    "wikipedia": null,
+    "lat_claude": null,
+    "lng_claude": null,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 37,
+    "name": "Dresden Freital",
+    "wikipedia": "https://en.wikipedia.org/wiki/Freital",
+    "lat_claude": 51.018,
+    "lng_claude": 13.61,
+    "coord_changed": true,
+    "geo_delta_km": 2.39
+  },
+  {
+    "section": "forum",
+    "index": 39,
+    "name": "Dresden Freital - Rosinaschacht",
+    "wikipedia": null,
+    "lat_claude": 51.006614,
+    "lng_claude": 13.651196,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 40,
+    "name": "ehemalige Uranerzaufbereitung Seelingstädt",
+    "wikipedia": null,
+    "lat_claude": 50.7728345,
+    "lng_claude": 12.2418481,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 43,
+    "name": "Fettquelle in BAD",
+    "wikipedia": null,
+    "lat_claude": null,
+    "lng_claude": null,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 44,
+    "name": "Florida's Radioactive Fountain",
+    "wikipedia": null,
+    "lat_claude": 26.935376,
+    "lng_claude": -82.051223,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 47,
+    "name": "Frankreich: Cs-137-Hotspots in den Alpen",
+    "wikipedia": null,
+    "lat_claude": 45.2,
+    "lng_claude": 6.7,
+    "coord_changed": true,
+    "geo_delta_km": 96.06
+  },
+  {
+    "section": "forum",
+    "index": 48,
+    "name": "Frankreich: Fort de Vaujours / Polygone d'expérimentation de Moronvilliers",
+    "wikipedia": null,
+    "lat_claude": 49.238389,
+    "lng_claude": 4.314402,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 51,
+    "name": "Fußgängerzone in Wernigerode und Rundwanderweg zum Brocken",
+    "wikipedia": null,
+    "lat_claude": 51.8344,
+    "lng_claude": 10.7863,
+    "coord_changed": false,
+    "geo_delta_km": 0.0
+  },
+  {
+    "section": "forum",
+    "index": 52,
+    "name": "Gallatin Towers climbing area in Montana, USA",
+    "wikipedia": null,
+    "lat_claude": 45.41689,
+    "lng_claude": -111.2342,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 53,
+    "name": "Gamma-ODL Referenzpunkt „Kapelle im Höhenpark Killesberg in Stuttgart",
+    "wikipedia": null,
+    "lat_claude": 48.806383,
+    "lng_claude": 9.170617,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 54,
+    "name": "Gamma-ODL Referenzpunkt Esslingen",
+    "wikipedia": null,
+    "lat_claude": 48.74308,
+    "lng_claude": 9.30553,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 55,
+    "name": "Gamma-ODL Referenzstrecke „Königstraße in Stuttgart",
+    "wikipedia": null,
+    "lat_claude": 48.7823,
+    "lng_claude": 9.1818,
+    "coord_changed": false,
+    "geo_delta_km": 0.0
+  },
+  {
+    "section": "forum",
+    "index": 56,
+    "name": "Geschichts-Drama 'Chernobyl' (GB/USA) auf SKY",
+    "wikipedia": null,
+    "lat_claude": null,
+    "lng_claude": null,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 57,
+    "name": "Gleesbergquelle im Gesundheitsbad ACTINON in Bad Schlema",
+    "wikipedia": null,
+    "lat_claude": null,
+    "lng_claude": null,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 58,
+    "name": "Granit an der Fillgraderstiege im 6. Bezirk",
+    "wikipedia": null,
+    "lat_claude": null,
+    "lng_claude": null,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 60,
+    "name": "Grüsse aus Autun",
+    "wikipedia": "https://en.wikipedia.org/wiki/Autun",
+    "lat_claude": 46.954361,
+    "lng_claude": 4.301417,
+    "coord_changed": true,
+    "geo_delta_km": 1.52
+  },
+  {
+    "section": "forum",
+    "index": 61,
+    "name": "Halde Schacht 333",
+    "wikipedia": null,
+    "lat_claude": 50.5113,
+    "lng_claude": 12.7483,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 62,
+    "name": "Halde Stolzenberg",
+    "wikipedia": null,
+    "lat_claude": 50.8662,
+    "lng_claude": 12.2286,
+    "coord_changed": false,
+    "geo_delta_km": 0.0
+  },
+  {
+    "section": "forum",
+    "index": 65,
+    "name": "Hamburg: Strahlendes Karolinenviertel",
+    "wikipedia": null,
+    "lat_claude": null,
+    "lng_claude": null,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 66,
+    "name": "Hanford Site",
+    "wikipedia": "https://en.wikipedia.org/wiki/Hanford_Site",
+    "lat_claude": 46.5328,
+    "lng_claude": -119.4931,
+    "coord_changed": false,
+    "geo_delta_km": 0.01
+  },
+  {
+    "section": "forum",
+    "index": 68,
+    "name": "Hessen ( Frankfurt am Main)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Frankfurt",
+    "lat_claude": 50.110922,
+    "lng_claude": 8.682127,
+    "coord_changed": true,
+    "geo_delta_km": 1.47
+  },
+  {
+    "section": "forum",
+    "index": 70,
+    "name": "Hessen, vorderer Odenwald, Steinbruch Mackenheim",
+    "wikipedia": null,
+    "lat_claude": 49.569066,
+    "lng_claude": 8.781677,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 71,
+    "name": "Hinweise auf Th- und Seltenerdmetalle rund um Nagy-Kopasz, Budapest",
+    "wikipedia": null,
+    "lat_claude": 47.48139,
+    "lng_claude": 19.145772,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 74,
+    "name": "Hotspot Halde 371 Hartenstein",
+    "wikipedia": null,
+    "lat_claude": 50.63087,
+    "lng_claude": 12.69338,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 75,
+    "name": "Hotspots am Schacht 277 in Zobes",
+    "wikipedia": null,
+    "lat_claude": 50.498138,
+    "lng_claude": 12.243471,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 77,
+    "name": "Hubertusquelle Thale",
+    "wikipedia": null,
+    "lat_claude": 51.742222,
+    "lng_claude": 11.027778,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 79,
+    "name": "Interessante Orte in Dänemark ?",
+    "wikipedia": null,
+    "lat_claude": 56.26392,
+    "lng_claude": 9.50195,
+    "coord_changed": true,
+    "geo_delta_km": 97.7
+  },
+  {
+    "section": "forum",
+    "index": 84,
+    "name": "Karten der weltweiten Uran- und Thorium-Vorkommen",
+    "wikipedia": null,
+    "lat_claude": 48.2342529,
+    "lng_claude": 16.4169882,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 90,
+    "name": "Kont. Kontrollen an Sperrzone Tschernobyl.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Chornobyl_Nuclear_Power_Plant",
+    "lat_claude": 51.3876,
+    "lng_claude": 30.1086,
+    "coord_changed": true,
+    "geo_delta_km": 17.09
+  },
+  {
+    "section": "forum",
+    "index": 91,
+    "name": "Kristallgrotte im Erlebnisbergwerk Merkers",
+    "wikipedia": "https://en.wikipedia.org/wiki/Merkers-Kieselbach",
+    "lat_claude": 50.8197,
+    "lng_claude": 10.1197,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 92,
+    "name": "Las Vegas, Test Side, Museum, Downwinders",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nevada_National_Security_Site",
+    "lat_claude": 36.8395,
+    "lng_claude": -116.0265,
+    "coord_changed": true,
+    "geo_delta_km": 27.95
+  },
+  {
+    "section": "forum",
+    "index": 93,
+    "name": "Lengenfeld Polenzstraße",
+    "wikipedia": null,
+    "lat_claude": 50.5706,
+    "lng_claude": 12.381,
+    "coord_changed": false,
+    "geo_delta_km": 0.0
+  },
+  {
+    "section": "forum",
+    "index": 94,
+    "name": "Lermontovskoe U-Lagerstätte",
+    "wikipedia": null,
+    "lat_claude": 44.081612,
+    "lng_claude": 43.005623,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 100,
+    "name": "Mehlinger Heide: Uranmunition?",
+    "wikipedia": null,
+    "lat_claude": 49.487417,
+    "lng_claude": 7.830513,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 103,
+    "name": "Münstertal",
+    "wikipedia": null,
+    "lat_claude": 47.85453,
+    "lng_claude": 7.78443,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 104,
+    "name": "Musée Curie, Paris/Frankreich",
+    "wikipedia": "https://en.wikipedia.org/wiki/Curie_Institute",
+    "lat_claude": 48.8446,
+    "lng_claude": 2.3453,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 105,
+    "name": "Museum Uranbergbau in Bad Schlema",
+    "wikipedia": null,
+    "lat_claude": 50.5598,
+    "lng_claude": 12.6747,
+    "coord_changed": true,
+    "geo_delta_km": 4.48
+  },
+  {
+    "section": "forum",
+    "index": 107,
+    "name": "Neues Kernenergiemuseum nahe Prag",
+    "wikipedia": null,
+    "lat_claude": 50.177554,
+    "lng_claude": 14.358433,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 108,
+    "name": "Neutronenquelle in Berlin Karlshorst",
+    "wikipedia": null,
+    "lat_claude": 52.482451,
+    "lng_claude": 13.533062,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 110,
+    "name": "ODL Großherrischwand",
+    "wikipedia": null,
+    "lat_claude": 47.681354,
+    "lng_claude": 8.007872,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 112,
+    "name": "Örsi-Hügel, Balaton, Ungarn",
+    "wikipedia": null,
+    "lat_claude": 46.813892,
+    "lng_claude": 17.536101,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 114,
+    "name": "Österreich - Waldviertel",
+    "wikipedia": "https://en.wikipedia.org/wiki/Waldviertel",
+    "lat_claude": 48.5,
+    "lng_claude": 15.4,
+    "coord_changed": true,
+    "geo_delta_km": 1.39
+  },
+  {
+    "section": "forum",
+    "index": 120,
+    "name": "Privates Mineralienmuseum in Mähring",
+    "wikipedia": null,
+    "lat_claude": 49.9087,
+    "lng_claude": 12.5305,
+    "coord_changed": false,
+    "geo_delta_km": 0.0
+  },
+  {
+    "section": "forum",
+    "index": 121,
+    "name": "Quellen mit Uran, Radium und Radon",
+    "wikipedia": null,
+    "lat_claude": 50.04988,
+    "lng_claude": 12.56552,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 122,
+    "name": "Radioaktive Schwermineralsände am Strand von L`Espiguette (Camargue, Frankreich)",
+    "wikipedia": null,
+    "lat_claude": 43.4783,
+    "lng_claude": 4.1512,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 123,
+    "name": "RADIONUKLIDE IN GRUNDWÄSSERN, GESTEINEN UND BACHSEDIMENTEN ÖSTERREICHS",
+    "wikipedia": null,
+    "lat_claude": 48.090573,
+    "lng_claude": 13.21491,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 124,
+    "name": "Radiumbrunnen Baden-Baden.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Baden-Baden",
+    "lat_claude": 48.7561,
+    "lng_claude": 8.2397,
+    "coord_changed": true,
+    "geo_delta_km": 46.03
+  },
+  {
+    "section": "forum",
+    "index": 125,
+    "name": "Radium-Quelle Břetislav bei Plesna (Radonquelle)",
+    "wikipedia": null,
+    "lat_claude": 50.206349732743156,
+    "lng_claude": 12.340415965606706,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 127,
+    "name": "Radiumquelle Hartmannsdorf",
+    "wikipedia": null,
+    "lat_claude": 50.5933,
+    "lng_claude": 12.4479,
+    "coord_changed": true,
+    "geo_delta_km": 7.06
+  },
+  {
+    "section": "forum",
+    "index": 129,
+    "name": "Radiumquelle Rodaborn",
+    "wikipedia": null,
+    "lat_claude": 50.759533,
+    "lng_claude": 11.87075,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 130,
+    "name": "Radiumquelle Stecklenberg/Harz",
+    "wikipedia": null,
+    "lat_claude": 51.729088,
+    "lng_claude": 11.089737,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 134,
+    "name": "Radiumquelle Wunderthausen",
+    "wikipedia": null,
+    "lat_claude": 51.11296,
+    "lng_claude": 8.540555,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 135,
+    "name": "Radiumquelle Zell am Harmersbach",
+    "wikipedia": null,
+    "lat_claude": 48.3618,
+    "lng_claude": 8.0668,
+    "coord_changed": false,
+    "geo_delta_km": 0.01
+  },
+  {
+    "section": "forum",
+    "index": 136,
+    "name": "Radonhaltige Quelle in Berga",
+    "wikipedia": null,
+    "lat_claude": 50.757943,
+    "lng_claude": 12.174485,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 139,
+    "name": "Reise mit privatem Guide nach Chernobyl/Pripjat April/Mai 2020",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pripyat",
+    "lat_claude": 51.4049,
+    "lng_claude": 30.0595,
+    "coord_changed": false,
+    "geo_delta_km": 0.5
+  },
+  {
+    "section": "forum",
+    "index": 140,
+    "name": "Reise nach Osteuropa",
+    "wikipedia": null,
+    "lat_claude": 50.7637845,
+    "lng_claude": 15.8460054,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 141,
+    "name": "Revier Zobes Schacht 294?",
+    "wikipedia": null,
+    "lat_claude": 50.498313,
+    "lng_claude": 12.254644,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 142,
+    "name": "Rotschlammdeponie Stade",
+    "wikipedia": null,
+    "lat_claude": 53.6406,
+    "lng_claude": 9.419,
+    "coord_changed": false,
+    "geo_delta_km": 0.0
+  },
+  {
+    "section": "forum",
+    "index": 143,
+    "name": "Rožná / Bukov Uran Minen",
+    "wikipedia": null,
+    "lat_claude": 49.4805,
+    "lng_claude": 16.2231,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 144,
+    "name": "Sanierung Collmberghalde bei Freital",
+    "wikipedia": null,
+    "lat_claude": 51.016265,
+    "lng_claude": 13.6530329,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 146,
+    "name": "Schacht 235 Weißer Hirsch bei Antonsthal",
+    "wikipedia": null,
+    "lat_claude": 50.504846,
+    "lng_claude": 12.77423,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 147,
+    "name": "Schacht 254 Streuberg / Bergen",
+    "wikipedia": null,
+    "lat_claude": 50.4671,
+    "lng_claude": 12.2472,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 148,
+    "name": "Schacht 318 bei Crandorf",
+    "wikipedia": null,
+    "lat_claude": 50.507401,
+    "lng_claude": 12.780704,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 152,
+    "name": "Schramberg und Umgebung",
+    "wikipedia": "https://en.wikipedia.org/wiki/Schramberg",
+    "lat_claude": 48.2289,
+    "lng_claude": 8.3722,
+    "coord_changed": true,
+    "geo_delta_km": 37.57
+  },
+  {
+    "section": "forum",
+    "index": 158,
+    "name": "Sonderwaffenlager Vogelsang bei Zehdenick",
+    "wikipedia": null,
+    "lat_claude": 52.9794838,
+    "lng_claude": 13.3348959,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 160,
+    "name": "Sportplatz Kleinnaundorf",
+    "wikipedia": null,
+    "lat_claude": 50.99785,
+    "lng_claude": 13.684667,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 161,
+    "name": "Steinbruch bei  Hösbach",
+    "wikipedia": null,
+    "lat_claude": 49.9784,
+    "lng_claude": 9.1962,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 162,
+    "name": "Steinbruch Jenikov Lahost",
+    "wikipedia": null,
+    "lat_claude": 50.63087,
+    "lng_claude": 13.758104,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 165,
+    "name": "Strahlender Affe",
+    "wikipedia": null,
+    "lat_claude": 47.7602,
+    "lng_claude": 9.2452,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 170,
+    "name": "Straße zwischen Dänkritz und Lauenhain",
+    "wikipedia": null,
+    "lat_claude": 50.789056,
+    "lng_claude": 12.427056,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 172,
+    "name": "Straßendreieck bei Berga/Elster",
+    "wikipedia": null,
+    "lat_claude": 50.768139,
+    "lng_claude": 12.157639,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 175,
+    "name": "Tammiku / Paldiski (Estland)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Paldiski",
+    "lat_claude": 59.3491,
+    "lng_claude": 24.0802,
+    "coord_changed": false,
+    "geo_delta_km": 0.0
+  },
+  {
+    "section": "forum",
+    "index": 177,
+    "name": "Telemark Norwegen",
+    "wikipedia": "https://en.wikipedia.org/wiki/Telemark",
+    "lat_claude": 59.2,
+    "lng_claude": 9.5,
+    "coord_changed": true,
+    "geo_delta_km": 13.81
+  },
+  {
+    "section": "forum",
+    "index": 184,
+    "name": "Uranhaltige Halden in Wittichen-Schenkenzell in BW",
+    "wikipedia": null,
+    "lat_claude": 48.33682,
+    "lng_claude": 8.341608,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 186,
+    "name": "Uranium Washington (state)",
+    "wikipedia": null,
+    "lat_claude": 47.941941,
+    "lng_claude": -118.0962,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 187,
+    "name": "Uranmine – Kővágószőlős, Ungarn",
+    "wikipedia": null,
+    "lat_claude": 46.099531,
+    "lng_claude": 18.090411,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 188,
+    "name": "Uranversuchsabbau in Müllenbach bei Baden-Baden",
+    "wikipedia": null,
+    "lat_claude": 48.741407,
+    "lng_claude": 8.29048,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 189,
+    "name": "VEB Chemiekombinat Bitterfeld",
+    "wikipedia": "https://de.wikipedia.org/wiki/Chemiekombinat_Bitterfeld",
+    "lat_claude": 51.6504,
+    "lng_claude": 12.2891,
+    "coord_changed": false,
+    "geo_delta_km": 0.0
+  },
+  {
+    "section": "forum",
+    "index": 190,
+    "name": "verrückter Geigerzähler im Jonastal",
+    "wikipedia": null,
+    "lat_claude": null,
+    "lng_claude": null,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 191,
+    "name": "Versuchslabor Stadtilm",
+    "wikipedia": null,
+    "lat_claude": 50.774744,
+    "lng_claude": 11.077528,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 192,
+    "name": "Vogesen, Frankreich",
+    "wikipedia": "https://en.wikipedia.org/wiki/Vosges",
+    "lat_claude": 48.2421,
+    "lng_claude": 7.3179,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 195,
+    "name": "Waldbrand in Tschernobyl",
+    "wikipedia": null,
+    "lat_claude": 51.389444,
+    "lng_claude": 30.099167,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 196,
+    "name": "Washout-Hotspot bei Magdeburg?",
+    "wikipedia": null,
+    "lat_claude": 52.697322,
+    "lng_claude": 12.186971,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 197,
+    "name": "Weinböhla: Ehemalige Radon-Quelle an der Laubenhöhe",
+    "wikipedia": null,
+    "lat_claude": 51.161944,
+    "lng_claude": 13.586222,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 200,
+    "name": "Wien: Altstandort Glühstrumpf-Fabrik Auer von Welsbach",
+    "wikipedia": "https://en.wikipedia.org/wiki/Auer_von_Welsbach",
+    "lat_claude": 48.1556,
+    "lng_claude": 16.3134,
+    "coord_changed": false,
+    "geo_delta_km": 0.0
+  },
+  {
+    "section": "forum",
+    "index": 201,
+    "name": "Wiese zwischen Gauern und Wolfersdorf",
+    "wikipedia": null,
+    "lat_claude": null,
+    "lng_claude": null,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 202,
+    "name": "Wiesenquelle in Bad Schlema",
+    "wikipedia": null,
+    "lat_claude": 50.5937,
+    "lng_claude": 12.6632,
+    "coord_changed": false,
+    "geo_delta_km": 0.0
+  },
+  {
+    "section": "forum",
+    "index": 203,
+    "name": "WISMUT-Bohrung(?) im Werdauer Wald",
+    "wikipedia": null,
+    "lat_claude": 50.714294,
+    "lng_claude": 12.258527,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 204,
+    "name": "WISMUT-Schotter: DREWS-Brache in Meerane",
+    "wikipedia": null,
+    "lat_claude": 50.843552,
+    "lng_claude": 12.44391,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 205,
+    "name": "Wismutsee bei Steinach",
+    "wikipedia": null,
+    "lat_claude": 50.444333,
+    "lng_claude": 11.170067,
+    "coord_changed": false,
+    "geo_delta_km": null
+  },
+  {
+    "section": "forum",
+    "index": 208,
+    "name": "Zwischenlager Rossendorf (ZLR)",
+    "wikipedia": null,
+    "lat_claude": 51.54231,
+    "lng_claude": 14.124659,
+    "coord_changed": false,
+    "geo_delta_km": null
+  }
+]

@@ -25,5 +25,6 @@ android-app/local.properties
 # Misc project-root clutter
 archive/
 falsch.txt
+promptlog.txt
 image.jpg
 release assets/
