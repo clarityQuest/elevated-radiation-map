@@ -90,8 +90,8 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onPageFinished(view: WebView?, url: String?) {
-                val lang = java.util.Locale.getDefault().language
-                view?.evaluateJavascript("userLang = '$lang'; applyLocale();", null)
+                val wikiLang = if (java.util.Locale.getDefault().language == "de") "'de'" else "'en'"
+                view?.evaluateJavascript("wikiLang = $wikiLang;", null)
             }
 
             override fun shouldOverrideUrlLoading(view: WebView?, request: WebResourceRequest?): Boolean {

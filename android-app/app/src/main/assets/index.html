@@ -3,20 +3,98 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Elevated Radiation Map</title>
+<title>Elevated Radiation Map – Geiger Counter Measurements in Germany &amp; Europe</title>
+<meta name="description" content="Interactive map of locations with elevated radiation measured by Geiger counters across Germany and Europe. Visualises dose rates (µSv/h) from citizen-science data by opengeiger.de and Geigerzählerforum. Find radioactive anomalies, old mine tailings, and naturally elevated background spots."/>
+<meta name="keywords" content="radiation map, Geiger counter map, radioactivity map Germany, Strahlungsmessung Karte, elevated radiation locations, dose rate µSv, opengeiger.de, Geigerzählerforum, nuclear radiation, Radioaktivität Deutschland, Geigerzähler Messorte, radiation hotspot, background radiation Europe"/>
+<meta name="robots" content="index, follow"/>
+<meta name="author" content="opengeiger.de &amp; Geigerzählerforum contributors"/>
+<meta property="og:title" content="Elevated Radiation Map – Geiger Counter Measurements in Germany &amp; Europe"/>
+<meta property="og:description" content="Interactive map showing hundreds of locations with elevated radiation, measured by citizen scientists with Geiger counters. Data from opengeiger.de and Geigerzählerforum. Colour-coded by dose rate."/>
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:locale:alternate" content="de_DE"/>
+<meta property="og:url" content="https://clarityquest.github.io/elevated-radiation-map/"/>
+<link rel="canonical" href="https://clarityquest.github.io/elevated-radiation-map/"/>
+<meta name="geo.region" content="DE"/>
+<meta name="geo.placename" content="Germany"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Elevated Radiation Map – Geiger Counter Data"/>
+<meta name="twitter:description" content="Interactive map of elevated-radiation locations across Germany and Europe. Geiger counter measurements from opengeiger.de and Geigerzählerforum, colour-coded by dose rate (µSv/h)."/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Elevated Radiation Map",
+  "alternateName": "Strahlungsmessung Karte",
+  "description": "Interactive map visualising hundreds of locations across Germany and Europe where citizen scientists have measured elevated radiation with Geiger counters. Data sourced from opengeiger.de and the Geigerzählerforum. Dose rates displayed in µSv/h, colour-coded from low background levels to extreme hotspots.",
+  "applicationCategory": "ScienceApplication",
+  "operatingSystem": "Any modern web browser",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+  "keywords": "radiation map, Geiger counter, dose rate, radioactivity, Germany, Europe, opengeiger, Geigerzählerforum",
+  "inLanguage": ["en", "de"],
+  "isAccessibleForFree": true,
+  "about": {
+    "@type": "Thing",
+    "name": "Ionising radiation measurements",
+    "description": "Crowd-sourced Geiger counter dose-rate readings at geographic locations"
+  },
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Hobbyist physicists, radiation safety researchers, curious citizens, geology enthusiasts"
+  },
+  "citation": [
+    { "@type": "WebSite", "name": "opengeiger.de", "url": "http://www.opengeiger.de/GeigerCaching/GeigerCaching.html" },
+    { "@type": "WebSite", "name": "Geigerzählerforum", "url": "https://www.geigerzaehlerforum.de/" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Elevated Radiation Locations in Germany and Europe",
+  "alternateName": "Erhöhte Strahlungsmessorte in Deutschland und Europa",
+  "description": "Crowd-sourced Geiger counter dose-rate measurements (µSv/h) at hundreds of locations across Germany and Europe. Compiled from opengeiger.de and the Geigerzählerforum citizen-science community. Includes location name, GPS coordinates, measured dose rate, source notes, and a direct link to the original measurement report.",
+  "url": "https://clarityquest.github.io/elevated-radiation-map/",
+  "keywords": ["radiation", "Geiger counter", "dose rate", "µSv/h", "radioactivity", "Germany", "Europe", "ionising radiation", "background radiation", "uranium", "thorium", "mine tailings", "Strahlung", "Radioaktivität"],
+  "creator": [
+    { "@type": "Organization", "name": "opengeiger.de", "url": "http://www.opengeiger.de" },
+    { "@type": "Organization", "name": "Geigerzählerforum", "url": "https://www.geigerzaehlerforum.de/" }
+  ],
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Germany and Europe",
+    "geo": { "@type": "GeoShape", "box": "47.2 5.9 55.1 15.0" }
+  },
+  "measurementTechnique": "Geiger-Müller counter",
+  "variableMeasured": {
+    "@type": "PropertyValue",
+    "name": "Dose rate",
+    "unitText": "µSv/h",
+    "description": "Ambient gamma dose rate in microsieverts per hour measured at ground level"
+  },
+  "isAccessibleForFree": true,
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "distribution": {
+    "@type": "DataDownload",
+    "encodingFormat": "application/json",
+    "contentUrl": "https://clarityquest.github.io/elevated-radiation-map/database.json"
+  }
+}
+</script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  html, body { width: 100%; height: 100%; overflow: hidden; }
+  html, body { height: 100%; overflow: hidden; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background: #1a1a2e;
+    background: #f5f5f5;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+    min-height: 100dvh;
   }
-  .map-wrap { position: relative; overflow: hidden; flex: 1 1 auto; min-height: 0; }
-  #map { width: 100%; height: 100%; }
   header {
     background: #1a1a2e;
     color: #fff;
@@ -25,7 +103,6 @@
     align-items: center;
     gap: 10px;
     flex-wrap: nowrap;
-    flex: 0 0 auto;
   }
   .header-meta { min-width: 0; }
   .source-links {
@@ -64,6 +141,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
+  #map { width: 100%; height: 100%; }
+  .map-wrap { position: relative; overflow: hidden; flex: 1 1 auto; min-height: 0; }
   #legend-stack {
     position: absolute; bottom: 44px; right: 12px; z-index: 1000;
     display: flex; flex-direction: column; gap: 8px; align-items: flex-end;
@@ -75,8 +154,6 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.2); white-space: nowrap;
   }
   #legend-toggle-btn:hover { background: #fff; }
-  #legend { transition: opacity 0.15s, transform 0.15s; }
-  #legend.hidden { display: none; }
   #legend {
     background: rgba(255,255,255,0.95); border-radius: 8px;
     padding: 8px 10px; font-size: 11px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);
@@ -128,16 +205,17 @@
   #info-wiki-img { float: left; width: 72px; height: 54px; object-fit: cover; border-radius: 4px; margin: 0 8px 4px 0; display: none; }
   #info-wiki-extract { font-size: 11px; color: #555; line-height: 1.45; }
   .link-short { display: none; }
-  #info-wiki-body-link { pointer-events: auto; cursor: pointer; }
+  #info-wiki-body-link { pointer-events: none; }
+  #lang-badge {
+    position: fixed; bottom: 8px; left: 8px; z-index: 1500;
+    font-size: 11px; font-weight: 700; letter-spacing: 1px; color: #fff;
+    background: rgba(0,0,0,0.45); border-radius: 4px; padding: 2px 6px;
+    cursor: pointer; opacity: 0.8; user-select: none;
+  }
+  #lang-badge:hover { opacity: 1; background: rgba(0,0,0,0.65); }
   #info-dose-row { margin: 4px 0 6px; line-height: 1.3; }
   #info .dose { font-size: 22px; font-weight: 700; }
   #info .tier { font-size: 12px; color: #555; vertical-align: middle; margin-left: 4px; }
-  /* Always use compact link style: pin icon for Google Maps, clickable wiki preview */
-  #info-gmaps { display: none !important; }
-  #info-gmaps-icon { display: inline !important; }
-  #info-wiki-link { display: none !important; }
-  #info-wiki-body-link { pointer-events: auto; cursor: pointer; }
-  #info-wiki-extract::before { content: 'Wiki: '; font-weight: 600; color: #333; }
   @media (min-width: 900px) {
     #info { width: 380px; font-size: 15px; padding: 18px 20px; }
     #info .iname { font-size: 17px; }
@@ -147,19 +225,12 @@
     #info .src-link { font-size: 13px; padding: 6px 13px; }
     #info-wiki-img { width: 100px; height: 76px; }
     #info-wiki-extract { font-size: 13px; }
+    #info-gmaps { display: none !important; }
+    #info-gmaps-icon { display: inline !important; }
+    #info-wiki-link { display: none !important; }
+    #info-wiki-body-link { pointer-events: auto; cursor: pointer; }
+    #info-wiki-extract::before { content: 'Wiki: '; font-weight: 600; color: #333; }
   }
-  /* Contact / add-place button: bottom-left, above OSM attribution */
-  #contact-btn {
-    position: absolute; bottom: 44px; left: 12px; z-index: 1000;
-    display: inline-flex; align-items: center; gap: 6px;
-    border: 0; border-radius: 6px;
-    background: #2e6ea8; color: #fff;
-    padding: 7px 11px; font-size: 12px; font-weight: 600;
-    text-decoration: none; cursor: pointer;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
-    white-space: nowrap;
-  }
-  #contact-btn:hover { background: #3b84c5; }
   .tri-marker { width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent; }
   @media (max-width: 480px), (max-height: 500px) and (orientation: landscape) {
     header { padding: 5px 8px; gap: 6px; }
@@ -170,6 +241,9 @@
     .locate-btn { padding: 4px 7px; font-size: 10px; }
     #locate-status { display: none; }
     #legend-stack { bottom: 36px; right: 8px; }
+    #legend-toggle-btn { display: block; }
+    #legend { display: none; }
+    #legend.legend-open { display: block; }
     #legend { padding: 6px 8px; font-size: 10px; max-width: 170px; }
     #legend strong { font-size: 11px; }
     .dot { width: 10px; height: 10px; margin-right: 4px; }
@@ -177,24 +251,20 @@
     .legend-shapes { gap: 8px; font-size: 10px; }
     #info { width: 220px; top: 8px; right: 8px; padding: 10px 12px; font-size: 12px; overflow-y: auto; max-height: calc(100vh - 24px); }
     #info .dose { font-size: 18px; }
-    #contact-btn { bottom: 36px; left: 8px; padding: 6px 9px; font-size: 11px; }
     #info .src-link { padding: 3px 7px; font-size: 11px; text-align: center; }
     #info-link     { order: 1; flex: 1; }
     #info-radiaverse { order: 2; flex: 1; }
     #info-forum-link { order: 3; width: 100%; }
+    #info-gmaps { display: none !important; }
+    #info-gmaps-icon { display: inline !important; }
+    #info-wiki-link { display: none !important; }
+    #info-wiki-body-link { pointer-events: auto; cursor: pointer; }
+    #info-wiki-extract::before { content: 'Wiki: '; font-weight: 600; color: #333; }
     .link-full { display: none; }
     .link-short { display: inline; }
   }
   @media (max-height: 500px) and (orientation: landscape) {
     header { padding: 2px 8px; }
-    #info { font-size: 9px; padding: 7px 8px; }
-    #info .close { font-size: 13px; }
-    #info .iname { font-size: 10px; }
-    #info .ilocation { font-size: 8px; }
-    #info .dose { font-size: 13px; }
-    #info .tier, #info .note { font-size: 8px; }
-    #info .src-link { font-size: 8px; padding: 2px 5px; }
-    #info-wiki-extract { font-size: 8px; }
   }
   @media (max-width: 480px) and (orientation: portrait) {
     .locate-btn { white-space: normal; max-width: 56px; line-height: 1.25; text-align: center; }
@@ -217,41 +287,50 @@
 </style>
 </head>
 <body>
+<noscript>
+  <p><strong>Elevated Radiation Map – Geiger Counter Measurements in Germany &amp; Europe</strong></p>
+  <p>This interactive map shows hundreds of locations across Germany and Europe where citizen scientists have measured elevated levels of ionising radiation with Geiger counters.
+  Data is sourced from <a href="http://www.opengeiger.de/GeigerCaching/GeigerCaching.html">opengeiger.de</a> and the <a href="https://www.geigerzaehlerforum.de/">Geigerzählerforum</a>.
+  Each map marker is colour-coded by the measured dose rate in µSv/h: blue for low background (&lt;0.5 µSv/h), green for slightly elevated (0.5–1 µSv/h), orange for high (1–3 µSv/h), red-orange for very high (3–10 µSv/h), and dark red for extreme readings (&ge;10 µSv/h).
+  Locations include old mine tailings, areas with naturally elevated background radiation, and other radioactive anomalies measured by hobbyist physicists, geology enthusiasts, and radiation safety researchers.
+  JavaScript must be enabled to use the interactive map.</p>
+</noscript>
 <header>
   <div class="header-meta">
     <h1>&#9762; Elevated Radiation Map</h1>
     <div class="source-links">
-      <span>Sources:</span>
+      <span data-i18n="sources_label">Sources:</span>
       <a href="http://www.opengeiger.de/GeigerCaching/GeigerCaching.html" target="_blank">opengeiger.de</a>
       <a href="https://www.geigerzaehlerforum.de/" target="_blank">geigerzaehlerforum.de</a>
     </div>
   </div>
-  <button class="locate-btn" id="locate-btn" type="button">Show my position</button>
-  <span id="locate-status">Click a marker for details</span>
+  <a class="locate-btn" href="mailto:info@three-mills.com" style="text-decoration:none"><span class="link-full" data-i18n="add_contact_full">Add places / Contact</span><span class="link-short" data-i18n="add_contact_short">Add / Contact</span></a>
+  <button class="locate-btn" id="locate-btn" type="button" data-i18n="show_position">Show my position</button>
+  <span id="locate-status" data-i18n="click_marker">Click a marker for details</span>
 </header>
 
 <div class="map-wrap">
   <div id="map"></div>
   <div id="loading-overlay">
     <div class="spinner"></div>
-    <span id="loading-msg">Loading data&hellip;</span>
+    <span id="loading-msg" data-i18n="loading">Loading data&hellip;</span>
   </div>
 
   <div id="legend-stack">
-    <button id="legend-toggle-btn" type="button" onclick="toggleLegend()">&#9776; Legend</button>
-    <div id="legend" class="hidden">
-      <strong>Sources</strong>
+    <button id="legend-toggle-btn" type="button">&#9432; Legend</button>
+    <div id="legend">
+      <strong data-i18n="legend_sources">Sources</strong>
       <div class="legend-sources">
         <label><input type="checkbox" id="chk-opengeiger" checked> opengeiger.de</label>
         <label><input type="checkbox" id="chk-forum" checked> Geigerzählerforum</label>
       </div>
-      <strong>Dose rate (&#181;Sv/h)</strong>
-      <div class="legend-row"><span class="dot" style="background:#A32D2D"></span> Extreme &ge;10</div>
-      <div class="legend-row"><span class="dot" style="background:#D85A30"></span> Very high 3&ndash;10</div>
-      <div class="legend-row"><span class="dot" style="background:#EF9F27"></span> High 1&ndash;3</div>
-      <div class="legend-row"><span class="dot" style="background:#639922"></span> Elevated 0.5&ndash;1</div>
-      <div class="legend-row"><span class="dot" style="background:#378ADD"></span> Low &lt;0.5</div>
-      <div class="legend-row"><span class="dot" style="background:#999"></span> No data</div>
+      <strong data-i18n="legend_dose">Dose rate (µSv/h)</strong>
+      <div class="legend-row"><span class="dot" style="background:#A32D2D"></span><span data-i18n="legend_extreme"> Extreme ≥10</span></div>
+      <div class="legend-row"><span class="dot" style="background:#D85A30"></span><span data-i18n="legend_very_high"> Very high 3–10</span></div>
+      <div class="legend-row"><span class="dot" style="background:#EF9F27"></span><span data-i18n="legend_high"> High 1–3</span></div>
+      <div class="legend-row"><span class="dot" style="background:#639922"></span><span data-i18n="legend_elevated"> Elevated 0.5–1</span></div>
+      <div class="legend-row"><span class="dot" style="background:#378ADD"></span><span data-i18n="legend_low"> Low &lt;0.5</span></div>
+      <div class="legend-row"><span class="dot" style="background:#999"></span><span data-i18n="legend_no_data"> No data</span></div>
       <div class="legend-shapes">
         <span><span class="dot" style="background:#888;width:10px;height:10px"></span> opengeiger</span>
         <span><span class="tri" style="border-bottom-color:#888"></span> Forum</span>
@@ -259,16 +338,9 @@
     </div>
   </div>
 
-
-  <a id="contact-btn"
-     href="mailto:info@three-mills.com?subject=Elevated%20Radiation%20Map%20%E2%80%93%20New%20place%20%2F%20Contact"
-     title="Suggest a new place or contact the maintainers">
-    &#9993; Add place / Contact
-  </a>
-
   <div id="info">
-    <span class="close" onclick="document.getElementById('info').style.display='none'; clearHighlight();">&#215;</span>
-    <a id="info-gmaps-icon" href="#" target="_blank" title="Google Maps" style="float:right;margin-left:6px;line-height:1;"><svg width="18" height="22" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C7.03 0 3 4.03 3 9c0 6.75 9 19 9 19s9-12.25 9-19c0-4.97-4.03-9-9-9z" fill="#EA4335"/><circle cx="12" cy="9" r="3.5" fill="#fff"/></svg></a>
+    <span class="close" onclick="closeInfo();">&#215;</span>
+    <a id="info-gmaps-icon" href="#" target="_blank" title="Google Maps" style="display:none;float:right;margin-left:6px;line-height:1;"><svg width="18" height="22" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C7.03 0 3 4.03 3 9c0 6.75 9 19 9 19s9-12.25 9-19c0-4.97-4.03-9-9-9z" fill="#EA4335"/><circle cx="12" cy="9" r="3.5" fill="#fff"/></svg></a>
     <div class="iname" id="info-name"></div>
     <div class="ilocation" id="info-location"></div>
     <div id="info-dose-row"><span class="dose" id="info-dose"></span><span class="tier" id="info-tier"></span></div>
@@ -277,7 +349,7 @@
       <a class="src-link" id="info-link" href="#" target="_blank">&#8594; Source</a>
       <a class="src-link" id="info-forum-link" href="#" target="_blank" style="display:none">&#8594; <span class="link-full">Geigerzählerforum</span><span class="link-short">Forum</span></a>
       <a class="src-link" id="info-gmaps" href="#" target="_blank">&#8594; Google Maps</a>
-      <a class="src-link" id="info-radiaverse" href="#" target="_blank">Radiaverse Map</a>
+      <a class="src-link" id="info-radiaverse" href="#" target="_blank">&#8594; <span class="link-full">map.radiaverse.com</span><span class="link-short">radiaverse map</span></a>
       <a class="src-link" id="info-wiki-link" href="#" target="_blank" style="display:none">&#8594; Wikipedia</a>
     </div>
     <div id="info-wiki">
@@ -289,16 +361,10 @@
       </a>
     </div>
   </div>
+  <div id="lang-badge" onclick="toggleWikiLang()" title="Switch Wikipedia language">DE</div>
 </div>
 
 <script>
-function toggleLegend() {
-  var legend = document.getElementById('legend');
-  var btn = document.getElementById('legend-toggle-btn');
-  var hidden = legend.classList.toggle('hidden');
-  btn.innerHTML = hidden ? '&#9776; Legend' : '&#10005; Legend';
-}
-
 var BASE = 'http://www.opengeiger.de/GeigerCaching/GeigerCaching.html';
 
 function buildSourceUrl(loc) {
@@ -326,18 +392,94 @@ function getColor(d) {
   if (d >= 0.5) return '#639922';
   return '#378ADD';
 }
+var i18n = {
+  de: {
+    sources_label: 'Quellen:',
+    add_contact_full: 'Orte hinzufügen / Kontakt',
+    add_contact_short: 'Hinzuf. / Kontakt',
+    show_position: 'Position anzeigen',
+    click_marker: 'Auf Marker klicken',
+    loading: 'Daten werden geladen…',
+    legend_sources: 'Quellen',
+    legend_dose: 'Dosisrate (µSv/h)',
+    legend_extreme: ' Extrem ≥10',
+    legend_very_high: ' Sehr hoch 3–10',
+    legend_high: ' Hoch 1–3',
+    legend_elevated: ' Erhöht 0,5–1',
+    legend_low: ' Niedrig <0,5',
+    legend_no_data: ' Keine Daten',
+    no_data: 'Keine Daten',
+    tier_extreme: 'Extrem', tier_very_high: 'Sehr hoch',
+    tier_high: 'Hoch', tier_elevated: 'Erhöht', tier_low: 'Niedrig',
+    you_are_here: 'Ihr Standort',
+    locating: 'Orten…',
+    locate_done: 'Aktueller Standort wird angezeigt',
+    locate_denied: 'Standortzugriff verweigert',
+    locate_error: 'Standort nicht ermittelbar',
+    locate_unsupported: 'Standortbestimmung nicht unterstützt',
+    lang_title: 'Auf Englisch umschalten',
+  },
+  en: {
+    sources_label: 'Sources:',
+    add_contact_full: 'Add places / Contact',
+    add_contact_short: 'Add / Contact',
+    show_position: 'Show my position',
+    click_marker: 'Click a marker for details',
+    loading: 'Loading data…',
+    legend_sources: 'Sources',
+    legend_dose: 'Dose rate (µSv/h)',
+    legend_extreme: ' Extreme ≥10',
+    legend_very_high: ' Very high 3–10',
+    legend_high: ' High 1–3',
+    legend_elevated: ' Elevated 0.5–1',
+    legend_low: ' Low <0.5',
+    legend_no_data: ' No data',
+    no_data: 'No data',
+    tier_extreme: 'Extreme', tier_very_high: 'Very high',
+    tier_high: 'High', tier_elevated: 'Elevated', tier_low: 'Low',
+    you_are_here: 'You are here',
+    locating: 'Locating…',
+    locate_done: 'Current position shown',
+    locate_denied: 'Location permission denied',
+    locate_error: 'Unable to get current position',
+    locate_unsupported: 'Geolocation is not supported',
+    lang_title: 'Switch to German',
+  }
+};
+
 function getTier(d) {
-  if (d < 0)    return t('noData');
-  if (d >= 10)  return t('extreme');
-  if (d >= 3)   return t('veryHigh');
-  if (d >= 1)   return t('high');
-  if (d >= 0.5) return t('elevated');
-  return t('low');
+  var t = i18n[wikiLang];
+  if (d < 0)    return '';
+  if (d >= 10)  return t.tier_extreme;
+  if (d >= 3)   return t.tier_very_high;
+  if (d >= 1)   return t.tier_high;
+  if (d >= 0.5) return t.tier_elevated;
+  return t.tier_low;
 }
 
-var map = L.map('map').setView([51, 12], 5);
-// Custom pane so round/merged markers render above triangles (z > markerPane's 600).
-map.createPane('ogPane');     map.getPane('ogPane').style.zIndex = 650;
+function applyLang() {
+  var t = i18n[wikiLang];
+  document.querySelectorAll('[data-i18n]').forEach(function(el) {
+    el.textContent = t[el.getAttribute('data-i18n')] || el.textContent;
+  });
+  document.getElementById('lang-badge').title = t.lang_title;
+}
+
+// Parse ?lat=X&lng=Y&zoom=Z or hash #zoom/lat/lng for deep-links from the editor
+var _urlLat, _urlLng, _urlZoom;
+(function() {
+  var p = new URLSearchParams(window.location.search);
+  var m = window.location.hash.match(/^#(\d+)\/([-\d.]+)\/([-\d.]+)/);
+  if (m) {
+    _urlLat = parseFloat(m[2]); _urlLng = parseFloat(m[3]); _urlZoom = parseInt(m[1]);
+  } else if (p.get('lat')) {
+    _urlLat = parseFloat(p.get('lat')); _urlLng = parseFloat(p.get('lng')); _urlZoom = parseInt(p.get('zoom')) || 17;
+  }
+})();
+var map = L.map('map').setView(
+  (_urlLat && _urlLng) ? [_urlLat, _urlLng] : [51, 12],
+  _urlZoom || 5
+);
 var isLocalFile = window.location.protocol === 'file:';
 var osmOptions = {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | Data: <a href="http://www.opengeiger.de">opengeiger.de</a>, <a href="https://www.geigerzaehlerforum.de/">geigerzaehlerforum.de</a>',
@@ -397,7 +539,7 @@ function showUserPosition(position) {
     weight: 2,
     fillOpacity: 0.95
   }).addTo(map);
-  // No tooltip on touch devices
+  userMarker.bindTooltip(i18n[wikiLang].you_are_here, {direction: 'top'});
 
   userAccuracyCircle = L.circle([lat, lng], {
     radius: accuracy,
@@ -408,24 +550,24 @@ function showUserPosition(position) {
   }).addTo(map);
 
   map.flyTo([lat, lng], 13, {duration: 0.7});
-  setLocateStatus(t('positionShown'));
+  setLocateStatus(i18n[wikiLang].locate_done);
 }
 
 function showUserPositionError(err) {
   if (err && err.code === 1) {
-    setLocateStatus(t('locationDenied'));
+    setLocateStatus(i18n[wikiLang].locate_denied);
     return;
   }
-  setLocateStatus(t('locationUnavailable'));
+  setLocateStatus(i18n[wikiLang].locate_error);
 }
 
 document.getElementById('locate-btn').addEventListener('click', function() {
   if (!navigator.geolocation) {
-    setLocateStatus(t('geolocationUnsupported'));
+    setLocateStatus(i18n[wikiLang].locate_unsupported);
     return;
   }
 
-  setLocateStatus(t('locating'));
+  setLocateStatus(i18n[wikiLang].locating);
   navigator.geolocation.getCurrentPosition(showUserPosition, showUserPositionError, {
     enableHighAccuracy: true,
     timeout: 15000,
@@ -436,22 +578,27 @@ document.getElementById('locate-btn').addEventListener('click', function() {
 var openGeigerLayer = L.layerGroup().addTo(map);
 var forumLayer = L.layerGroup().addTo(map);
 
+function closeInfo() {
+  document.getElementById('info').style.display = 'none';
+  document.body.classList.remove('info-open');
+  clearHighlight();
+}
+
 function showInfo(loc, color, sourceLabel, sourceUrl, forumLoc) {
   document.getElementById('info').style.display = 'block';
+  document.body.classList.add('info-open');
   document.getElementById('info-name').textContent = loc.name;
   var locText = (loc.location || '').trim();
   document.getElementById('info-location').textContent = (locText && locText !== loc.name.trim()) ? locText : '';
   document.getElementById('info-dose').style.color = color;
-  document.getElementById('info-dose').textContent = loc.dose < 0 ? t('noData') : loc.dose + ' \u00b5Sv/h';
+  document.getElementById('info-dose').textContent = loc.dose < 0 ? i18n[wikiLang].no_data : loc.dose + ' \u00b5Sv/h';
   var tierLabel = getTier(loc.dose);
   document.getElementById('info-tier').textContent = tierLabel ? ' (' + tierLabel + ')' : '';
+  currentNote = loc.note || null;
+  currentDose = loc.dose;
   var noteEl = document.getElementById('info-note');
   noteEl.textContent = loc.note || '';
-  if (userLang !== 'en' && loc.note) {
-    translateNote(loc.note, function(translated) {
-      if (noteEl.textContent === loc.note) noteEl.textContent = translated;
-    });
-  }
+  if (loc.note) translateNote(loc.note, wikiLang, function(t) { noteEl.textContent = t; });
   document.getElementById('info-link').textContent = '\u2192 ' + sourceLabel;
   document.getElementById('info-link').href = sourceUrl;
   document.getElementById('info-gmaps').href = buildGoogleMapsUrl(loc.lat, loc.lng);
@@ -464,102 +611,64 @@ function showInfo(loc, color, sourceLabel, sourceUrl, forumLoc) {
   } else {
     fl.style.display = 'none';
   }
-  var wikiUrl = extractWikiUrl(loc.wikipedia) || extractWikiUrl(forumLoc && forumLoc.wikipedia) || null;
+  var wikiUrl = loc.wikipedia || (forumLoc && forumLoc.wikipedia) || null;
   fetchWikiPreview(wikiUrl);
 }
 
-function extractWikiUrl(str) {
-  if (!str) return null;
-  var m = str.match(/https:\/\/[\w-]+\.wikipedia\.org\/wiki\/\S+/);
-  return m ? m[0] : null;
-}
-
-var STRINGS = {
-  de: {
-    noData: 'Keine Daten',
-    extreme: 'EXTREM', veryHigh: 'SEHR HOCH', high: 'HOCH',
-    elevated: 'ERHÖHT', low: 'NIEDRIG',
-    positionShown: 'Aktuelle Position wird angezeigt',
-    locationDenied: 'Standortzugriff verweigert',
-    locationUnavailable: 'Standort nicht verfügbar',
-    geolocationUnsupported: 'Geolokalisierung nicht unterstützt',
-    locating: 'Standort wird ermittelt…',
-    showPosition: 'Meine Position',
-    clickMarker: 'Marker antippen für Details',
-    loadingData: 'Daten werden geladen…',
-    legend: 'Legende', sources: 'Quellen', doseRate: 'Dosisleistung (µSv/h)',
-    addPlace: 'Ort hinzufügen / Kontakt',
-    legendExtreme: 'Extrem ≥10', legendVeryHigh: 'Sehr hoch 3–10',
-    legendHigh: 'Hoch 1–3', legendElevated: 'Erhöht 0,5–1',
-    legendLow: 'Niedrig <0,5'
-  },
-  en: {
-    noData: 'No data',
-    extreme: 'EXTREME', veryHigh: 'VERY HIGH', high: 'HIGH',
-    elevated: 'ELEVATED', low: 'LOW',
-    positionShown: 'Current position shown',
-    locationDenied: 'Location permission denied',
-    locationUnavailable: 'Unable to get current position',
-    geolocationUnsupported: 'Geolocation is not supported',
-    locating: 'Locating...',
-    showPosition: 'Show my position',
-    clickMarker: 'Click a marker for details',
-    loadingData: 'Loading data…',
-    legend: 'Legend', sources: 'Sources', doseRate: 'Dose rate (µSv/h)',
-    addPlace: 'Add place / Contact',
-    legendExtreme: 'Extreme ≥10', legendVeryHigh: 'Very high 3–10',
-    legendHigh: 'High 1–3', legendElevated: 'Elevated 0.5–1',
-    legendLow: 'Low <0.5'
-  }
-};
-function t(key) { return (STRINGS[userLang] || STRINGS.en)[key] || STRINGS.en[key]; }
-
-function applyLocale() {
-  document.getElementById('locate-btn').textContent = t('showPosition');
-  var ls = document.getElementById('locate-status');
-  if (ls && !ls.dataset.active) ls.textContent = t('clickMarker');
-  document.getElementById('loading-msg').textContent = t('loadingData');
-  var ltb = document.getElementById('legend-toggle-btn');
-  if (ltb) ltb.innerHTML = '&#9776; ' + t('legend');
-  var legStrong = document.querySelectorAll('#legend strong');
-  if (legStrong[0]) legStrong[0].textContent = t('sources');
-  if (legStrong[1]) legStrong[1].textContent = t('doseRate');
-  var rows = document.querySelectorAll('#legend .legend-row');
-  var labels = ['legendExtreme','legendVeryHigh','legendHigh','legendElevated','legendLow','noData'];
-  rows.forEach(function(row, i) {
-    var dot = row.querySelector('.dot, .tri');
-    if (dot) row.removeChild(dot);
-    row.textContent = ' ' + t(labels[i]);
-    if (dot) row.insertBefore(dot, row.firstChild);
-  });
-  var cb = document.getElementById('contact-btn');
-  if (cb) cb.innerHTML = '&#9993; ' + t('addPlace');
-}
-
-var noteTranslationCache = {};
-function translateNote(text, callback) {
-  if (!text) return;
-  if (noteTranslationCache[text]) { callback(noteTranslationCache[text]); return; }
-  fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(text) + '&langpair=en|de')
-    .then(function(r) { return r.json(); })
-    .then(function(data) {
-      var translated = data.responseData && data.responseData.translatedText;
-      if (translated && translated !== text) {
-        noteTranslationCache[text] = translated;
-        callback(translated);
-      }
-    })
-    .catch(function() {});
-}
-
 var wikiCache = {};
-var userLang = (navigator.language || 'de').split('-')[0];
+var noteCache = {};
+var wikiLang = (navigator.language || 'de').split('-')[0] === 'de' ? 'de' : 'en';
+var currentWikiUrl = null;
+var currentNote = null;
+var currentDose = null;
+
+function guessNoteLang(text) {
+  return /[äöüÄÖÜß]/.test(text) ? 'de' : 'en';
+}
+
+function translateNote(text, targetLang, callback) {
+  if (!text) { callback(''); return; }
+  var sl = guessNoteLang(text);
+  if (sl === targetLang) { callback(text); return; }
+  var key = targetLang + '\0' + text;
+  if (noteCache[key]) { callback(noteCache[key]); return; }
+  var url = 'https://api.mymemory.translated.net/get?q=' + encodeURIComponent(text) +
+    '&langpair=' + sl + '|' + targetLang;
+  fetch(url).then(function(r) { return r.json(); }).then(function(d) {
+    var t = d.responseData && d.responseData.translatedText;
+    noteCache[key] = t || text;
+    callback(noteCache[key]);
+  }).catch(function() { callback(text); });
+}
+
+(function() {
+  document.getElementById('lang-badge').textContent = wikiLang.toUpperCase();
+  applyLang();
+})();
+
+function toggleWikiLang() {
+  wikiLang = wikiLang === 'de' ? 'en' : 'de';
+  document.getElementById('lang-badge').textContent = wikiLang.toUpperCase();
+  wikiCache = {};
+  applyLang();
+  if (document.getElementById('info').style.display !== 'none') {
+    if (currentDose !== null) {
+      document.getElementById('info-dose').textContent = currentDose < 0 ? i18n[wikiLang].no_data : currentDose + ' µSv/h';
+      var tierLabel = getTier(currentDose);
+      document.getElementById('info-tier').textContent = tierLabel ? ' (' + tierLabel + ')' : '';
+    }
+    var noteEl = document.getElementById('info-note');
+    if (currentNote) translateNote(currentNote, wikiLang, function(t) { noteEl.textContent = t; });
+    if (currentWikiUrl) fetchWikiPreview(currentWikiUrl);
+  }
+}
 
 function fetchWikiPreview(url) {
   var wikiEl  = document.getElementById('info-wiki');
   var wikiLnk = document.getElementById('info-wiki-link');
   wikiEl.style.display = 'none';
   wikiLnk.style.display = 'none';
+  currentWikiUrl = url || null;
   if (!url) return;
   wikiLnk.href = url;
   wikiLnk.style.display = 'inline-block';
@@ -571,44 +680,62 @@ function fetchWikiPreview(url) {
 
   function render(data) {
     var extract = (data.extract || '');
+    if (!extract) { wikiEl.style.display = 'none'; return; }
     if (extract.length > 220) extract = extract.slice(0, 220) + '…';
     var img = document.getElementById('info-wiki-img');
     var thumb = data.thumbnail;
-    if (thumb && thumb.source) {
-      img.src = thumb.source;
-      img.style.display = 'block';
-    } else {
-      img.style.display = 'none';
-    }
+    if (thumb && thumb.source) { img.src = thumb.source; img.style.display = 'block'; }
+    else { img.style.display = 'none'; }
     document.getElementById('info-wiki-extract').textContent = extract;
     wikiLnk.textContent = '→ Wikipedia: ' + (data.title || 'Artikel');
     wikiEl.style.display = 'block';
   }
 
+  // Render data whose extract is in articleLang; machine-translate if needed.
+  function renderInLang(data, articleLang) {
+    if (articleLang === wikiLang) { render(data); return; }
+    var extract = (data.extract || '').slice(0, 220);
+    if (!extract) { wikiEl.style.display = 'none'; return; }
+    var cacheKey = wikiLang + '\0' + extract;
+    if (noteCache[cacheKey]) {
+      render({ title: data.title, extract: noteCache[cacheKey], thumbnail: data.thumbnail });
+      return;
+    }
+    fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(extract) +
+      '&langpair=' + articleLang + '|' + wikiLang)
+      .then(function(r) { return r.json(); })
+      .then(function(d) {
+        var t = d.responseData && d.responseData.translatedText;
+        if (t) noteCache[cacheKey] = t;
+        render({ title: data.title, extract: t || extract, thumbnail: data.thumbnail });
+      }).catch(function() { render(data); });
+  }
+
   function tryTranslate(origData) {
     var wdItem = origData.wikibase_item;
-    if (!wdItem) { render(origData); return; }
+    if (!wdItem) { renderInLang(origData, srcLang); return; }
     var wdUrl = 'https://www.wikidata.org/w/api.php?action=wbgetentities&ids=' + wdItem +
-      '&props=sitelinks&sitefilter=' + userLang + 'wiki|enwiki&format=json&origin=*';
+      '&props=sitelinks&sitefilter=dewiki|enwiki&format=json&origin=*';
     fetch(wdUrl).then(function(r) { return r.json(); }).then(function(wd) {
       var entity = wd.entities && wd.entities[wdItem];
-      if (!entity) { render(origData); return; }
+      if (!entity) { renderInLang(origData, srcLang); return; }
       var sl = entity.sitelinks || {};
-      var target = sl[userLang + 'wiki'] || sl['enwiki'];
-      if (!target) { render(origData); return; }
-      var tLang = sl[userLang + 'wiki'] ? userLang : 'en';
+      var otherLang = wikiLang === 'de' ? 'en' : 'de';
+      var target = sl[wikiLang + 'wiki'] || sl[otherLang + 'wiki'];
+      if (!target) { renderInLang(origData, srcLang); return; }
+      var tLang = sl[wikiLang + 'wiki'] ? wikiLang : otherLang;
       var tUrl = 'https://' + tLang + '.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(target.title);
-      if (wikiCache[tUrl]) { render(wikiCache[tUrl]); return; }
+      if (wikiCache[tUrl]) { renderInLang(wikiCache[tUrl], tLang); return; }
       fetch(tUrl).then(function(r) { return r.json(); }).then(function(data) {
         wikiCache[tUrl] = data;
-        render(data);
-      }).catch(function() { render(origData); });
-    }).catch(function() { render(origData); });
+        renderInLang(data, tLang);
+      }).catch(function() { renderInLang(origData, srcLang); });
+    }).catch(function() { renderInLang(origData, srcLang); });
   }
 
   function afterFetch(data) {
     wikiCache[apiUrl] = data;
-    if (srcLang !== userLang) {
+    if (srcLang !== wikiLang) {
       tryTranslate(data);
     } else {
       render(data);
@@ -621,7 +748,6 @@ function fetchWikiPreview(url) {
 
 var ogMarkers = [];
 var forumMarkers = [];
-var markerData = [];  // for tap resolver
 var selectedMarker = null;
 var highlightRing = null;
 
@@ -662,8 +788,7 @@ function selectMarker(marker) {
       color: '#000',
       weight: 2.5,
       opacity: 0.85,
-      interactive: false,
-      pane: 'ogPane'
+      interactive: false
     }).addTo(map);
   }
 }
@@ -675,11 +800,7 @@ function clearHighlight() {
 
 (async function() {
   try {
-    var dbUrl = 'database.json';
-    if (location && location.origin === 'https://appassets.androidplatform.net') {
-      dbUrl = location.origin + '/assets/database.json';
-    }
-    var r = await fetch(dbUrl);
+    var r = await fetch('database.json');
     if (!r.ok) throw new Error('HTTP ' + r.status);
     var db = await r.json();
     var mergeResult = computeMergedPairs(db.opengeiger, db.forum);
@@ -725,22 +846,21 @@ function renderOpenGeiger(locations, mergeResult) {
     var mergedForum = mergeResult ? mergeResult.ogMap.get(loc) : null;
     var marker;
     if (mergedForum) {
-      marker = L.marker([loc.lat, loc.lng], { icon: makeMergedIcon(color, r), pane: 'ogPane' }).addTo(openGeigerLayer);
+      marker = L.marker([loc.lat, loc.lng], { icon: makeMergedIcon(color, r) }).addTo(openGeigerLayer);
       marker._mergedColor = color;
       marker._mergedR = r;
     } else {
       marker = L.circleMarker([loc.lat, loc.lng], {
-        radius: r, fillColor: color, color: '#fff', weight: 1.5, fillOpacity: 0.85,
-        pane: 'ogPane'
+        radius: r, fillColor: color, color: '#fff', weight: 1.5, fillOpacity: 0.85
       }).addTo(openGeigerLayer);
     }
+    marker.bindTooltip(loc.name, {direction: 'top'});
     marker.on('click', function(e) {
       L.DomEvent.stopPropagation(e);
       marker.closeTooltip();
       selectMarker(marker);
       showInfo(loc, color, 'opengeiger.de', buildSourceUrl(loc), mergedForum);
     });
-    markerData.push({ kind: 'og', loc: loc, color: color, marker: marker, mergedForum: mergedForum });
     ogMarkers.push(marker);
   });
 }
@@ -753,6 +873,7 @@ function renderForum(locations, mergeResult) {
     var color = getColor(loc.dose);
     var icon = makeTriangleIcon(color, s);
     var marker = L.marker([loc.lat, loc.lng], {icon: icon}).addTo(forumLayer);
+    marker.bindTooltip(loc.name, {direction: 'top'});
     marker.on('click', function(e) {
       L.DomEvent.stopPropagation(e);
       marker.closeTooltip();
@@ -762,7 +883,6 @@ function renderForum(locations, mergeResult) {
     marker._triSize = s;
     marker._triColor = color;
     marker._markerType = 'triangle';
-    markerData.push({ kind: 'forum', loc: loc, color: color, marker: marker });
     forumMarkers.push(marker);
   });
 }
@@ -869,41 +989,8 @@ function adjustOverlappingMarkers() {
 }
 
 map.on('zoomend', adjustOverlappingMarkers);
-// Unified tap handler: find nearest marker within TAP_RADIUS, else close panel.
-var TAP_RADIUS = 22;
-map.on('click', function(e) {
-  var tapPt = map.latLngToLayerPoint(e.latlng);
-  var best = null;
-  var bestDist = Infinity;
-  for (var i = 0; i < markerData.length; i++) {
-    var md = markerData[i];
-    var mPt = map.latLngToLayerPoint(md.marker.getLatLng());
-    var dx = tapPt.x - mPt.x, dy = tapPt.y - mPt.y;
-    var d = Math.sqrt(dx * dx + dy * dy);
-    if (d > TAP_RADIUS) continue;
-    var biased = md.kind === 'forum' ? d + 1000 : d;
-    if (biased < bestDist) { bestDist = biased; best = md; }
-  }
-  if (best) {
-    selectMarker(best.marker);
-    if (best.kind === 'og') {
-      showInfo(best.loc, best.color, 'opengeiger.de', buildSourceUrl(best.loc), best.mergedForum);
-    } else {
-      showInfo(best.loc, best.color, 'Geigerzählerforum', best.loc.url);
-    }
-    return;
-  }
-  var info = document.getElementById('info');
-  if (info && info.style.display !== 'none') {
-    info.style.display = 'none';
-    clearHighlight();
-  }
-  var legend = document.getElementById('legend');
-  if (legend && !legend.classList.contains('hidden')) {
-    legend.classList.add('hidden');
-    var btn = document.getElementById('legend-toggle-btn');
-    if (btn) btn.innerHTML = '&#9776; Legend';
-  }
+map.on('click', function() {
+  if (document.getElementById('info').style.display !== 'none') closeInfo();
 });
 
 document.getElementById('chk-opengeiger').addEventListener('change', function() {
@@ -915,7 +1002,9 @@ document.getElementById('chk-forum').addEventListener('change', function() {
   else map.removeLayer(forumLayer);
 });
 
-
+document.getElementById('legend-toggle-btn').addEventListener('click', function() {
+  document.getElementById('legend').classList.toggle('legend-open');
+});
 </script>
 </body>
 </html>
